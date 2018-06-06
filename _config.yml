@@ -1,1 +1,25 @@
+# Site settings
+title: 'Corucia'
+author: Fabien HIEGEL
+description: >
+  Software Craftman
+github_username: fhiegel
+
+# Build Setting
 theme: minima
+port: 9000
+
+# Env Setting
+header_pages:
+ - index.html
+ - cv/index.html
+
+collections:
+- jobs
+
+ # Exclude from processing.
+ # The following items will not be processed, by default. Create a custom list
+ # to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock

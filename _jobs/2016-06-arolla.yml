@@ -1,0 +1,48 @@
+---
+title: Développeur Java JEE
+type: job
+company:
+  name: Arolla
+  descriptor: Société de conseil
+dates:
+  start: Juin 2016
+tasks:
+  format: raw
+  list:
+    - name: Mission chez VIDAL (Editeur de donnée médicamenteuse)
+      dates:
+        start: Novembre 2017
+      description: >
+        Intervention dans le cadre de plusieurs projets, portant sur différentes étapes
+        du cycle de la génération du dictionnaire de santé VIDAL.
+      details:
+        - name: Enrichissement des contrôles de Posologie HAS
+          description: >
+            Scenarii BDD (Prescription, Saisie du référentiel),
+            Migration vers AngularJS et introduction de composants
+        - name: Souscription & Nouvelle Facturation
+          description: >
+            Numérisation de l’envoi du dossier, Génération des données de facturation
+      keywords: [JAVA, JUNIT, MOCKITO, CUCUMBER, 'JAVASCRIPT (ANGULARJS, JASMINE)', MONGODB,
+        SPRING,HIBERNATE, GIT, CLEAN CODE, TDD, PAIR-PROGRAMMING]
+
+    - name: Mission chez DARTY (Site internet de vente en ligne)
+      dates:
+        start: Juin 2016
+        end: Novembre 2017
+      description: >
+        Intervention  dans  le  cadre  d'un  projet  d'amélioration  continue,  sur  un  large  panel
+        d'applications, aux stacks diversifiées, et de qualité hétérogène.
+      details:
+        - name: Working with Legacy
+          description: >
+            Rétro-testing et outillage des TUs, sensibilisation des équipes au CleanCode
+        - name: Application des pratiques de Software Craftmanship
+          description: >
+           TDD, Pair-Programming, et Code Reviews, amélioration des processus de merge du code, Ateliers & Dojos
+        - name: Mise en place des workflow logiciels
+          description: >
+            Introduction à la norme BPMN, mise en place des workflow de paiement, et des commandes
+      keywords: [JAVA, JUNIT, MOCKITO, 'JAVASCRIPT (JQUERY, ANGULARJS)', GUICE, DROPWIZARD, REST,
+        GIT, CLEAN CODE, TDD, PAIR-PROGRAMMING, CODEREVIEW ]
+---

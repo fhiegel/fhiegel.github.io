@@ -1,0 +1,10 @@
+{% assign dates = include.dates -%}
+{%- if dates -%}
+<div class="job-dates">
+    {%- if dates.end %}
+    <span class="job-dates">{{ dates.start | escape }} – {{ dates.end | escape }}</span>
+    {%- else %}
+    <span class="job-dates">Début {{ dates.start | escape }}</span>
+    {%- endif %}
+</div>
+{%- endif -%}

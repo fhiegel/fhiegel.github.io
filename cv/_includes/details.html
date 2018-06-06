@@ -1,0 +1,17 @@
+{% assign details = include.details %}
+{% if details %}
+<div class="details">
+    {%- for detail in details %}
+    <div class="detail">
+
+        {%- if detail.name -%}
+        <span class="detail-name">{{ detail.name | escape }}</span>
+        {%- endif %}
+
+        {%- if detail.description -%}
+        <span class="detail-description">{{ detail.description | escape }}</span>
+        {%- endif-%}
+    </div>
+    {%- endfor %}
+</div>
+{% endif %}

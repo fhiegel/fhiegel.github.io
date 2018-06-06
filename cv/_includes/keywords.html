@@ -1,0 +1,9 @@
+{% assign keywords = include.keywords -%}
+{%- if keywords -%}
+<div class="keywords">
+    <div class="keywords-title">{{ include.title | default: "Environnement" }} :</div>
+    {%- for keyword in keywords %}
+    <span class="keyword">{{ keyword }}</span>
+    {%- endfor %}
+</div>
+{%- endif -%}

@@ -1,0 +1,55 @@
+---
+title: Développeur Java – Département R&D
+type: job
+company:
+  name: Oalia
+  descriptor: Editeur logiciel (Optimisation des processus d’achat)
+dates:
+  start: Mars 2011
+  end: Juin 2016
+tasks:
+  format: raw
+  list:
+    - name: Développement de l’UIOM (User Interface Object Model)
+      dates:
+        start: Mars 2011
+        end: Sept. 2011
+      description: ''
+      details:
+        - description: Nouvelle couche de rendu HTML de la nouvelle architecture
+        - description: TDD, rétro-compatible Turbine-Velocity, automatisation des intégrations GUI
+
+    - name: Stabilisation du legacy important en vue d’un fork
+      dates:
+        start: Sept. 2011
+        end: Sept. 2012
+      description: ''
+      details:
+        - description: TMA sur l’ensemble de l’existant
+        - description: Importante augmentation de la couverture de Test
+
+    - name: Mise en place de IAM (Interactive Application Model)
+      dates:
+        start: Sept. 2012
+        end: Mars 2014
+      details:
+        - name: Nouvelle architecture logicielle
+          description: Modélisation des processus métiers et des écrans
+        - description: Intégration UIOM & IAM
+        - name: Outillage
+          description: API de développement fluides, création d’un « Studio »
+
+    - name: Lead Développeur, Référent Technique IAM
+      dates:
+        start: Mars 2014
+        end: Mai 2016
+      details:
+        - name: Outillage
+          description: Tests d’intégration, Runners JUnit, Selenium-IDE</li>
+        - description: Formation nouveaux arrivants
+        - description: Amélioration processus intégration GUI
+
+keywords:
+  [JAVA 7, JAVASCRIPT (JQUERY), 'SPRING (CORE, MVC)', HIBERNATE, POSTRESQL, JUNIT,
+  EASYMOCK, SELENIUM, GIT, DESIGN PATTERNS, CLEAN CODE, TDD, PAIR-PROGRAMMING, SCRUM ]
+---

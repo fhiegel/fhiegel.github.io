@@ -1,0 +1,12 @@
+<div class="job">
+    <h3 class="job-title">{{ job.title | escape }}</h3>
+    <div class="company">
+        <span class="company name">{{ job.company.name | escape }}</span>
+        {% if job.company.descriptor -%}
+        <span class="company-descriptor">{{ job.company.descriptor | escape }}</span>
+        {%- endif %}
+    </div>
+    {% include_relative _includes/dates.html dates=job.dates %}
+    {% include_relative _includes/tasks.html tasks=job.tasks %}
+    {% include_relative _includes/keywords.html keywords=job.keywords %}
+</div>

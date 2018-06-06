@@ -1,0 +1,16 @@
+{% assign tasks = include.tasks -%}
+{% if tasks %}
+<div class="tasks">
+    {%- for task in tasks.list %}
+    <div class="task">
+        <span class="task-name">{{ task.name | escape }}</span>
+        {% include_relative _includes/dates.html dates=task.dates %}
+        {%- if task.description and task.description != '' -%}
+        <span class="task-description">{{ task.description | escape }}</span>
+        {%- endif -%}
+        {% include_relative _includes/details.html details=task.details %}
+        {% include_relative _includes/keywords.html keywords=task.keywords %}
+    </div>
+    {%- endfor %}
+</div>
+{% endif %}
