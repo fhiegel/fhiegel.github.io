@@ -2,7 +2,7 @@
 {%- assign jobs = include.jobs | default: site.jobs | where:'type', type | sort: 'date' | reverse %}
 {%- if jobs -%}
 <div class="jobs">
-    <h1>{{ include.title | default: "Nouvelles" }}</h1>
+    <h1 class="name">{{ include.title | default: "Nouvelles" }}</h1>
 
     {%- for job in jobs %}
     {% include_relative _includes/job.html job=job %}

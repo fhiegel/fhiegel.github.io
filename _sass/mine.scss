@@ -1,0 +1,37 @@
+$jobs-theme-color: #eeeeff;
+
+.jobs {
+  //font-size: 1.15em;
+
+  h1 {
+    background-color: $jobs-theme-color;
+    font-variant: small-caps;
+  }
+
+  h1,
+  .name,
+  .task-name,
+  .detail-name {
+    font-weight: bolder;
+  }
+
+  .job {
+
+    .company {
+      background-color: lighten($jobs-theme-color, 2%);
+      * {
+        display: block;
+      }
+    }
+
+  }
+
+  .job-dates {
+    color: darken($jobs-theme-color, 20%);
+    //display: flex;
+    > * {
+      float: right;
+    }
+  }
+
+}

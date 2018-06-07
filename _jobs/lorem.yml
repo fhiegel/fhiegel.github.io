@@ -1,0 +1,27 @@
+---
+title: Résumé de la partie du 26 am
+type: ipsus
+company:
+  name: Synopsis
+  description: >
+    Vous vous éveillez alors qu'un grand grondement retenti au loin. Une petite vois vous suggère de vous dépêcher.
+dates:
+  start: 26 Mai 2018
+  end: 27 Mai 2018
+tasks:
+  format: raw
+  list:
+    - name: Trouver l'armurerie
+      dates:
+        start: 20h00
+        end: 22h00
+      description: Trouver l'armurerie en suivant un schéma de jeu différente avec des cartes d'"infiltration"
+      details:
+        - name: Actions du Monstre
+        - name: Actions des Joueurs
+        - description: Aliquam eu ante auctor, sollicitudin enim at, malesuada justo.
+        - name: Nunc pulvinar ipsum ut tempus tempus.
+          description: Nullam imperdiet orci non metus pharetra mollis. Praesent sit amet justo nunc. Quisque condimentum vel mi sit amet auctor. Donec rutrum fermentum posuere. Suspendisse nec dolor vel neque vulputate scelerisque. Maecenas imperdiet eu ligula eget commodo. Maecenas vulputate non sapien eu luctus.
+        - name: Tour douze
+          description: Le personnage de sébastien s'éteint.
+---
