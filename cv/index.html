@@ -3,11 +3,5 @@ layout: default
 title: Sandbox
 ---
 <div id="page-container">
-    <h1>EXPÉRIENCES PROFESSIONNELLES</h1>
-    {%- assign jobs = site.jobs | where:'type', 'job' | sort: 'date' | reverse %}
-    {%- for job in jobs %}
-    {% include_relative _includes/job.html job=job %}
-    {%- endfor %}
-    <h1>FORMATIONS</h1>
-    <h1>PROJETS ANNEXES</h1>
+    {% include_relative _includes/jobs.html %}
 </div>
