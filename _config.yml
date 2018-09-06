@@ -1,5 +1,5 @@
 # Site settings
-title: 'Corucia'
+title: 'fhiegel'
 author: Fabien HIEGEL
 description: >
   Software Craftman
@@ -13,6 +13,8 @@ port: 9000
 header_pages:
  - index.html
  - cv/index.html
+ - cv/nocv/index.md
+ - cv/pitch/index.md
 
 collections:
 - jobs
