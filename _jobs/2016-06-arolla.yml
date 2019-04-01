@@ -1,29 +1,43 @@
 ---
-title: Développeur Java JEE
+title: 'Software Craftman / Développeur Java '
 type: job
 company:
   name: Arolla
-  descriptor: Société de conseil
+  descriptor: >
+    Société de conseil, spécialisée dans les techniques a vancées de
+    développement (Clean code, TDD, BDD, DDD)
 dates:
   start: Juin 2016
+  end: Décembre 2018
 tasks:
   format: raw
   list:
     - name: Mission chez VIDAL (Editeur de donnée médicamenteuse)
       dates:
         start: Novembre 2017
+        end: Décembre 2018
       description: >
         Intervention dans le cadre de plusieurs projets, portant sur différentes étapes
         du cycle de la génération du dictionnaire de santé VIDAL.
       details:
-        - name: Enrichissement des contrôles de Posologie HAS
+        - name: 'Posologie: Enrichissement des contrôles de Posologie HAS'
           description: >
             Scenarii BDD (Prescription, Saisie du référentiel),
             Migration vers AngularJS et introduction de composants
         - name: Souscription & Nouvelle Facturation
           description: >
             Numérisation de l’envoi du dossier, Génération des données de facturation
-      keywords: [JAVA, JUNIT, MOCKITO, CUCUMBER, 'JAVASCRIPT (ANGULARJS, JASMINE)', MONGODB,
+        - name: Circuit du médicament CinqB
+          description: >
+            Le Bon médicament au Bon patient, à la Bonne dose, au Bon moment. CRUD simple en
+            Java 11, Angular 6.
+            Scrummaster et développeur dans l'équipe
+        - name: 'Secu-Replay: re-jeu de la sécurisation des posologies'
+          description: >
+            Développement d'une application traitant 80Go de donnéesavec Spark, pour requêter
+            un cluster de servers de sécurisation des posologies.
+            Scrummaster et développeur dans l'équipe
+      keywords: [JAVA, SPARK, SCRUM, JUNIT, MOCKITO, CUCUMBER, 'JAVASCRIPT (ANGULARJS, JASMINE)', MONGODB,
         SPRING,HIBERNATE, GIT, CLEAN CODE, TDD, PAIR-PROGRAMMING]
 
     - name: Mission chez DARTY (Site internet de vente en ligne)
