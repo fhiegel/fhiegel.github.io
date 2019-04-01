@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+//$text-color:       #111 !default;
+//$background-color: #111111 !default;
+//$brand-color:      #7ae22a !default;
+@import "minima",
+        "custom/base"
+;

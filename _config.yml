@@ -1,13 +1,17 @@
 # Site settings
-title: 'fhiegel'
+title: 'Le Roliste qui code'
 author: Fabien HIEGEL
 description: >
-  Software Craftman
-github_username: fhiegel
+  Artisant logiciel, mais roliste avant tout.
 
 # Build Setting
 theme: minima
-port: 9000
+
+minima:
+  social_links:
+    twitter: fhiegel
+    github: fhiegel
+    linkedin: fabien-hiegel-874416b5
 
 # Env Setting
 header_pages:
@@ -18,6 +22,9 @@ header_pages:
 
 collections:
 - jobs
+
+# Build
+port: 9000
 
  # Exclude from processing.
  # The following items will not be processed, by default. Create a custom list
