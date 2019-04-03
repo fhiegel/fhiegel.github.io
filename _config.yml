@@ -32,3 +32,4 @@ port: 9000
 exclude:
   - Gemfile
   - Gemfile.lock
+  - scripts
