@@ -1,0 +1,28 @@
+---
+title: Développeur Java
+type: job
+company:
+  name: Oui SNCF
+  descriptor: Agence de voyage
+dates:
+  start: Décembre 2018
+#  end: Décembre 2018
+tasks:
+  format: raw
+  list:
+    - name: 'WATTO: Cross-Sell et Personnalisation des offres'
+      dates:
+        start: Décembre 2018
+#        end: Décembre 2018
+      description: >
+        TODO
+      details:
+        - name: 'XSell'
+          description: >
+            TODO
+        - name: 'Personalisation'
+          description: >
+            TODO
+      keywords: [JAVA, SPARK, SCRUM, JUNIT, MOCKITO, CUCUMBER, 'JAVASCRIPT (ANGULARJS, JASMINE)', MONGODB,
+        SPRING,HIBERNATE, GIT, CLEAN CODE, TDD, PAIR-PROGRAMMING]
+---
