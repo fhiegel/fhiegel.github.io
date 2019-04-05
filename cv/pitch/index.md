@@ -8,5 +8,5 @@ permalink: /pitch/
    data-card-controls="0" 
    data-card-width="800"
    data-card-theme="dark"
-   href="https://gitpitch.com/fhiegel/fhiegel.github.io/cv?p=cv/pitch/_me">fhiegel</a>
+   href="https://gitpitch.com/fhiegel/fhiegel.github.io?p=cv/pitch/_me">fhiegel</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
