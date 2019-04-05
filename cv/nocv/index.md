@@ -1,6 +1,7 @@
 ---
 layout: default
 title: NoCV
+permalink: /nocv/
 ---
 
 # 2019
