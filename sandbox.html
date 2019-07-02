@@ -1,0 +1,31 @@
+<div>
+    <input type="text" id="tryingrtc">
+    <button type="button" id="trybutton">Send</button>
+    <script>
+        var configuration = {
+            iceServers: [
+                { 'url': 'stun:stun.services.mozilla.com' } /*{'url': 'stun:stun.l.google.com:19302'}*/
+            ]
+        };
+        // var conf = new RTCConfiguration()
+        var pc = new RTCPeerConnection(configuration);
+        var dc = pc.createDataChannel('my channelqsdfgsqdfg qsdf');
+
+        dc.onmessage = function (event) {
+            console.log('received: ' + event.data);
+        };
+
+        dc.onopen = function () {
+            console.log('datachannel open');
+        };
+
+        dc.onclose = function () {
+            console.log('datachannel close');
+        };
+
+        // dc.open();
+        document.getElementById('trybutton').addEventListener('click', function () {
+            dc.send('SEND');
+        });
+    </script>
+</div>
