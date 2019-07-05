@@ -4,7 +4,7 @@ type: job
 company:
   name: Arolla
   descriptor: >
-    Société de conseil, spécialisée dans les techniques a vancées de
+    Société de conseil, spécialisée dans les techniques avancées de
     développement (Clean code, TDD, BDD, DDD)
 dates:
   start: Juin 2016

@@ -1,0 +1,293 @@
+@mixin monster-sprite($monster-name, $sprite-type, $sprite-size, $sprite) {
+  .#{$sprite-type}-#{$monster-name} {
+    display: inline-block;
+    height: #{map-get($sprite, "height")}px;
+    width: #{map-get($sprite, "width")}px;
+    background: url('monsters/monsters-spritesheet-#{$sprite-size}.png') #{map-get($sprite, "x")}px #{map-get($sprite, "y")}px;
+  }
+}
+
+@mixin extract-sprite($monster, $sprite-type, $sprite-size) {
+  @include monster-sprite(
+                  map-get($monster, "name"),
+                  $sprite-type,
+                  $sprite-size,
+                  map-get(map-get($monster, $sprite-size), $sprite-type));
+}
+
+@mixin monster-display($monster) {
+  @include extract-sprite($monster, "image", "1218x810");
+  @include extract-sprite($monster, "icon", "1218x810"); // x2/3
+}
+
+
+$monsters: (
+        ("name": 'albatros',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -360, y: -423)),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -240, y: -292),
+                        "icon": (height: 32, width: 32, x: -202, y: -638))
+        ),
+        ("name": 'ant',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -18, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -12, y: 0),
+                        "icon": (height: 32, width: 32, x: -2, y: -708),
+                )
+        ),
+        ("name": 'bull',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1623, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -1082, y: -128),
+                        "icon": (height: 32, width: 32, x: -992, y: -638),
+                )
+        ),
+        ("name": 'condor',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1053, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -702, y: 0),
+                        "icon": (height: 32, width: 32, x: -202, y: -638),
+                )
+        ),
+        ("name": 'crab',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -156, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -104, y: -128),
+                        "icon": (height: 32, width: 32, x: -2, y: -708),
+                )
+        ),
+        ("name": 'dragon',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -180, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -120, y: -282),
+                        "icon": (height: 32, width: 32, x: -202, y: -638),
+                )
+        ),
+        ("name": 'eye',
+                "1827x1215": (
+                        "image": (height: 192, width: 72, x: -288, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 48, x: -192, y: 0),
+                        "icon": (height: 32, width: 32, x: -792, y: -638),
+                )
+        ),
+        ("name": 'fish',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -153, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -102, y: 0),
+                        "icon": (height: 32, width: 32, x: -382, y: -708),
+                )
+        ),
+        ("name": 'fly',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -291, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -194, y: -128),
+                        "icon": (height: 32, width: 32, x: -2, y: -708),
+                )
+        ),
+        ("name": 'ghost',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -783, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -522, y: 0),
+                        "icon": (height: 32, width: 32, x: -802, y: -578),
+                )
+        ),
+        ("name": 'goblin',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -540, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -360, y: -282),
+                        "icon": (height: 32, width: 32, x: -1002, y: -578),
+                )
+        ),
+        ("name": 'golem',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1248, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -832, y: -128),
+                        "icon": (height: 32, width: 32, x: -192, y: -708),
+                )
+        ),
+        ("name": 'griffin',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: 0, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: 0, y: -282),
+                        "icon": (height: 32, width: 32, x: -402, y: -638),
+                )
+        ),
+        ("name": 'imp',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1428, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -952, y: -128),
+                        "icon": (height: 32, width: 32, x: -402, y: -638),
+                )
+        ),
+        ("name": 'lizard',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1338, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -892, y: 0),
+                        "icon": (height: 32, width: 32, x: -992, y: -638),
+                )
+        ),
+        ("name": 'medusa',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -918, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -612, y: 0),
+                        "icon": (height: 32, width: 32, x: -2, y: -638),
+                )
+        ),
+        ("name": 'plant',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -1485, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -990, y: 0),
+                        "icon": (height: 32, width: 32, x: -592, y: -638),
+                )
+        ),
+        ("name": 'octopus',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -438, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -292, y: -128),
+                        "icon": (height: 32, width: 32, x: -592, y: -638)
+                )
+        ),
+        ("name": 'skeleton',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1620, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -1080, y: 0),
+                        "icon": (height: 32, width: 32, x: -802, y: -578),
+                )
+        ),
+        ("name": 'slime',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -393, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -262, y: 0),
+                        "icon": (height: 32, width: 32, x: -792, y: -638),
+                )
+        ),
+        ("name": 'snake',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -528, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -352, y: 0),
+                        "icon": (height: 32, width: 32, x: -2, y: -638),
+                )
+        ),
+        ("name": 'wolf',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -1203, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -802, y: 0),
+                        "icon": (height: 32, width: 32, x: -1002, y: -578),
+                )
+        ),
+        ("name": 'wererat',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -18, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -12, y: -128),
+                        "icon": (height: 32, width: 32, x: -1002, y: -578)
+                )
+        ),
+        ("name": 'worm',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -663, y: 0)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -442, y: 0),
+                        "icon": (height: 32, width: 32, x: -2, y: -638),
+                )
+        ),
+        ("name": 'zombie',
+                "1827x1215": (
+                        "image": (height: 192, width: 96, x: -585, y: -192)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 64, x: -390, y: -128),
+                        "icon": (height: 32, width: 32, x: -802, y: -578),
+                )
+        ),
+        ("name": 'sei-ryu',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1098, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -732, y: -282),
+                        "icon": (height: 32, width: 32, x: -252, y: -470)
+                )
+        ),
+        ("name": 'su-zaku',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1488, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -992, y: -282),
+                        "icon": (height: 32, width: 32, x: -532, y: -476)
+                )
+        ),
+        ("name": 'gen-bu',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -903, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -602, y: -282),
+                        "icon": (height: 32, width: 32, x: -162, y: -476)
+                )
+        ),
+        ("name": 'byak-ko',
+                "1827x1215": (
+                        "image": (height: 192, width: 144, x: -1293, y: -423)
+                ),
+                "1218x810": (
+                        "image": (height: 128, width: 96, x: -862, y: -282),
+                        "icon": (height: 32, width: 32, x: -432, y: -476)
+                )
+        ));
+
+.monsters {
+        margin-top: 10px;
+
+  @each $monster in $monsters {
+    @include monster-display($monster);
+  }
+
+}
+
