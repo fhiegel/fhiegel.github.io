@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://fhiegel.github.io',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'Par Fabien Hiegel',
+  subtitle: 'Sou titre fort conséquent',
+  copyright: '',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
@@ -16,28 +16,28 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'CV',
+      path: '/me/cv'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'NoCV',
+      path: '/me/nocv'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Fabien Hiegel',
+    photo: '/fhiegel.jpg',
+    bio: 'Softawre Craftsman et roliste.',
     contacts: {
       email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      facebook: '',
+      telegram: '',
+      twitter: 'fhiegel',
+      github: 'fhiegel',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'fabien-hiegel-874416b5',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
