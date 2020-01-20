@@ -1,7 +1,7 @@
 {
-  "version": "3.0.3",
-  "name": "gatsby-starter-lumen",
-  "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
+  "version": "0.0.1",
+  "name": "sandblox",
+  "description": "Sandbox pour site de blo à partir de gatsby-lumen-starter",
   "main": "n/a",
   "scripts": {
     "develop": "yarn run clean && gatsby develop",
@@ -16,27 +16,10 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "repository": "https://github.com/fhiegel/fhiegel.github.io",
+  "author": "Fabien Hiegel <fabien.hiegel@gmail.com>",
   "license": "MIT",
-  "keywords": [
-    "gatsby",
-    "graphql",
-    "netlify",
-    "netlify-cms",
-    "pagination",
-    "categories",
-    "tags",
-    "prismjs",
-    "static",
-    "lost",
-    "blog",
-    "minimal",
-    "react",
-    "theme",
-    "starter",
-    "disqus"
-  ],
+  "keywords": [],
   "dependencies": {
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",

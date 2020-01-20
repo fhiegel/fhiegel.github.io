@@ -11,7 +11,7 @@ exports[`PostTemplate renders correctly 1`] = `
       className="post__home-button"
       href="/"
     >
-      All Articles
+      Accueil
     </a>
     <div
       className="post__content"
@@ -43,8 +43,8 @@ exports[`PostTemplate renders correctly 1`] = `
         <p
           className="meta__date"
         >
-          Published 
-          1 Sep 2016
+          Le 
+          1 sept. 2016
         </p>
       </div>
       <div
