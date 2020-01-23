@@ -1,14 +1,11 @@
 language: node_js
+before_script:
+  - npm install -g gatsby-cli
 node_js:
-  - '10'
-install:
-  - npm install -g codecov
-script:
-  - yarn install
-  - yarn lint
-  - yarn test:coverage --runInBand --no-cache
-  - yarn test --runInBand --no-cache
-  - codecov
-cache:
-  directories:
-    - node_modules
+  - "10"
+deploy:
+  provider: script
+  script: yarn install && yarn run deploy
+  skip_cleanup: true
+  on:
+    branch: gatsby/master

@@ -1,12 +1,13 @@
 {
   "version": "0.0.1",
-  "name": "sandblox",
-  "description": "Sandbox pour site de blo à partir de gatsby-lumen-starter",
+  "name": "@fhiegel/fhiegel",
+  "description": "Sandbox pour développer un petit site perso, du tooling JdR, et pourquoi pas, quelques articles de blog.",
   "main": "n/a",
   "scripts": {
     "develop": "npm run clean && gatsby develop",
     "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && './node_modules/.bin/gh-pages' -d public -b master",
+    "deploy-manually": "yarn run clean && gatsby build --prefix-paths && './node_modules/.bin/gh-pages' -d public -b master ",
+    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/fhiegel/fhiegel.github.io.git",
     "clean": "'./node_modules/.bin/rimraf' .cache public",
     "flow": "flow",
     "lint:js": "eslint --cache --ext .js,.jsx .",

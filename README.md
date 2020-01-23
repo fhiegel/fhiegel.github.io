@@ -1,5 +1,7 @@
-# Sandblox
+# Gatsby / Master
 
-Sandbbo de blog, pour site perso.
+Branche principale pour le [blog](fhiegel), construit avec Gatsby.
 
-From gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+Le site utilise le template [`gatsby-starter-lumen`](https://github.com/alxshelepenok/gatsby-starter-lumen)
+
+[fhiegel]: https://fhiegel.github.io
