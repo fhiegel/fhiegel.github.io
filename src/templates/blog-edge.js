@@ -17,9 +17,7 @@ class ReactReveal extends React.Component {
       <div className='slides' >
         <section data-markdown>
             <script type="text/template">
-                # Test
-                Soit
-                ## Test 2
+               {fuk}
             </script>
         </section>
       </div>
@@ -29,10 +27,10 @@ class ReactReveal extends React.Component {
 }
 
 const BlogTemplate = ({ data }) => {
-    const { html: pageBody } = data.markdownRemark;
+    const { html: pageBody, rawMarkdownBody:raw} = data.markdownRemark;
     return (
       <Layout >
-      <ReactReveal fuk={pageBody} />
+      <ReactReveal fuk={raw} />
       </Layout>
     )
 }
@@ -43,6 +41,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      rawMarkdownBody
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
