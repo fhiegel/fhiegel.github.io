@@ -1,0 +1,54 @@
+<html>
+<head>
+        <title>Bloc note tampon de Fabien Hiegel</title>  
+        <style type="text/css">
+        	body{
+        		background-color:#b8b8b8;
+        		// width:100%;
+        		// margin: 12 auto 14 10;
+        	}
+        	textarea{
+        		border-style:none;
+        		width:49%;
+        		height:390px;
+        		padding:10px;
+        		margin:2px;
+        		//resize:none;
+        	}
+        </style>     
+        <script language="javascript" type="text/javascript" src="jquery-2.1.1.min.js" ></script>
+        <script language="javascript" type="text/javascript" >
+        	function createNote(){
+        		// var newNote = jQuery(document.createElement('div'));
+        		var innerArea = jQuery(document.createElement('textarea'));
+        		
+        		innerArea.css('background-color','#ffffb0');
+        		innerArea.css('resize','none');
+        		//innerArea.css('width','100%');
+        		//innerArea.css('height','100%');
+        		
+        		//newNote.css('width','49%');
+        		//newNote.css('height','390px');
+        		//newNote.css('display','inline');
+        		//newNote.resizable("both"); // TODO : mettre le plugin de redimentionnement
+        		//newNote.append(innerArea);
+        		
+        		$('body').append(innerArea);
+        	}
+        	
+        </script>
+</head>
+<body>
+	<!-- <div style="background-color:#000000;">-->
+        	<h3>Bloc note tampon <button onclick="createNote()">+</button></h3>
+        	<!-- .css('background-color','#ffffd0') -->
+		<textarea style="background-color:#ffffb0"></textarea>
+		<textarea style="background-color:#ffffb0;"></textarea>
+		<textarea style="background-color:#ffffb0"></textarea>
+		<textarea style="background-color:#ffffb0"></textarea>
+
+		<button onclick="createNote()">+</button>		
+
+	<!--</div>-->
+</body>
+</html>
