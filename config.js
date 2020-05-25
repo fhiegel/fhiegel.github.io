@@ -3,8 +3,8 @@
 module.exports = {
   url: 'https://fhiegel.github.io',
   pathPrefix: '/',
-  title: 'Un Simple Dev - Blog',
-  subtitle: 'Sandbox pour développer un petit site perso, du tooling JdR, et pourquoi pas, quelques articles de blog.',
+  title: 'Juste Un Dev - Blog',
+  subtitle: '"Vous ne voulez pas un whisky d\'abord?". Sandbox pour développer un petit site perso, du tooling JdR, et pourquoi pas, quelques articles de blog.',
   copyright: '',
   disqusShortname: '',
   postsPerPage: 4,
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Fabien Hiegel',
     photo: '/fhiegel.jpg',
-    bio: 'Simple Dev. Craftsman. Roliste.',
+    bio: 'JusteUnDev. Craftsman. Roliste.',
     contacts: {
       github: 'fhiegel',
       twitter: 'fhiegel',

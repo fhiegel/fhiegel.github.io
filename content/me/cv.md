@@ -1,5 +1,5 @@
 ---
-title: "No CV"
+title: "CV"
 template: "page"
 socialImage: "/media/me/fhiegel.jpg"
 ---
