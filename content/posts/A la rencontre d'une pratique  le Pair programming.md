@@ -1,17 +1,28 @@
-# A la rencontre d'une pratique : le Pair programming
+# A la rencontre d'une pratique : le Pair-Programming
 
-Vous en avez probablement déjà entendu parler, peut-être que vous le pratiquez déjà, le Pair-Programming est une méthodologie de développement mettant deux développeurs à contribution, pour développer ensemble une même fonctionnalité.
+Vous en avez probablement déjà entendu parler, peut-être que vous l'utilisez déjà, le Pair-Programming est une pratique de développement mettant deux développeurs à contribution, pour développer ensemble un même logiciel.
 
-Il s'agit de l'une des 12 pratiques qui nous viennent de l'eXtreme Programming (_"Extreme Programming Explained", Kent Beck, 1999_), qui propose de faire du Pair-Programming tout le temps.
+Le Pair-Programming est l'une des 12 pratiques issues de l'eXtreme Programming (_"eXtreme Programming Explained", Kent Beck, 1999_), qui propose de faire du Pair-Programming tout le temps, quel que soit le sujet.
+
+Il s'agit de l'une des 12 pratiques qui nous viennent de l'eXtreme Programming (_"Extreme Programming Explained", Kent Beck, 1999_), qui propose de faire du Pair-Programming tout le temps, sur tous les sujets.
+
+Mais comment est-ce que ça fonctionne dans la vraie vie ?
 
 ## Pairer : deux personnes, une machine
 
-La particularité principale du Pair-Programming, c'est de faire travailler deux personnes sur une seule machine. 
+Pour faire simple ; le Pair-Programming, c'est de faire travailler deux personnes sur une seule machine. Point.
+
 Une seule machine.
-**Une seule** machine.
-**UNE SEULE** machine.
-C'est-à-dire un seul clavier, une seule souris, unn même écran. Point.
+	**Une seule** machine.
+			**UNE SEULE** machine.
+
+Encore une fois ?
+
+**UNE SEULE MACHINE.**
+
+C'est-à-dire un seul clavier, une seule souris, et un même écran. 
 Ça veut également dire : une seule et même source d'information pour les deux développeurs. 
+Ca veut dire : ni ordinateur portable supplémentaire, ni téléphone portable pendant la session de pair-programming.
 
 Lorsque deux développeurs travaillent ensemble sur une même fonctionnalité, mais que chacun travaille sur sa machine, ça n'est pas du Pair-Programming.
 
