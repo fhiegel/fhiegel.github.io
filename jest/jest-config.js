@@ -15,7 +15,8 @@ module.exports = {
     'node_modules/(?!(gatsby)/)'
   ],
   globals: {
-    __PATH_PREFIX__: ''
+    __PATH_PREFIX__: '',
+    __BASE_PATH__: '',
   },
   setupFiles: ['<rootDir>/jest/loadershim.js']
 };

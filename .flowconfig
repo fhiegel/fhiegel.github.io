@@ -1,15 +1,13 @@
 [ignore]
-
-[include]
+.*/node_modules/*
+.*/public/*
 
 [libs]
 flow-typed
 
-[lints]
-
 [options]
 module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/css-module-stub.js'
-server.max_workers=4
+server.max_workers=1
 
 [strict]
 nonstrict-import
