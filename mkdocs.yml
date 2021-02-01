@@ -1,0 +1,90 @@
+# Project information
+site_name: Katas
+site_url: https://fhiegel.github.io/katas
+site_description: Repository of katas
+repo_url: https://github.com/fhiegel/katas
+edit_uri: ""
+
+# Nav
+
+nav:
+  - Accueuil: index.md
+  - Compilation perso:
+    - Katas: katas/index.md
+    - Coding Dojo: katas/coding-dojo
+    - Deliberate Practice: katas/deliberate-practice
+    - Katalogue:
+      - katas/katas/FizzBuzz
+      - katas/katas/Diamound
+  - Me:
+    - me/cv.md
+    - me/nocv.md
+
+# Theme options ef2929, d52929
+
+theme:
+  name: material
+  custom_dir: theme
+  language: fr
+  logo: assets/images/icon-128x128.png
+  favicon: assets/images/favicon.png
+  palette:
+    primary: black
+    accent: red
+  features:
+    - navigation.sections
+    - navigation.tabs
+
+reveal:
+  path: reveal.js/dist
+  transition: slide
+  theme:
+    name: white.css
+    path: theme
+  plugin:
+    path: reveal.js/plugin
+
+extra:
+  author:
+    name: fhiegel
+    icon: fontawesome/solid/blog
+    #  https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons/
+    #  icon: /fontawesome/solid/blog
+    #  icon: fontawesome/solid/arrow-alt-circle-up
+    #  icon: fontawesome/solid/angle-left
+    #  icon: fontawesome/regular/lemon
+    #  icon: fontawesome/regular/id-badge
+    #  icon: fontawesome/solid/dice-d20
+    link: https://fhiegel.github.io
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fhiegel
+      name: fhiegel on GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/fhiegel
+      name: fhiegel on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/fabien-hiegel-874416b5
+      name: Fabien Hiegel on LinkedIn
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - extra
+  - meta
+  - tables
+  - toc
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - macros

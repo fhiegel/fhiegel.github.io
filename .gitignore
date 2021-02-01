@@ -1,0 +1,15 @@
+# Eclipse
+.project
+.classpath
+.settings/*
+
+# IntelliJ
+.idea
+*.iml
+
+# Exercices
+code
+target
+
+# MkDocs
+site
