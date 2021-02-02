@@ -1,0 +1,1150 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Vous cherchez des conseils sur le métier de développeur ?
+Vous voulez demander à Michael Feathers, Seb Rose ou encore à Robert C. Martin (Uncle Bob).
+Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : Les 97 choses que tout développeur devrait savoir.
+">
+      
+      
+      
+        <meta name="author" content="Fabien Hiegel">
+      
+      
+        <link rel="canonical" href="https://fhiegel.github.io/blog/97-things/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
+    
+    
+      
+        <title>97 choses que tout développeur devrait savoir (25/97) - Juste un dev</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-agir-avec-prudence" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://fhiegel.github.io" title="Juste un dev" class="md-header-nav__button md-logo" aria-label="Juste un dev">
+      
+  <img src="../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Juste un dev
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              97 choses que tout développeur devrait savoir (25/97)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../practices/katas/" class="md-tabs__link">
+        S'entraîner
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../learn/" class="md-tabs__link">
+        Apprendre
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../me/cv/" class="md-tabs__link">
+        A propos
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://fhiegel.github.io" title="Juste un dev" class="md-nav__button md-logo" aria-label="Juste un dev">
+      
+  <img src="../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    Juste un dev
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        S'entraîner
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="S'entraîner" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          S'entraîner
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/" class="md-nav__link">
+        Katas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+      
+      <label class="md-nav__link" for="nav-2-2">
+        Coding Dojo
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Coding Dojo" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-2">
+          <span class="md-nav__icon md-icon"></span>
+          Coding Dojo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/coding-dojo/" class="md-nav__link">
+        Coding Dojo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/coding-dojo/slides/" class="md-nav__link">
+        Presentation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/deliberate-practice/" class="md-nav__link">
+        Deliberate Practice
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+      
+      <label class="md-nav__link" for="nav-2-4">
+        Katalogue
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Katalogue" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-4">
+          <span class="md-nav__icon md-icon"></span>
+          Katalogue
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/FizzBuzz" class="md-nav__link">
+        FizzBuzz
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/Diamound" class="md-nav__link">
+        Diamound
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        Apprendre
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Apprendre" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Apprendre
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/" class="md-nav__link">
+        Disclaimer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+      
+      <label class="md-nav__link" for="nav-3-2">
+        🎓 Formations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="🎓 Formations" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          🎓 Formations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/formations/tdd/" class="md-nav__link">
+        TDD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/formations/solid/" class="md-nav__link">
+        S.O.L.I.D
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+      
+      <label class="md-nav__link" for="nav-3-3">
+        🧩 Serious Games
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="🧩 Serious Games" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-3">
+          <span class="md-nav__icon md-icon"></span>
+          🧩 Serious Games
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/serious-games/sensibiliser-aux-tests-unitaires/" class="md-nav__link">
+        Tests Unitaires - Sensibiliser sans coder
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        A propos
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="A propos" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          A propos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../me/cv/" class="md-nav__link">
+        CV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../me/nocv/" class="md-nav__link">
+        NoCV
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>En juillet, sur LinkedIn, je suis tombé sur ce post, d'<a href="http://coding-is-like-cooking.info">Emily Bache</a></p>
+<p><img alt="image with no caption" src="images/quote-emily-bache.png" /></p>
+<p>Je suis fan du personnage, développeur, et curieux.
+Je me suis donc attelé à la recherche et à lecture du livre <em>"97 Things Every <strong>Java</strong> Programmer Should Know"</em></p>
+<p>...</p>
+<p>Echec cuisant : Je me suis trompé dans le titre du livre.</p>
+<p>...</p>
+<p>Mais j'ai trouvé autre chose : le livre <em>"97 Things Every Programmer Should Know"</em> (sans "Java"), datant de 2010, disponible sous <a href="https://github.com/97-things/97-things-every-programmer-should-know">GitHub</a>, <a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/">GitBook</a>, sous une license <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>, et je l'ai lu (en partie). Le livre est chouette, facile à lire, et balaie un large panel de sujet. Il regroupe 97 conseils sur le développement informatique, sur deux pages maximum. Rien n'est profondément creusé, mais certaines anecdotes nous rappellent notre quotidien de développeur, OPS, testeur, ou d'autres métiers du développement logiciel.</p>
+<p>Dans la suite de cet article, je vous propose de parcourir ce que j'ai compris des <strong>25</strong> premiers conseils.</p>
+<h2 id="1-agir-avec-prudence"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/1" title="GitHub Issue: squidfunk/mkdocs-material#1">#1</a>. Agir avec Prudence<a class="headerlink" href="#1-agir-avec-prudence" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Act with Prudence (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_01/README.md">Thing 01</a>)
+— SebRose</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/sebrose.jpg" /></p>
+<blockquote>
+<p>Whatever you undertake, act with prudence and consider the consequences.</p>
+<p>— Anonyme</p>
+</blockquote>
+<p>Parfois, dans le développement logiciel, on nous demande de choisir entre "<em>faites le vite</em>" et "<em>faites le bien</em>". Bien souvent, le "<em>faites-le vite</em>" est accompagné de l'intention "<em>on l'améliorera plus tard</em>".
+Martin Fowler appelle cette pratique la "<em><strong>dette technique intentionnelle</strong></em>" [<a href="http://martinfowler.com/bliki/TechnicalDebtQuadrant.html">1</a>].</p>
+<p>La dette technique intentionnelle est un <em>emprunt</em>, que vous contractez sur le budget de votre projet. Vous en recevez des bénéfices à court terme, mais plus vous la conservez longtemps, plus elle sera difficile à rembourser.
+Parfois, ce sera tout bonnement impossible.</p>
+<p>Soyez prudent quand vous en introduisez, et soyez conscient des impacts que cette dette peut avoir sur votre projet. Aussi : remboursez votre dette technique aussi vite que possible.
+Faire autrement serait imprudent.</p>
+<h2 id="2-appliquez-les-principes-de-la-programmation-fonctionnelle"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/2" title="GitHub Issue: squidfunk/mkdocs-material#2">#2</a>. Appliquez les principes de la programmation Fonctionnelle<a class="headerlink" href="#2-appliquez-les-principes-de-la-programmation-fonctionnelle" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Apply Functional Programming Principles (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_02/README.md">Thing 02</a>)
+— Edward Garson</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/edward_garson.jpg" /></p>
+<p>Les paradigmes de la programmation fonctionnelle vous permettent d'améliorer grandement la qualité de votre code.
+Et ce, même dans des languages utilisant d'autres paradigmes comme les langages impératifs, ou les langages orientés objet.
+En effet, votre design fera preuve d'une meilleure <a href="https://fr.wikipedia.org/wiki/Transparence_référentielle">transparence référentielle</a>.</p>
+<p>La transparence référentielle, c'est quelque chose que vous <strong>souhaitez</strong> pour le design de votre code, même si vous le ne savez pas encore.
+Cela implique que toutes vos fonctions sont <strong>pures</strong>, c'est-à-dire que, pour les mêmes paramètres d'entrée, elles auront toujours le même comportement. Sans effet de bord.</p>
+<p>Aussi ; prenez le temps de vous intéresser à la programmation fonctionnelle pour utiliser ses bénéfices dès que vous vous avez besoin.</p>
+<h2 id="3-demandez-vous-que-ferait-lutilisateur-ce-que-vous-netes-pas"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/3" title="GitHub Issue: squidfunk/mkdocs-material#3">#3</a>. Demandez-vous "Que ferait l'utilisateur ?" (Ce que vous n'êtes pas)<a class="headerlink" href="#3-demandez-vous-que-ferait-lutilisateur-ce-que-vous-netes-pas" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Ask "What Would the User Do?" (You Are not the User) (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_03/README.md">Thing 03</a>)
+— Giles Colborne</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/giles_colborne.jpg" /></p>
+<p>Nous avons tendance à croire que les autres pensent comme nous.
+Ce n'est pas le cas, et il existe un biais cognitif pour le décrire : l'<strong>Effet de faux consensus</strong>.
+Ce biais permet d'expliquer pourquoi les développeurs, qui passent davantage de temps à utiliser l'informatique que leurs 
+utilisateurs, ont du mal à comprendre que ces derniers maîtrisent mal les outils et les patterns de l'informatique.</p>
+<p>Pour comprendre comment l'utilisateur fonctionne, le meilleur moyen reste encore l'observation.
+Observez quelqu'un utiliser l'application que vous développez, et proposez-lui de vraies tâches, avec ses propres mots, et non avec les vôtres.
+Les utilisateurs arrivent à se débrouiller, et trouvent parfois des chemins tordus pour arriver à leurs fins.
+Votre temps sera mieux investi à les observer pendant une heure, qu'à passer une journée à essayer de deviner leurs intentions.</p>
+<h2 id="4-automatisez-vos-standards-de-code"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/4" title="GitHub Issue: squidfunk/mkdocs-material#4">#4</a>. Automatisez vos standards de code<a class="headerlink" href="#4-automatisez-vos-standards-de-code" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Automate Your Coding Standard (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_04/README.md">Thing 04</a>)
+— Filip van Laenen</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/filip_van_laenen.jpg" /></p>
+<p>Au début d'un projet, tout le mode a meilleures intentions du monde.
+Les développeurs écrivent les standards de code du projet dans des guides de contribution, auxquels tout le monde adhère.</p>
+<p>Mais à un moment, tout bascule. Respecter les standards de code devient une corvée.</p>
+<p>Pourquoi met-on en place des standards de code ?
+Pour garder un format uniforme d'un développeur à l'autre ?
+Pour éviter certains "anti-patterns" et limiter l'apparition de bugs communs ? </p>
+<p>Pour maintenir les standards de code qui vous importent, il existe pléthore d'outils produisant des rapports sur la qualité du code.
+Seules, ces solutions ne sont pas suffisantes : il faut automatiser et imposer les standards de code lorsque c'est possible.</p>
+<p>Quelques exemples :</p>
+<ul>
+<li>Assurez-vous de formater automatiquement votre code, dans le processus de "Build" de l'application. </li>
+<li>Utiliser des analyseurs de code statique, pour détecter les anti-patterns honnis. Et cassez le Build quand vous en trouvez un.</li>
+<li>Apprenez à configurer ces outils pour vous-même</li>
+<li>Si la couverture de code vous importe, allez au-delà de la seule mesure. Automatisez l'analyse des résultats, et cassez le Build lorsque votre indicateur va à l'encontre de vos exigences de qualité.</li>
+</ul>
+<p>Automatisez le plus possible, ce qui vous semble important.
+Et pour ce que vous ne pouvez pas automatiser, conservez des guidelines.
+Mais gardez à l'esprit que tout le monde ne les respectera pas scrupuleusement.</p>
+<p>Enfin, vos standards devraient évoluer dans le temps, en même temps que le projet.
+Ce qui paraissait pertinent au début du projet, aura peut-être moins de sens quelques mois plus tard.</p>
+<h2 id="5-la-beaute-reside-dans-la-simplicite"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/5" title="GitHub Issue: squidfunk/mkdocs-material#5">#5</a>. La beauté réside dans la simplicité<a class="headerlink" href="#5-la-beaute-reside-dans-la-simplicite" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Chapter 5. Beauty Is in Simplicity (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_05/README.md">Thing 05</a>)
+— Jørn Ølmheim</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/jorn_olmheim.jpg" /></p>
+<p>Qu'est-ce que le <strong>beau code</strong> ? Cette question est très subjective, car la perception de la beauté réside en chacun.</p>
+<p>Cependant, quand nous parlons de "beauté du code", nous recherchons souvent :</p>
+<ul>
+<li>Lisibilité</li>
+<li>Maintenabilité</li>
+<li>Rapidité de développement</li>
+<li>L'insaisissable qualité de la beauté intrinsèque</li>
+</ul>
+<p>Pensez au code que vous avez rencontré dans votre vie. Si vous n'en avez jamais lu, faites-le ! Maintenant ! Une fois que c'est fait, rappelez-vous ce qui vous a plu.</p>
+<p>Pour ma part, c'est la simplicité. Quelle que soit la complexité globale du système, ses modules devraient être découpés en petites parties simples.
+Avec des objets simples, possédant une seule responsabilité, eux-mêmes possédants des méthodes correctement nommées.</p>
+<p>Bref : à tous les niveaux, le code doit rester simple, avec une seule responsabilité simple et claire, et des relations simples.
+C'est la seule manière de s'assurer que le système reste maintenable au cours du temps, avec une productivité optimale ; faire du code simple, propre, testable.</p>
+<p>La beauté naît et se retrouve dans la simplicité.</p>
+<h2 id="6-avant-de-refactorer"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/6" title="GitHub Issue: squidfunk/mkdocs-material#6">#6</a>. Avant de Refactorer<a class="headerlink" href="#6-avant-de-refactorer" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Before You Refactor (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_06/README.md">Thing 06</a>)
+— Rajith Attapattu</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/rajith_attapattu.jpg" /></p>
+<p>En tant que développeur, vous allez être amené à refactorer du code.
+Par pitié pour vous-même et pour vos collègue, pensez aux éléments suivants :</p>
+<ul>
+<li>La meilleure approche pour refactorer, est de faire le point sur la codebase existante, et de la confronter avec ses tests.
+Cela vous permettra de comprendre les forces et les faiblesses du code existant, et éventuellement d'éviter les pièges auxquels ont déjà pensé vos prédécesseurs</li>
+<li>Résistez à l'envie de tout réécrire. Souvent, le code en production fonctionne, et ce, même s'il est moche, non testé, et non optimisé. Quand vous le pouvez, réutilisez ce code.</li>
+<li>Privilégiez des petits changements successifs, plutôt mieux qu'un gros changement radical. </li>
+<li>Après chaque étape de votre refactor, assurez-vous que les tests existants passent. Et évitez de supprimer des tests existants, sans savoir ce qu'ils font.</li>
+<li>Votre ego, et vos préférences personnelles, ne sont pas une raison suffisante pour entamer un refactor.</li>
+<li>Introduire une nouvelle technologie, n'est pas une raison suffisante pour entamer un refactor.</li>
+<li>Rappelez-vous que l'erreur est humaine. Vous n'avez pas la garantie que votre refactor améliorera réellement le code.</li>
+</ul>
+<h2 id="7-mefiez-vous-du-partage"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/7" title="GitHub Issue: squidfunk/mkdocs-material#7">#7</a>. Méfiez-vous du partage<a class="headerlink" href="#7-mefiez-vous-du-partage" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Beware the Share (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_07/README.md">Thing 07</a>)
+— Udi Dahan</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/udi_dahan.jpg" /></p>
+<p>Vous est-il arrivé d'appliquer le principe DRY (Don't Repeat Yourself) ?
+Et de mutualiser du code dupliqué depuis deux modules dans votre code dans une librairie partagée ?
+Et d'ajouter cette librairie dans les dépendances de vos modules ?
+Et de vous rendre compte que vous venez de faire n'importe quoi ?</p>
+<p>Pourquoi ? Vous venez de passer à côté d'un élément <strong>essentiel</strong> du développement informatique.</p>
+<p>Le <strong>contexte</strong>.</p>
+<p>Trouver du code dupliqué dans deux modules indépendants, ne signifie pas nécessairement qu'il s'agisse de la même logique métier.
+Les deux modules peuvent évoluer indépendamment l'un de l'autre, et les règles métiers également.
+Introduire une librairie pour mutualiser du code, a créé un couplage, complexifiant la maintenance des deux modules, en leur imposant de se synchroniser avec un librairie tierce.</p>
+<p>Pourtant l'idée initiale part d'une bonne intention : réduire la duplication, et le nombre de lignes de codes.
+Prenez garde lorsque vous mutualisez du code, et assurez-vous que le contexte métier est cohérent. Alors seulement, mutualisez.</p>
+<h2 id="8-la-regle-du-boy-scout"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/8" title="GitHub Issue: squidfunk/mkdocs-material#8">#8</a>. La règle du Boy Scout<a class="headerlink" href="#8-la-regle-du-boy-scout" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>The Boy Scout Rule (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_08/README.md">Thing 08</a>)
+— Robert C. Martin (Uncle Bob)</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/robert_c_martin.jpg" /></p>
+<blockquote>
+<p>Laissez toujours le campement plus propre que lorsque vous y êtes entré.</p>
+</blockquote>
+<p>Quelque soit l'auteur originel du code que vous avez sous les yeux, si vous pensez pouvoir l'améliorer, même un tout petit peu, alors faites-le.
+Améliorez continuellement la codebase que vous partagez avec vos collègues.</p>
+<h2 id="9-commence-par-verifier-ton-code-avant-de-chercher-le-fautif-ailleurs"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/9" title="GitHub Issue: squidfunk/mkdocs-material#9">#9</a>. Commence par vérifier ton code avant de chercher le fautif ailleurs<a class="headerlink" href="#9-commence-par-verifier-ton-code-avant-de-chercher-le-fautif-ailleurs" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Check Your Code First before Looking to Blame Others (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_09/README.md">Thing 09</a>)
+—  Allan Kelly</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/allan_kelly.jpg" /></p>
+<p>Nous, développeurs, sommes souvent de mauvaise foi : nous ne voulons pas remettre notre code en question lors d'un bug.
+Jamais.</p>
+<p>Cependant, les bugs du compilateur, ou de la JVM sont très rares.
+Partez du principe que les outils que vous utilisez sont stables et matures,
+ et qu'ils sont utilisés par une multitude d'autres personnes, à moins que vous n'utilisiez une version 0.1 ou une alpha.</p>
+<p>Aussi, quand vous avez un problème dans votre application, investissez votre énergie à rechercher le problème et la solution dans votre code, et pas dans le code les autres.</p>
+<h2 id="10-choisissez-vos-outils-avec-soin"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/10" title="GitHub Issue: squidfunk/mkdocs-material#10">#10</a>. Choisissez vos outils avec soin<a class="headerlink" href="#10-choisissez-vos-outils-avec-soin" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Choose Your Tools with Care (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_10/README.md">Thing 10</a>)
+— Giovanni Asproni</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/giovanni_asproni.jpg" /></p>
+<p>Aujourd'hui, les logiciels sont rarement construits à partir de rien : 
+ils sont assemblés à partir d'outils existants, de frameworks et de librairies.</p>
+<p>Cependant, choisir le bon ensemble d'outils est parfois un casse-tête sans nom.
+Cherchez la <strong>raison d'être</strong> de vos outils, et comprenez le problème qui a entrainé leur création.
+Bien trop souvent, à utiliser des librairies et des frameworks trop complexes, 
+vous chercherez à les tordre, et à ler détourner de leur usage. 
+Vous arriverez probablement à le faire fonctionner, mais dans un contexte auquel il n'est pas destiné.</p>
+<p>Par exemple, si vous êtes dans un contexte asynchrone sur l'ensemble de votre système,
+évitez d'introduire un outil synchrone, même s'il semble répondre à une partie de votre problème.</p>
+<p>Ma stratégie dans le choix des outils : ne prenez que les outils dont vous avez réellement besoin.
+J'essaie également, d'isoler au maximum ces outils de mon domaine métier.
+Je les intègres dans des couches applicatives dédiées.
+Ainsi, lorsque j'ai besoin de changer d'outils, je peux le faire facilement.</p>
+<h2 id="11-developpez-dans-le-language-du-domaine-metier"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/11" title="GitHub Issue: squidfunk/mkdocs-material#11">#11</a>. Développez dans le Language du Domaine Métier<a class="headerlink" href="#11-developpez-dans-le-language-du-domaine-metier" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Code in the Language of the Domain (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_11/README.md">Thing 11</a>)
+— Dan North</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/dan_north.jpg" /></p>
+<p>Prenons l'exemple de deux codebases.</p>
+<p>Dans la première vous trouvez ceci :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">portfolioIdsByTraderId</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">getId</span><span class="p">())</span>
+    <span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">portfolio</span><span class="p">.</span><span class="na">getId</span><span class="p">()))</span> <span class="p">{...}</span>
+</code></pre></div>
+<p>Après moults réflexions, vous vous rendez compte qu'il y a des associations de <code>portfolios</code> et de <code>trader</code>.
+Vous les trouvez dans un objet comme celui-ci :</p>
+<div class="highlight"><pre><span></span><code><span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">portfolioIdsByTraderId</span><span class="p">;</span>
+</code></pre></div>
+<p>Et, peu à peu, vous vous rendez compte que ce dictionnaire conditionne la visibilité des portfolios par trader.</p>
+<p>Dans la seconde code base, vous tombez sur ceci :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">canView</span><span class="p">(</span><span class="n">portfolio</span><span class="p">))</span> <span class="p">{...}</span>
+</code></pre></div>
+<p>Pas de prise de tête. Vous savez ce que le code fait, même si vous ne savez pas comment. Peut-être qu'il s'agit de Map de Map, comme dans l'exemple précédent, mais il s'agit de la logique du <code>trader</code>, pas de la votre.</p>
+<p>Répondez franchement : sur quelle codebase préféreriez-vous travailler ?</p>
+<h2 id="12-le-code-est-le-design"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/12" title="GitHub Issue: squidfunk/mkdocs-material#12">#12</a>. Le code EST le design<a class="headerlink" href="#12-le-code-est-le-design" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Code Is Design (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_12/README.md">Thing 12</a>)
+— Ryan Brush</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/ryan_brush.jpg" /></p>
+<p>Projetons-nous dans un futur imaginaire, 
+dans lequel des robots sont en mesure de nous construire n'importe quoi,
+à partir d'air et sans énergie.
+À une seule condition : Qu'on leur fournisse des plans clairs et précis.</p>
+<p>Imaginez la révolution dans le monde de la construction ;
+si quelque chose cloche sur un bâtiment ou une voiture,
+il suffit de corriger les plans et de les donner aux robots.
+Ils reconstruiront l'objet pour un coût négligeable.</p>
+<p>Seulement, que se passe-t-il lorsque le desing est imparfait ou incomplet ?
+Les utilisateurs manipulent des objets imparfaits ou incomplets. Et même si on envoie des robots dédié à réparer les erreurs de design, on arrive à une conclusion : la qualité va de mal en pis, et les utilisateurs sont mécontents.  </p>
+<p>Et si je vous disais que ce monde existe déjà en informatique ?
+Que les robots du futur, sont les compilateurs d'aujourd'hui ?
+Que les plans clairs et précis, correspondent au code que les développeurs produisent ?
+Le point intéressant de cette approche, c'est de considérer que le produit fini est issu
+d'un <strong>processus de créativité</strong> plutôt que d'un processus mécanique.</p>
+<p>Cette approche nous donne des pistes pour éviter la catastrophe :
+  - s'assurer de la qualité du produit par des batteries de tests.
+  - gagner en efficacité en cherchant des outils plus précis, et en s'entraînant à les utiliser.</p>
+<p>Il n'y a pas de secret : les meilleurs designs sont produits par les meilleurs designers, 
+qui se consacrent à la maîtrise de leur Art.</p>
+<p>Le code fonctionne de la même manière.</p>
+<h2 id="13-laspect-du-code-compte"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/13" title="GitHub Issue: squidfunk/mkdocs-material#13">#13</a>. L'aspect du code compte<a class="headerlink" href="#13-laspect-du-code-compte" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Code Layout Matters (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_13/README.md">Thing 13</a>)
+— Steve Freeman</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/steve_freeman.jpg" /></p>
+<p>En tant que développeurs, nous passons plus de temps à naviguer, et à lire du code, qu'à en écrire. Et ce, dans le but de trouver où coder. Il existe plusieurs moyens de faciliter cette lecture :</p>
+<ul>
+<li>Rendre le code facile à scanner visuellement :les gens sont doués pour faire correspondre des motifs visuels entre eux. Si le code est homogène, il sera plus facile de trouver les séparateurs et conteneurs dans le code, et de trouver où coder.</li>
+<li>Rendre la disposition du code expressive :la structure dui code aide à comprendre l'intention, et les formateurs automatiques de code permettent de grouper les structures du code par l'indentation, les sauts de lignes, etc. Mais parfois, ils ne suffisent pas et il faut compléter à la main les sauts de lignes, ou d'autres séparateurs visuels pour bien mettre mon intention en évidence.</li>
+<li>Rendre le code compact : plus j'ai de code sous mes yeux, moins j'en garde en tête. Aujourd'hui, les IDE mettent en évidence le code avec de la coloration syntaxique, et des liens internes. Servez-vous de ces fonctionnalités pour garder un code compact, en évitant le bruit des commentaires, et qui sera plus facile à comprendre.</li>
+</ul>
+<p>L'allure générale du code doit m'aider à le comprendre, rien de plus.</p>
+<h2 id="14-la-revue-de-code"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/14" title="GitHub Issue: squidfunk/mkdocs-material#14">#14</a>. La Revue de Code<a class="headerlink" href="#14-la-revue-de-code" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Code Reviews (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_14/README.md">Thing 14</a>)
+— Mattias Karlsson</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/mattias_karlsson.jpg" /></p>
+<p>Vous ne le savez pas encore, mais vous avez envie de faire de la revue de code.</p>
+<p>Pourquoi ?
+Elle permet d'améliorer la qualité du code
+Elle permet de diminuer la fréquence des ratés
+Elle permet de faire monter en compétence les relecteurs
+Elle permet de faire monter en compétence le rédacteur
+Elle permet de faire du TeamBuilding </p>
+<p>Comment ?
+La reveue de code est un moment incroyable pour partager la connaissance d'un projet.
+Elle contribue à améliorer la propriété collective du code de chacun des membres de l'équipe.
+En revanche, vous devez chercher à faire des remarques <em>constructives</em> plutôt que <em>caustiques</em>.</p>
+<p>Essayer d'organiser une revue de code hebdomadaire : prenez une à deux heures pour lire simple une portion de code de votre projet, en groupe.
+Rendre cet exercice amusant, est la principale clé de la réussite, et tout le monde en sortira grandi. </p>
+<h2 id="15-reflexions-sur-votre-code"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/15" title="GitHub Issue: squidfunk/mkdocs-material#15">#15</a>. Reflexions sur votre code<a class="headerlink" href="#15-reflexions-sur-votre-code" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Coding with Reason (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_15/README.md">Thing 15</a>)
+— Yechiel Kimchi</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/yechiel_kimchi.jpg" /></p>
+<p>Regardez votre code, et réfléchissez.
+Est-ce qu'il est syntaxiquement correct ? Ou voyez-vous des erreurs ? 
+S'agit-il d'erreurs plutôt techniques ou fonctionnelles ?</p>
+<p>C'est tout de même mieux d'utiliser un outil automatisé, tel un compilateur
+ou des tests automatisés, pour faire cet exercice. N'est-il pas ?
+Malheureusement, ce n'est pas toujours possible.</p>
+<p>Pour faciliter cet exercice : essayez de découper le code en petites portions compréhensibles
+(par exemple des méthodes de 5 à 10 lignes), et réfléchissez de nouveau pour savoir si chaque
+petite portion de code est correcte ou non.
+Cette façon de faire vous rappelle-t-elle quelque chose ?</p>
+<p>La plupart des "bonnes pratiques" que l'on connait aujourd'hui, sont issues de d'exercices cherchant
+à faciliter la lecture, et la reflexion sur le code, hors outillage.
+Beaucoup de ces pratiques sont, sans surprise, automatisables à l'aide d'analyseurs statiques de code.</p>
+<p>Prenez le temps de réfléchir sur votre code. En plus de déterminer de son exactitude, cela vous permet de mieux le comprendre.
+Et si vous communiquez le résultat de vos réflexions, tout le monde en profitera ! </p>
+<h2 id="16-un-commentaire-sur-les-commentaires"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/16" title="GitHub Issue: squidfunk/mkdocs-material#16">#16</a>. Un Commentaire sur les commentaires<a class="headerlink" href="#16-un-commentaire-sur-les-commentaires" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>A Comment on Comments (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_16/README.md">Thing 16</a>)
+— Cal Evans</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/cal_evans.jpg" /></p>
+<p>Les commentaires ne sont pas nécessairement un mal.Faites en sorte que le code soit compréhensible pour les développeurs qui passeront derrière vous.</p>
+<p>Mais n'en faites pas trop : assurez-vous que vos commentaires clarifient le code, et ne l'obfusquent pas. 
+Les futurs développeurs doivent comprendre ce que fait le code en rapport avec le commentaire, sans avoir besoin de lire les détails d'implémentation.</p>
+<h2 id="17-ne-commentez-que-ce-que-le-code-ne-peut-pas-dire-de-lui-meme"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/17" title="GitHub Issue: squidfunk/mkdocs-material#17">#17</a>. Ne commentez que ce que le code ne peut pas dire de lui-même<a class="headerlink" href="#17-ne-commentez-que-ce-que-le-code-ne-peut-pas-dire-de-lui-meme" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Comment Only What the Code Cannot Say (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_17/README.md">Thing 17</a>)
+— Kevlin Henney</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/kevlin_henney.jpg" /></p>
+<p>Ecrire de bons commentaires est une compétence à part entière. Elle consiste principalement à savoir <strong>à quel moment il faut ne pas en écrire.</strong> Un commentaire erroné n'a pas de valeur, et peut avoir un effet négatif. Il peut nuire à la concentration et être source de distraction. De plus, il est plus facile pour un commentaire faux, de survivre dans une codebase, qu'un bug dans le code. Un commentaire n'est pas exécuté, contrairement au code.</p>
+<p>Comment qualifier la valeur d'un commentaire ? Il doit expliciter quelque chose que le code ne peut lui-même dire. Lorsqu'une portion de code est commentée, cherchez à la remanier, pour qu'elle exprime par elle-même l'intention du commentaire. Extrayez des méthodes, renommez-les, exprimez l'intention du code par son design. La différence entre ce qu'exprime le code, et ce que vous voulez dire au global, est un bon candidat pour en faire un commentaire.</p>
+<h2 id="18-apprendre-en-continu"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/18" title="GitHub Issue: squidfunk/mkdocs-material#18">#18</a>. Apprendre en continu<a class="headerlink" href="#18-apprendre-en-continu" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Continuous Learning (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_18/README.md">Thing 18</a>)
+— Clint Shank</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/clint_shank.jpg" /></p>
+<p>N'importe qui sur Terre peut apprendre à faire votre métier. Travaillez votre employabilité, et continuez d'apprendre. Sinon, vous devenez un dinosaure, et vous disparaîtrez quand plus personne n'aura besoin de vous.</p>
+<p>Comment faire ? Certain employeurs vous accompagnent, d'autres non, et pour assurez votre sécurité, il est de votre responsabilité de prendre en charge votre éducation.</p>
+<p>Beaucoup de méthodes permettant de progresser, sont gratuites, et disponibles sur Internet.</p>
+<p>La technologie évolue vite. Ne restez pas derrière.</p>
+<h2 id="19-commodite-nest-par-aider"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/19" title="GitHub Issue: squidfunk/mkdocs-material#19">#19</a>. Commodité n'est par aider<a class="headerlink" href="#19-commodite-nest-par-aider" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Convenience Is not an -ility (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_19/README.md">Thing 19</a>)
+— Gregor Hohpe</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/gregor_hohpe.jpg" /></p>
+<p>Ecrire de bonnes API de code n'est pas chose aisée. Connaître les bonnes pratiques ne garantis pas de savoir les appliquer proprement.</p>
+<p>Par exemple, sur une APi de 'stratégie', je rencontre souvent des "<strong>arguments de commodité</strong>" :</p>
+<ul>
+<li>Je ne veux pas que mes consommateurs fassent deux appels séparés pour faire cette unique chose</li>
+<li>Pourquoi faire une seconde méthode, alors que celle-ci fait déjà presque le travail ? Il suffit de rajouter un simple booléan.</li>
+<li>Regarde c'est très simple : si le second paramètre finit par ".txt", alors la méthode considère que le premier paramètres est un nom de fichier : on n'a pas vraiement besoin de deux méthodes.</li>
+</ul>
+<p>Ce genre d'argument, est susceptible de diminuer la lisibilité du code, et de conduire à des méthodes telles que : </p>
+<div class="highlight"><pre><span></span><code>parser.processNodes(text, false);
+</code></pre></div>
+<p>Il n'y a rien de mal à user de commodité, tant qu'elle ne nuit pas au design des API. Les API sont supposées masquer la complexité sous-jacente du programme. Un vocabulaire cohérent et réfléchi permet de rendre le code expressif et compréhensif dans la couche logicielle appelant vos API.</p>
+<h2 id="20-deployez-vite-et-souvent"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/20" title="GitHub Issue: squidfunk/mkdocs-material#20">#20</a>. Déployez vite et souvent<a class="headerlink" href="#20-deployez-vite-et-souvent" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Deploy Early and Often (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_20/README.md">Thing 20</a>)
+— Steve Berczuk</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/steve_berczuk.jpg" /></p>
+<p>Le processus d'installation/déploiement, est la première chose visible pour l'utilisateur final. Ce dernier utilise une application déployée. </p>
+<p>Entamez votre projet avec le processus d'installation. Ainsi, vous aurez créé et livré un élément à forte valeur ajoutée pour l'utilisateur final. De plus, vous aurez la possibilité de l'affiner au fil de la vie du projet. Vous devriez tester et remanier ce processus comme vous le faites avec le code.</p>
+<p>Le processus d'installation/déploiement est indispensable à la productivité de votre utilisateur final. Ne le négligez pas.</p>
+<h2 id="21-separez-les-exceptions-techniques-des-exceptions-metier"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/21" title="GitHub Issue: squidfunk/mkdocs-material#21">#21</a>. Séparez les exceptions techniques des exceptions métier<a class="headerlink" href="#21-separez-les-exceptions-techniques-des-exceptions-metier" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Distinguish Business Exceptions from Technical (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_21/README.md">Thing 21</a>)
+— Dan Bergh Johnsson</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/dan_bergh_johnsson.jpg" /></p>
+<p>Au runtime, il y a deux raisons pour lesquelles les choses se passent mal</p>
+<ul>
+<li>l'impossibilité d'utiliser l'application pour des raisons techniques</li>
+<li>la prévention d'une mauvaise utilisation de l'application pour des raisons métiers</li>
+</ul>
+<p>Les langages de programmation modernes ont un moyen pour signaler ce genre de problème : lancer une Exception. Seulement, elles sont utilisées indifféremment pour les deux raisons ci-dessus, ce qui peut être source de confusion.</p>
+<p>Mélanger les Exceptions métier et les Exceptions techniques dans une même hiérachie ajoute de la complexité dans les couches qui les traitent. Bien séparer les responsabilités améliore la clarté, et augmente les chances de traiter les chaque typologie d'Exceptions dans la couche applicative appropriée.</p>
+<h2 id="22-entrainez-vous-volontairement-encore-et-encore"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/22" title="GitHub Issue: squidfunk/mkdocs-material#22">#22</a>. Entraînez-vous, volontairement, encore et encore<a class="headerlink" href="#22-entrainez-vous-volontairement-encore-et-encore" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Do Lots of Deliberate Practice (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_22/README.md">Thing 22</a>)
+— Jon Jagger</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/jon_jagger.jpg" /></p>
+<p>L'entraînement volontaire, ou "Deliberate Practice" en anglais, va au-delà de la simple résolution d'un problème. Il s'agit de la répétition d'un exercice, pour acquérir une expertise sur une compétence. Cela signifie répéter l'exercice, encore et encore, jusqu'à atteindre le niveau de maîtrise satisfaisant.</p>
+<p>A quel niveau peut-on considérer avoir acquis la maîtrise de l'exercice ? Peter Norvig donne "10 000 heures, c'est le nombre magique". Cela représente environ 20h par semaine, pendant 10 ans.</p>
+<p>Mais l'entraînement volontaire va encore au-delà de la simple répétition. Il s'agit de se mettre dans une situation qui vous tire un tout petit peu plus vers le haut, de chercher à résoudre la problématique, puis d'analyser votre performance pour vous améliorer la fois suivante.</p>
+<p>L'entraînement volontaire est une question d'apprentissage. D'un apprentissage qui vous change. D'un apprentissage qui modifie votre comportement et vos habitudes. Courage!</p>
+<h2 id="23-les-idiomes-specifiques-du-domaine"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/23" title="GitHub Issue: squidfunk/mkdocs-material#23">#23</a>. Les idiomes spécifiques du domaine<a class="headerlink" href="#23-les-idiomes-specifiques-du-domaine" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Domain-Specific Languages (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_23/README.md">Thing 23</a>)
+— Michael Hunger</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/michael_hunger.jpg" /></p>
+<p>Lorsque vous écoutez une discussion entre experts, vous vous rendrez compte qu'ils utilisent un vocabulaire différent de leur langage de tous les jours. Et ce, quel que soit le domaine d'expertise. C'est ce q'uon appelle des DSL (Domain-Specific Languages) : chaque domaine spécifgique possède son vocabulaire spécifique.</p>
+<p>Les DSL peuvent être de deux sortes : les internes et les externes.</p>
+<ul>
+<li><strong>Les DSL internes</strong>, généralement du sucre syntaxique dans un language de programmation, permettant de se rapprocher du langage naturel. Ce genre de DSL utilise des pattenrs, comme les Builders, du chainage de méthode et des annotations</li>
+<li><strong>Les DSL externes</strong>, généralement du texte ou des diagrammes, sont souvent analysés par des outils (parsers, transformers) et convertis en éléments d'un modèle applicatif. Exemple : AndroMDA, Gherkins.</li>
+</ul>
+<p>Adaptez votre DSl au public que vous visez. En masquant la complexité technique les DSLs permettent à leurs usagers d'adapter leur système en toute autonomie, sans l'aide de développeurs.</p>
+<h2 id="24-nayez-pas-peur-de-casser-des-choses"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/24" title="GitHub Issue: squidfunk/mkdocs-material#24">#24</a>. N'ayez pas peur de casser des choses<a class="headerlink" href="#24-nayez-pas-peur-de-casser-des-choses" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Don’t Be Afraid to Break Things (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_24/README.md">Thing 24</a>)
+— Mike Lewis</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/mike_lewis.jpg" /></p>
+<p>Dans le monde de l'industrie logicielle, tout le monde a rencontré une application qualifiée, au mieux, de précaire. Sur ce genre d'application, à chaque fois que l'on modifie quelque chose, on est susceptibles de casser une autre fonctionnalité, sans lien apparent avec le code modifié. Dans ce contexte, chaque fonctionnalité est livrée avec le moins de modification possible. C'est l'équivalent de jouer au Jenga, mais sur un logiciel.</p>
+<p>Une telle aplication est malade, et nécessite un médecin qui amputerait les portions malades pour les soigner. </p>
+<p>Tel un chirurgien, ne craignez pas votre code, et ne vous laissez pas paralyser par la peur du changement. Investissez du temps dans le remaniement du code, car cela apportera des bénéfices sur la durée du projet. Prenez soin de votre application. Soignez-la. Nettoyez-la.</p>
+<p>Cett attitude est contagieuse, et inspirera vos collègues. Il se mettrront à leur tour à prendre soin de l'application. Gardez une liste des "mesure d'hygiène" de l'application, que l'équipe prendra soin sur la durée du projet. Ne cessez jamais de prendre soin de la santé générale de votre application.</p>
+<h2 id="25-ne-soyez-pas-tendres-avec-vos-donnees-de-test"><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/squidfunk/mkdocs-material/issues/25" title="GitHub Issue: squidfunk/mkdocs-material#25">#25</a>. Ne soyez pas tendres avec vos données de test<a class="headerlink" href="#25-ne-soyez-pas-tendres-avec-vos-donnees-de-test" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Don't Be Cute with Your Test Data (<a href="https://github.com/97-things/97-things-every-programmer-should-know/blob/master/en/thing_25/README.md">Thing 25</a>)
+— Rod Begbie</p>
+</blockquote>
+<p><img alt="image with no caption" src="images/rod_begbie.jpg" /></p>
+<p>L'histoire du développement possède plusieurs anecdotes croustillantes autour du thème "Personne ne verra ça", qui, subitement, devient visible. Le type de fuite varie, et est parfois préjudiciable, pour une personne, une équipe, ou toute l'entreprise. Par exemple :</p>
+<ul>
+<li>Lors d'une démo, le client clique sur un bouton non-implémenté. Un message lui dit "Ne recommence pas, bâtard !"</li>
+<li>Un développeur maintenant une application legacy, se voit demander de mettre en place une fenêtre de gestion des erreurs. Subitement les utilisateurs se voient afficher des messages "La base de donnée sacrée a été corrompue, Batman!" lorsque quelque chose casse.</li>
+<li>Quelqu'un a confondu les interfaces d'administration de tests et de prod, et a saisi quelques données "rigolotes" en production. Les utilisateurs peuvent désormais acheter le "Conseiller personnel de Bill Gates" pour la modique somme de 1M€</li>
+</ul>
+<p>Rappelez-vous du vieil adage :</p>
+<blockquote>
+<p>Un mensonge peut faire le tour de la terre le temps que la vérité mette ses chaussures. — Mark Twain</p>
+</blockquote>
+<p>Adage, déjà vrai en ces temps, où Twitter, Facebook, LinkedIn, n'existaient pas encore.</p>
+<p>En bref, dès que vous écrivez du texte dans votre code, qu'il s'agisse de commentaires, de logs ou de données de test, réfléchissez à quoi cela ressemblerait s'il devenait public. </p>
+<h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
+<p>Voici déjà 25 réflexions sur les 97 du livre. J'espère que vous en tirez quelque chose. Malgré le fait que vous subissez mon interprétation :)
+Je vous rappelle que, si vous cherchez à accéder aux textes originaux, ils sont disponibles sur <a href="https://github.com/97-things/97-things-every-programmer-should-know">GitHub</a>, <a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/">GitBook</a></p>
+<p>Personnellement, même si je ne suis pas toujours d'accord avec les propos des auteurs, j'apprends des petits trucs par ce et par là. Je trouve ça amusant de comparer le contexte du monde informatique au moment de la sortie du livre (2010), et le contexte actuel. </p>
+<p>Je prendrais le temps de faire les autres, mais... Patience !</p>
+<p>Et vous ? Quelles sont les pépites, ou les réflexions qui vous ont marqué ? </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+<!--        <span class="md-footer-social__link">-->
+<!--          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M172.2 226.8c-14.6-2.9-28.2 8.9-28.2 23.8V301c0 10.2 7.1 18.4 16.7 22 18.2 6.8 31.3 24.4 31.3 45 0 26.5-21.5 48-48 48s-48-21.5-48-48V120c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v248c0 89.5 82.1 160.2 175 140.7 54.4-11.4 98.3-55.4 109.7-109.7 17.4-82.9-37-157.2-112.5-172.2zM209 0c-9.2-.5-17 6.8-17 16v31.6c0 8.5 6.6 15.5 15 15.9 129.4 7 233.4 112 240.9 241.5.5 8.4 7.5 15 15.9 15h32.1c9.2 0 16.5-7.8 16-17C503.4 139.8 372.2 8.6 209 0zm.3 96c-9.3-.7-17.3 6.7-17.3 16.1v32.1c0 8.4 6.5 15.3 14.8 15.9 76.8 6.3 138 68.2 144.9 145.2.8 8.3 7.6 14.7 15.9 14.7h32.2c9.3 0 16.8-8 16.1-17.3-8.4-110.1-96.5-198.2-206.6-206.7z"/></svg>-->
+<!--        </span>-->
+        Compiled by
+        <a href="https://fhiegel.github.io" target="_blank" rel="noopener" title="fhiegel">
+          fhiegel
+        </a>
+        <!--Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        -->
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on Twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.linkedin.com/in/fabien-hiegel-874416b5" target="_blank" rel="noopener" title="Fabien Hiegel on LinkedIn" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.sections', 'navigation.tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

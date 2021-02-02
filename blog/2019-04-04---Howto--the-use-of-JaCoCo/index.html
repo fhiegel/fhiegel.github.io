@@ -1,0 +1,1390 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comment produire un rapport de couverture de code, sur une application Java multi-module, avec et sans, les tests d'intégration, à l'aide de JaCoCo.
+">
+      
+      
+      
+      
+        <link rel="canonical" href="https://fhiegel.github.io/blog/2019-04-04---Howto--the-use-of-JaCoCo/">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
+    
+    
+      
+        <title>HOWTO: Use of JaCoCo - Juste un dev</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="red">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#jacoco-sur-un-projet-maven-multi-modules" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://fhiegel.github.io" title="Juste un dev" class="md-header-nav__button md-logo" aria-label="Juste un dev">
+      
+  <img src="../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Juste un dev
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              HOWTO: Use of JaCoCo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../practices/katas/" class="md-tabs__link">
+        S'entraîner
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../learn/" class="md-tabs__link">
+        Apprendre
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../me/cv/" class="md-tabs__link">
+        A propos
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://fhiegel.github.io" title="Juste un dev" class="md-nav__button md-logo" aria-label="Juste un dev">
+      
+  <img src="../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    Juste un dev
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        S'entraîner
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="S'entraîner" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          S'entraîner
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/" class="md-nav__link">
+        Katas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+      
+      <label class="md-nav__link" for="nav-2-2">
+        Coding Dojo
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Coding Dojo" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-2">
+          <span class="md-nav__icon md-icon"></span>
+          Coding Dojo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/coding-dojo/" class="md-nav__link">
+        Coding Dojo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/coding-dojo/slides/" class="md-nav__link">
+        Presentation
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/deliberate-practice/" class="md-nav__link">
+        Deliberate Practice
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+      
+      <label class="md-nav__link" for="nav-2-4">
+        Katalogue
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Katalogue" data-md-level="2">
+        <label class="md-nav__title" for="nav-2-4">
+          <span class="md-nav__icon md-icon"></span>
+          Katalogue
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/FizzBuzz" class="md-nav__link">
+        FizzBuzz
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/katas/Diamound" class="md-nav__link">
+        Diamound
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        Apprendre
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Apprendre" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Apprendre
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/" class="md-nav__link">
+        Disclaimer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+      
+      <label class="md-nav__link" for="nav-3-2">
+        🎓 Formations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="🎓 Formations" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-2">
+          <span class="md-nav__icon md-icon"></span>
+          🎓 Formations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/formations/tdd/" class="md-nav__link">
+        TDD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/formations/solid/" class="md-nav__link">
+        S.O.L.I.D
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+      
+      <label class="md-nav__link" for="nav-3-3">
+        🧩 Serious Games
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="🧩 Serious Games" data-md-level="2">
+        <label class="md-nav__title" for="nav-3-3">
+          <span class="md-nav__icon md-icon"></span>
+          🧩 Serious Games
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learn/serious-games/sensibiliser-aux-tests-unitaires/" class="md-nav__link">
+        Tests Unitaires - Sensibiliser sans coder
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        A propos
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="A propos" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          A propos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../me/cv/" class="md-nav__link">
+        CV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../me/nocv/" class="md-nav__link">
+        NoCV
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#avec-les-outils-jacoco" class="md-nav__link">
+    Avec les outils JaCoCo
+  </a>
+  
+    <nav class="md-nav" aria-label="Avec les outils JaCoCo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recuperer-les-outils-jacoco" class="md-nav__link">
+    Récupérer les outils JaCoCo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-le-fichier-danalyse" class="md-nav__link">
+    Générer le fichier d'analyse
+  </a>
+  
+    <nav class="md-nav" aria-label="Générer le fichier d'analyse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instrumentaliser-le-code-a-analyser" class="md-nav__link">
+    Instrumentaliser le code à analyser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests-dintegration" class="md-nav__link">
+    Tests d'intégration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generer-un-rapport-comprehensible-par-un-etre-humain" class="md-nav__link">
+    Générer un rapport compréhensible par un être humain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avec-maven" class="md-nav__link">
+    Avec Maven
+  </a>
+  
+    <nav class="md-nav" aria-label="Avec Maven">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utiliser-le-plugin-jacoco" class="md-nav__link">
+    Utiliser le plugin JaCoCo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pour-un-projet-en-multi-modules" class="md-nav__link">
+    Pour un projet en multi-modules
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour un projet en multi-modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-prealable" class="md-nav__link">
+    Configuration préalable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-du-fichier-jacocoexec" class="md-nav__link">
+    Génération du fichier jacoco.exec
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation-le-rapport-jacoco" class="md-nav__link">
+    Génération le rapport JaCoCo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#envoi-du-rapport-a-sonar" class="md-nav__link">
+    Envoi du rapport à Sonar
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    TL;DR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-dans-une-pipeline-jenkins-multibranche" class="md-nav__link">
+    Intégration dans une pipeline Jenkins Multibranche
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>Comment produire un rapport de couverture de code, sur une application Java multi-module,
+avec et sans, les tests d'intégration, à l'aide de JaCoCo.</p>
+<h1 id="jacoco-sur-un-projet-maven-multi-modules">JaCoCo sur un projet Maven multi-modules<a class="headerlink" href="#jacoco-sur-un-projet-maven-multi-modules" title="Permanent link">&para;</a></h1>
+<p><a href="https://www.jacoco.org/jacoco/">JaCoCo</a> est un ensemble d'outils permettant d'instrumentaliser le code Java,
+ et de collecter des métriques lors de l'exécution de ce code. </p>
+<h2 id="avec-les-outils-jacoco">Avec les outils JaCoCo<a class="headerlink" href="#avec-les-outils-jacoco" title="Permanent link">&para;</a></h2>
+<h3 id="recuperer-les-outils-jacoco">Récupérer les outils JaCoCo<a class="headerlink" href="#recuperer-les-outils-jacoco" title="Permanent link">&para;</a></h3>
+<p>Télécharger JaCoCo depuis le site officiel: <a href="https://www.jacoco.org/jacoco/index.html">ici</a>.</p>
+<p>Décompresser les fichiers, et récupérer le chemin vers le dossier lib :</p>
+<div class="highlight"><pre><span></span><code><span class="nv">JACOCO_HOME</span><span class="o">=</span>~/jacoco-0.8.x/lib/
+</code></pre></div>
+<p>Ce répertoire contient les jars, dont on se servira par la suite :</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Agent JaCoCo</span>
+<span class="nv">JACOCO_AGENT</span><span class="o">=</span><span class="nv">$JACOCO_HOME</span>/jacocoagent.jar
+
+<span class="c1"># Command Line Interface </span>
+<span class="nv">JACOCO_CLI</span><span class="o">=</span><span class="nv">$JACOCO_HOME</span>/jacococli.jar
+</code></pre></div>
+<h3 id="generer-le-fichier-danalyse">Générer le fichier d'analyse<a class="headerlink" href="#generer-le-fichier-danalyse" title="Permanent link">&para;</a></h3>
+<p>L'utilisation de JaCoCo a pour objectif d'analyser le code.
+Pour cela, JaCoCo va générer un fichier d'analyse : <code>jacoco.exec</code>.</p>
+<p>Ce fichier, et son emplacement sont configurables:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">JACOCO_EXEC_FILE</span><span class="o">=</span>~/target/my-jacoco-execution-data.exec
+
+<span class="c1"># Par défaut:</span>
+<span class="nv">JACOCO_EXEC_FILE</span><span class="o">=</span>./jacoco.exec
+</code></pre></div>
+<h4 id="instrumentaliser-le-code-a-analyser">Instrumentaliser le code à analyser<a class="headerlink" href="#instrumentaliser-le-code-a-analyser" title="Permanent link">&para;</a></h4>
+<p>L'agent Jacoco, <code>jacocoagent</code>, permet de collecter les données sur une JVM, et de les dumper lorsque la JVM s'éteint.
+Pour ce faire, il faut démarrer la JVM avec l'option  appropriée :</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># VM Options: add jacocoagent</span>
+-javaagent:<span class="nv">$JACOCO_AGENT</span>
+
+<span class="c1"># Windows exemple without env variables:</span>
+-javaagent:D:<span class="se">\\</span>develop<span class="se">\\</span>tools<span class="se">\\</span>jacoco<span class="se">\\</span>jacocoagent.jar
+
+<span class="c1"># Configuration pattern</span>
+-javaagent:<span class="o">[</span>yourpath/<span class="o">]</span>jacocoagent.jar<span class="o">=[</span>option1<span class="o">]=[</span>value1<span class="o">]</span>,<span class="o">[</span>option2<span class="o">]=[</span>value2<span class="o">]</span>
+</code></pre></div>
+<p>Sous IntelliJ:</p>
+<div class="highlight"><pre><span></span><code>Run &gt; Edit Configuration &gt; <span class="o">[</span>Select Configuration<span class="o">]</span> &gt; First Tab <span class="s2">&quot;Configuration&quot;</span> &gt; VM Options
+</code></pre></div>
+<p>Avec cette configuration, JaCoCo génère un fichier d'analyse à l'emplacement par défaut, lorsque l'on éteint la JVM.
+Cet emplacement peut être configuré de la manière suivante :</p>
+<div class="highlight"><pre><span></span><code>-javaagent:<span class="nv">$JACOCO_AGENT</span><span class="o">=</span><span class="nv">destfile</span><span class="o">=</span><span class="nv">$JACOCO_EXEC_FILE</span>
+
+<span class="c1"># Windows exemple without env variable:</span>
+-javaagent:D:<span class="se">\\</span>develop<span class="se">\\</span>tools<span class="se">\\</span>jacoco<span class="se">\\</span>jacocoagent.jar<span class="o">=</span><span class="nv">destfile</span><span class="o">=</span><span class="nv">$JACOCO_EXEC_FILE</span>
+</code></pre></div>
+<h4 id="tests-dintegration">Tests d'intégration<a class="headerlink" href="#tests-dintegration" title="Permanent link">&para;</a></h4>
+<p>En testant une application en mode "Boite noire", on préférera mieux maîtriser la génération des données.
+Pour cela, on configure le <code>jacocoagent</code> de la manière suivante :</p>
+<div class="highlight"><pre><span></span><code>-javaagent:<span class="nv">$JACOCO_AGENT</span><span class="o">=</span><span class="nv">output</span><span class="o">=</span>tcpserver
+</code></pre></div>
+<p>Cela signifie que le rapport d'exécution sera écrit dans une socket, sur un couple <code>host:port</code> défini, 
+<code>localhost:6300</code> par défaut. On peut configurer ce couple de la manière suivante :</p>
+<div class="highlight"><pre><span></span><code>-javaagent:<span class="nv">$JACOCO_AGENT</span><span class="o">=</span><span class="nv">output</span><span class="o">=</span>tcpserver,address<span class="o">=</span><span class="m">10</span>.2.10.2,port<span class="o">=</span><span class="m">8080</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Attention:</strong> la configuration <code>destfile=$JACOCO_EXEC_FILE</code> devient alors caduque.</p>
+</blockquote>
+<p>A tout moment, et tant que la JVM tourne, on peut récupérer en local les données analysées par JaCoCo sur la JVM 
+instrumentalisée. Avec les outils en ligne de commande :</p>
+<div class="highlight"><pre><span></span><code>java -jar <span class="nv">$JACOCO_CLI</span> <span class="se">\</span>
+    dump <span class="se">\</span>
+    --destfile <span class="nv">$JACOCO_EXEC_FILE</span>
+</code></pre></div>
+<p>Par défaut, le dump s'effectue sur <code>localhost:6300</code>, et génère un fichier <code>./jacoco.exec</code>.</p>
+<p><strong>Synthèse:</strong> Avec les étapes ci-dessus, on est en mesure de générer, via des instructions en ligne de commande,
+un rapport d'analyse JaCoCo explopitable. Le fichier <code>$JACOCO_EXEC_FILE</code> peut être transmis à un Sonar, ou à tout
+autre outil permettant de centraliser les analyse de code.</p>
+<p>Utiliser les outils de ligne de commande de JaCoCo peut être pratique dans une pipeline industrialisée,
+par exemple avec du Jenkin et du Docker.</p>
+<h3 id="generer-un-rapport-comprehensible-par-un-etre-humain">Générer un rapport compréhensible par un être humain<a class="headerlink" href="#generer-un-rapport-comprehensible-par-un-etre-humain" title="Permanent link">&para;</a></h3>
+<p>Avant d'industrialiser tout le processus sur Sonar, on voudra probablement analyser manuellement le fichier généré.
+C'est possible via un rapport généré avec les outils en ligne de commande :</p>
+<div class="highlight"><pre><span></span><code>java -jar <span class="nv">$JACOCO_CLI</span> <span class="se">\</span>
+    report <span class="se">\</span>
+    --classfiles ./target/classes/
+</code></pre></div>
+<p>Cela n'est valable que pour un projet simple. JaCoCo a besoin du chemin vers les classes compilées,
+pour lesquelles il va générer un rapport, et du chemin vers le le fichier d'analyse, <code>./jacoco.exec</code> par défaut.</p>
+<p>En fait, c'est également possible pour un projet en multi-modules:</p>
+<div class="highlight"><pre><span></span><code>java -jar <span class="nv">$JACOCO_CLI</span> <span class="se">\</span>
+    report <span class="se">\ </span>
+        ./first-module/jacoco.exec <span class="se">\</span>
+        ./second-module/jacoco.exec <span class="se">\</span>
+        ./third-module/jacoco.exec <span class="se">\</span>
+    --classfiles ./first-module/target/classes/ <span class="se">\</span>
+    --classfiles ./second-module/target/classes/ <span class="se">\</span>
+    --classfiles ./third-module/target/classes/
+</code></pre></div>
+<p>JaCoCo sait utiliser plusieurs fichiers d'analyse, et parcourir plusieurs répertoires de classes compilées,
+pour générer le rapport final.</p>
+<p>D'ailleurs, on pourra vouloir lui définir l'emplacement où l'on génère le rapport:</p>
+<div class="highlight"><pre><span></span><code>java -jar $JACOCO_CLI \
+    report \ 
+        ./first-module/jacoco.exec \
+        ./second-module/jacoco.exec \
+        ./third-module/jacoco.exec \
+    --classfiles ./first-module//target/classes/ \
+    --classfiles ./second-module/target/classes/ \
+    --classfiles ./third-module/target/classes/ \
+    --html jacoco/report
+</code></pre></div>
+<p>Enjoy!</p>
+<h2 id="avec-maven">Avec Maven<a class="headerlink" href="#avec-maven" title="Permanent link">&para;</a></h2>
+<h3 id="utiliser-le-plugin-jacoco">Utiliser le plugin JaCoCo<a class="headerlink" href="#utiliser-le-plugin-jacoco" title="Permanent link">&para;</a></h3>
+<p>Dans le POM Maven, il faut rajouter le plugin JaCoCo</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="c">&lt;!-- Go on JaCoCo website for the latest version: https://www.jacoco.org/jacoco/trunk/doc/maven.html --&gt;</span>
+    <span class="nt">&lt;jacoco.version&gt;</span>0.8.4<span class="nt">&lt;/jacoco.version&gt;</span>
+    ...
+<span class="nt">&lt;/properties&gt;</span>
+...
+<span class="nt">&lt;plugins&gt;</span>
+    ...
+    <span class="nt">&lt;plugin&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>${jacoco.version}<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;executions&gt;</span>
+            <span class="nt">&lt;execution&gt;</span>
+                <span class="nt">&lt;id&gt;</span>agent<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;goals&gt;</span>
+                    <span class="nt">&lt;goal&gt;</span>prepare-agent<span class="nt">&lt;/goal&gt;</span>
+                <span class="nt">&lt;/goals&gt;</span>
+            <span class="nt">&lt;/execution&gt;</span>
+            <span class="nt">&lt;execution&gt;</span>
+                <span class="nt">&lt;id&gt;</span>generate-report<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;goals&gt;</span>
+                    <span class="nt">&lt;goal&gt;</span>report<span class="nt">&lt;/goal&gt;</span>
+                <span class="nt">&lt;/goals&gt;</span>
+            <span class="nt">&lt;/execution&gt;</span>
+        <span class="nt">&lt;/executions&gt;</span>
+    <span class="nt">&lt;/plugin&gt;</span>
+    ...
+<span class="nt">&lt;/plugins&gt;</span>
+</code></pre></div>
+<p>Par défaut, JaCoCo collecte les données d'analyse d'exécution dans un fichier <code>target/jacoco.exec</code>.
+Ce fichier est local à chaque projet Maven, et re-généré à chaque build.
+<code>prepare-agent</code> est automatiquement utilisé à la phase Maven <code>initialize</code>.
+Pour analyser le code, il suffit de jouer la commande:</p>
+<div class="highlight"><pre><span></span><code>mvn <span class="nb">test</span>
+</code></pre></div>
+<p>Par défaut, JaCoCo génère le rapport dans le dossier <code>target/jacoco</code>.
+Ce rapport est automatiquement généré à la phase Maven <code>verify</code>.
+Pour analyser le code, et générer le rapport, il suffit de jouer la commande:</p>
+<div class="highlight"><pre><span></span><code>mvn verify 
+</code></pre></div>
+<h3 id="pour-un-projet-en-multi-modules">Pour un projet en multi-modules<a class="headerlink" href="#pour-un-projet-en-multi-modules" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><em>Sur mon projet multi-modules, Sonar me donne des résultats ne reflétant pas la réalité ! C'est nul Sonar !</em>
+<br> <strong>Développeur lambda</strong></p>
+</blockquote>
+<p>Si, dans certains cas, le rapport Sonar ne correspond pas à la réalité du code, c'est que Sonar n'a pas les
+informations précises de ce qu'il doit analyser. </p>
+<p>La solution ci-dessous, permet de configurer correctement JaCoCo, pour qu'il génère un rapport complet à Sonar.
+Elle consiste à :</p>
+<ul>
+<li>Générer le fichier <code>jacoco.exec</code> avec TOUTES les données consolidées de TOUS les modules à analyser.</li>
+<li>S'appuyer sur ce fichier pour générer un rapport consolidé, utilisant le classpath de tous les modules</li>
+<li>Dire à Sonar d'utiliser ce rapport consolidé pour effectuer son analyse</li>
+</ul>
+<p>Le projet impacté, est un projet multi-module, dont les modules héritent d'un POM parent.
+Les modifications sont à porter dans le POM parent, ainsi, tous les sous-modules en bénéficieront automatiquement.
+Si votre projet utilise une structure différente, il faudra revoir les <code>properties</code> pour que les chemins
+des fichiers générés et utilisés, restent cohérents</p>
+<h4 id="configuration-prealable">Configuration préalable<a class="headerlink" href="#configuration-prealable" title="Permanent link">&para;</a></h4>
+<p>Dans cette solution, on a besoin d'avoir un répertoire commun à tous les modules, pour écrire/lire des fichiers.
+Pour davantage de simplicité, ce répertoire sera le répertoire de build du projet parent: </p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    <span class="nt">&lt;root.build.directory&gt;</span>${maven.multiModuleProjectDirectory}/target<span class="nt">&lt;/root.build.directory&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h4 id="generation-du-fichier-jacocoexec">Génération du fichier <code>jacoco.exec</code><a class="headerlink" href="#generation-du-fichier-jacocoexec" title="Permanent link">&para;</a></h4>
+<p>L'objectif de cette étape est de générer un fichier <code>jacoco.exec</code> unique.
+Il suffit, de préciser, dans le plugin, le chemin du fichier, qui doit être le même pour tous les modules du projet.</p>
+<p>On rajoute les propriétés: 
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="nt">&lt;jacoco.dir&gt;</span>${root.build.directory}/jacoco<span class="nt">&lt;/jacoco.dir&gt;</span>
+    <span class="nt">&lt;jacoco.execFile&gt;</span>${jacoco.dir}/jacoco.exec<span class="nt">&lt;/jacoco.execFile&gt;</span>
+    ...
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div></p>
+<p>On configure le plugin, dans un profile spécifique</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>generate-jacoco-exec<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;destFile&gt;</span>${jacoco.execFile}<span class="nt">&lt;/destFile&gt;</span>
+                    <span class="nt">&lt;append&gt;</span>true<span class="nt">&lt;/append&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>agent<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>prepare-agent<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Désormais, on génère le fichier <code>jacoco.exec</code> pour tous les modules, via la commande :</p>
+<div class="highlight"><pre><span></span><code>mvn -Pgenerate-jacoco-exec clean verify
+</code></pre></div>
+<h4 id="generation-le-rapport-jacoco">Génération le rapport JaCoCo<a class="headerlink" href="#generation-le-rapport-jacoco" title="Permanent link">&para;</a></h4>
+<p>On génère le rapport xml, à partir du fichier <code>jacoco.exec</code> préalablement généré.</p>
+<p>On rajoute les propriétés: </p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="c">&lt;!-- Déjà défini à l&#39;étape précédente: </span>
+<span class="c">    &lt;jacoco.execFile&gt;${jacoco.dir}/jacoco.exec&lt;/jacoco.execFile&gt;</span>
+<span class="c">    --&gt;</span>
+    <span class="nt">&lt;jacoco.report.dir&gt;</span>${jacoco.dir}/report<span class="nt">&lt;/jacoco.report.dir&gt;</span>
+    ...
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<p>On configure le plugin, dans un profile spécifique:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>generate-jacoco-report<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;dataFile&gt;</span>${jacoco.execFile}<span class="nt">&lt;/dataFile&gt;</span>
+                    <span class="nt">&lt;outputDirectory&gt;</span>${jacoco.report.dir}<span class="nt">&lt;/outputDirectory&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>xml-report<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>report<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Avec une telle configuration, on génère un rapport par module. Le rapport d'un module venant remplacer le rapport
+existant, ce n'est pas exploitable.
+Il nous faut donc le générer une seule fois, pour tout le classpath du projet; ce que l'on va faire à partir du projet parent.</p>
+<p>Malheureusement, le rapport via plugin maven jacoco, <code>mvn jacoco:report</code>, n'est pas aussi complet que sont pendant 
+en ligne de commande. On ne peut pas configurer le classpath pour répertorier toutes les classes du projet.</p>
+<p>Il va falloir ruser: lors de la génération du fichier <code>jacoco.exec</code>, on passe sur tout le classpath du projet.
+On va donc copier toutes les classes à un unique emplacement, pour les réutiliser à la génération du rapport.</p>
+<blockquote>
+<p><strong>Attention:</strong> Cette copie des classes comùilées, a pour seul but de générer un rapport JaCoCo.
+Il faut impérativement éviter de faire cette manipulation lors du packaging de l'application pour la production! </p>
+</blockquote>
+<p>On rajoute les propriétés:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="nt">&lt;jacoco.classpath&gt;</span>${root.build.directory}/classes<span class="nt">&lt;/jacoco.classpath&gt;</span>
+    ...
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div></p>
+<p>On modifie le profil précédent, pour copier les classes compilées:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>generate-jacoco-exec<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;destFile&gt;</span>${jacoco.execFile}<span class="nt">&lt;/destFile&gt;</span>
+                    <span class="nt">&lt;append&gt;</span>true<span class="nt">&lt;/append&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>agent<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>prepare-agent<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>maven-resources-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>copy-resources<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;phase&gt;</span>package<span class="nt">&lt;/phase&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>copy-resources<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                        <span class="nt">&lt;configuration&gt;</span>
+                            <span class="nt">&lt;outputDirectory&gt;</span>${jacoco.classpath}<span class="nt">&lt;/outputDirectory&gt;</span>
+                            <span class="nt">&lt;resources&gt;</span>
+                                <span class="nt">&lt;resource&gt;</span>
+                                    <span class="nt">&lt;directory&gt;</span>${project.basedir}/target/classes<span class="nt">&lt;/directory&gt;</span>
+                                <span class="nt">&lt;/resource&gt;</span>
+                            <span class="nt">&lt;/resources&gt;</span>
+                        <span class="nt">&lt;/configuration&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Désormais, on génère le rapport JaCoCo, XML et HTML, pour tous les modules, via la commande :</p>
+<div class="highlight"><pre><span></span><code>mvn -Pgenerate-jacoco-report jacoco:report -N
+<span class="c1"># -N permet de n&#39;exécuter la commande que pour le POM parent</span>
+</code></pre></div>
+<h4 id="envoi-du-rapport-a-sonar">Envoi du rapport à Sonar<a class="headerlink" href="#envoi-du-rapport-a-sonar" title="Permanent link">&para;</a></h4>
+<p>Il suffit désormais, d'envoyer correctement le rapport à Sonar.
+On doit lui préciser qu'on envoie un rapport JaCoCo, l'emplacement du rapport, et des binaires à analyser.</p>
+<p>On rajoute les propriétés:
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="c">&lt;!-- Déjà défini aux étapes précédentes: </span>
+<span class="c">    &lt;jacoco.report.dir&gt;${jacoco.dir}/report&lt;/jacoco.report.dir&gt;</span>
+<span class="c">    &lt;jacoco.classpath&gt;${root.build.directory}/classes&lt;/jacoco.classpath&gt;</span>
+<span class="c">    --&gt;</span>
+    <span class="nt">&lt;sonar.binaries&gt;</span>${jacoco.classpath}<span class="nt">&lt;/sonar.binaries&gt;</span>
+    <span class="nt">&lt;sonar.java.coveragePlugin&gt;</span>jacoco<span class="nt">&lt;/sonar.java.coveragePlugin&gt;</span>
+    <span class="nt">&lt;sonar.dynamicAnalysis&gt;</span>reuseReports<span class="nt">&lt;/sonar.dynamicAnalysis&gt;</span>
+    <span class="nt">&lt;sonar.coverage.jacoco.xmlReportPaths&gt;</span>${jacoco.report.dir}/jacoco.xml<span class="nt">&lt;/sonar.coverage.jacoco.xmlReportPaths&gt;</span>
+    ...
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+On configure le plugin, dans un profile spécifique:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>sonar<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.sonarsource.scanner.maven<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>sonar-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Désormais, on envoie le rapport JaCoCo à Sonar, via la commande:</p>
+<div class="highlight"><pre><span></span><code>mvn -Psonar sonar:sonar -Dsonar.host.url<span class="o">=</span>http://my.own.sonar.com
+</code></pre></div>
+<h4 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h4>
+<p>Rajouter les propriétés permettant de mutualiser les emplacement de lecture/ecriture des fichiers :
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;properties&gt;</span>
+    ...
+    <span class="nt">&lt;jacoco.version&gt;</span>0.8.4<span class="nt">&lt;/jacoco.version&gt;</span>
+    <span class="nt">&lt;root.build.directory&gt;</span>${maven.multiModuleProjectDirectory}/target<span class="nt">&lt;/root.build.directory&gt;</span>
+    <span class="nt">&lt;jacoco.dir&gt;</span>${root.build.directory}/jacoco<span class="nt">&lt;/jacoco.dir&gt;</span>
+    <span class="nt">&lt;jacoco.classpath&gt;</span>${root.build.directory}/classes<span class="nt">&lt;/jacoco.classpath&gt;</span>
+    <span class="nt">&lt;jacoco.execFile&gt;</span>${jacoco.dir}/jacoco.exec<span class="nt">&lt;/jacoco.execFile&gt;</span>
+    <span class="nt">&lt;jacoco.report.dir&gt;</span>${jacoco.dir}/report<span class="nt">&lt;/jacoco.report.dir&gt;</span>
+
+    <span class="nt">&lt;sonar.maven-plugin.version&gt;</span>3.6.0.1398<span class="nt">&lt;/sonar.maven-plugin.version&gt;</span>
+    <span class="nt">&lt;sonar.binaries&gt;</span>${jacoco.classpath}<span class="nt">&lt;/sonar.binaries&gt;</span>
+    <span class="nt">&lt;sonar.java.coveragePlugin&gt;</span>jacoco<span class="nt">&lt;/sonar.java.coveragePlugin&gt;</span>
+    <span class="nt">&lt;sonar.dynamicAnalysis&gt;</span>reuseReports<span class="nt">&lt;/sonar.dynamicAnalysis&gt;</span>
+    <span class="nt">&lt;sonar.coverage.jacoco.xmlReportPaths&gt;</span>${jacoco.report.dir}/jacoco.xml<span class="nt">&lt;/sonar.coverage.jacoco.xmlReportPaths&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div></p>
+<p>Dans un profile spécifique, <code>generate-jacoco-exec</code>:
+ - on configure le plugin JaCoCo, pour générer le fichier <code>jacoco.exec</code> consolidé
+ - on copie les classes compilées en vue de générer le rapport XML consolidé</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>generate-jacoco-exec<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;destFile&gt;</span>${jacoco.execFile}<span class="nt">&lt;/destFile&gt;</span>
+                    <span class="nt">&lt;append&gt;</span>true<span class="nt">&lt;/append&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>agent<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>prepare-agent<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>maven-resources-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>copy-resources<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;phase&gt;</span>package<span class="nt">&lt;/phase&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>copy-resources<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                        <span class="nt">&lt;configuration&gt;</span>
+                            <span class="nt">&lt;outputDirectory&gt;</span>${jacoco.classpath}<span class="nt">&lt;/outputDirectory&gt;</span>
+                            <span class="nt">&lt;resources&gt;</span>
+                                <span class="nt">&lt;resource&gt;</span>
+                                    <span class="nt">&lt;directory&gt;</span>${project.basedir}/target/classes<span class="nt">&lt;/directory&gt;</span>
+                                <span class="nt">&lt;/resource&gt;</span>
+                            <span class="nt">&lt;/resources&gt;</span>
+                        <span class="nt">&lt;/configuration&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Dans un profile spécifique, <code>generate-jacoco-report</code>:
+ - on configure le plugin JaCoCo, pour générer le rapport XML et HTML à partir d'un seul fichier
+ - cette génération se fera depuis le projet parent, dans lequel on a dupliqué les binaires <strong>à seule fin d'analyse</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>generate-jacoco-report<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.jacoco<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>jacoco-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+                <span class="nt">&lt;configuration&gt;</span>
+                    <span class="nt">&lt;dataFile&gt;</span>${jacoco.execFile}<span class="nt">&lt;/dataFile&gt;</span>
+                    <span class="nt">&lt;outputDirectory&gt;</span>${jacoco.report.dir}<span class="nt">&lt;/outputDirectory&gt;</span>
+                <span class="nt">&lt;/configuration&gt;</span>
+                <span class="nt">&lt;executions&gt;</span>
+                    <span class="nt">&lt;execution&gt;</span>
+                        <span class="nt">&lt;id&gt;</span>xml-report<span class="nt">&lt;/id&gt;</span>
+                        <span class="nt">&lt;goals&gt;</span>
+                            <span class="nt">&lt;goal&gt;</span>report<span class="nt">&lt;/goal&gt;</span>
+                        <span class="nt">&lt;/goals&gt;</span>
+                    <span class="nt">&lt;/execution&gt;</span>
+                <span class="nt">&lt;/executions&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>Dans un profile spécifique, <code>sonar</code>:
+ - on déclare l'utilisation du plugin sonar </p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;profile&gt;</span>
+    <span class="nt">&lt;id&gt;</span>sonar<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+            <span class="nt">&lt;plugin&gt;</span>
+                <span class="nt">&lt;groupId&gt;</span>org.sonarsource.scanner.maven<span class="nt">&lt;/groupId&gt;</span>
+                <span class="nt">&lt;artifactId&gt;</span>sonar-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/profile&gt;</span>
+</code></pre></div>
+<p>On peut maintenant exécuter les commandes suivante:</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># Génération du rapport binaire    </span>
+    mvn -Pgenerate-jacoco-exec clean verify
+
+    <span class="c1"># Génération du rapport XML</span>
+    mvn -Pgenerate-jacoco-report jacoco:report -N
+
+    <span class="c1"># Analyse Sonar</span>
+    mvn -Psonar sonar:sonar -Dsonar.host.url<span class="o">=</span>http://my.own.sonar.com
+</code></pre></div>
+<h3 id="integration-dans-une-pipeline-jenkins-multibranche">Intégration dans une pipeline Jenkins Multibranche<a class="headerlink" href="#integration-dans-une-pipeline-jenkins-multibranche" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
+    <span class="n">agent</span> <span class="o">{</span> 
+        <span class="n">label</span> <span class="s1">&#39;maven3 &amp;&amp; java10&#39;</span> 
+    <span class="o">}</span>
+
+    <span class="n">stages</span> <span class="o">{</span>
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Checkout&#39;</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">checkout</span> <span class="n">scm</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Generate JaCoCo Report&#39;</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">withMaven</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="n">sh</span> <span class="s2">&quot;mvn -Pgenerate-jacoco-exec verify&quot;</span>
+                    <span class="n">sh</span> <span class="s2">&quot;mvn -Pgenerate-jacoco-report jacoco:report -N&quot;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Send to Sonar&#39;</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">steps</span> <span class="o">{</span>
+                <span class="n">withMaven</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="n">sh</span> <span class="s2">&quot;mvn -Psonar sonar:sonar -Dsonar.host.url=http://my.own.sonar.com&quot;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
+<p>Générer un rapport Sonar cohérent, c'est possible avec JaCoCo.
+Ce n'est qu'une question de configuration, avec des outils pas toujours homogènes.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+<!--        <span class="md-footer-social__link">-->
+<!--          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M172.2 226.8c-14.6-2.9-28.2 8.9-28.2 23.8V301c0 10.2 7.1 18.4 16.7 22 18.2 6.8 31.3 24.4 31.3 45 0 26.5-21.5 48-48 48s-48-21.5-48-48V120c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v248c0 89.5 82.1 160.2 175 140.7 54.4-11.4 98.3-55.4 109.7-109.7 17.4-82.9-37-157.2-112.5-172.2zM209 0c-9.2-.5-17 6.8-17 16v31.6c0 8.5 6.6 15.5 15 15.9 129.4 7 233.4 112 240.9 241.5.5 8.4 7.5 15 15.9 15h32.1c9.2 0 16.5-7.8 16-17C503.4 139.8 372.2 8.6 209 0zm.3 96c-9.3-.7-17.3 6.7-17.3 16.1v32.1c0 8.4 6.5 15.3 14.8 15.9 76.8 6.3 138 68.2 144.9 145.2.8 8.3 7.6 14.7 15.9 14.7h32.2c9.3 0 16.8-8 16.1-17.3-8.4-110.1-96.5-198.2-206.6-206.7z"/></svg>-->
+<!--        </span>-->
+        Compiled by
+        <a href="https://fhiegel.github.io" target="_blank" rel="noopener" title="fhiegel">
+          fhiegel
+        </a>
+        <!--Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        -->
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on Twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.linkedin.com/in/fabien-hiegel-874416b5" target="_blank" rel="noopener" title="Fabien Hiegel on LinkedIn" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.sections', 'navigation.tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
