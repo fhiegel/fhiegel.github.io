@@ -18,4 +18,4 @@ deploy:
   target-branch: gh-pages
   local_dir: site
   on:
-    branch: main
+    branch: docs

@@ -1,26 +1,42 @@
 # Project information
-site_name: Katas
-site_url: https://fhiegel.github.io/katas
-site_description: Repository of katas
-repo_url: https://github.com/fhiegel/katas
+site_name: Juste un dev
+site_url: https://fhiegel.github.io
+site_description: Mu Own Website
+repo_url: https://github.com/fhiegel/fhiegel.github.io
 edit_uri: ""
 
 # Nav
 
 nav:
-  - Accueuil: index.md
-  - Compilation perso:
-    - Katas: katas/index.md
-    - Coding Dojo: katas/coding-dojo
-    - Deliberate Practice: katas/deliberate-practice
+  - Accueil: index.md
+  - S'entraîner:
+    - Katas: practices/katas/index.md
+    - Coding Dojo:
+      - Coding Dojo: practices/coding-dojo/index.md
+      - Presentation: practices/coding-dojo/slides.md
+    - Deliberate Practice: practices/deliberate-practice/
     - Katalogue:
-      - katas/katas/FizzBuzz
-      - katas/katas/Diamound
-  - Me:
-    - me/cv.md
-    - me/nocv.md
+      - FizzBuzz: practices/katas/FizzBuzz
+      - Diamound: practices/katas/Diamound
+  - Apprendre:
+      - Disclaimer: learn/index.md
+      - 🎓 Formations:
+        - TDD: learn/formations/tdd/index.md
+        - S.O.L.I.D: learn/formations/solid/index.md
+      - 🧩 Serious Games:
+        - Tests Unitaires - Sensibiliser sans coder: learn/serious-games/sensibiliser-aux-tests-unitaires.md
+#  - Veiller: blog/
+#    - posts/2019-04-04---Howto--the-use-of-JaCoCo.md
+#    - posts/A la rencontre d'une pratique  le Pair programming.md
+#    - posts/Le jeu de rôle  méthodologie de développement en informatique.md
+#    - posts/97-things\index.md
+  - A propos:
+    - CV: me/cv.md
+    - NoCV: me/nocv.md
 
 # Theme options ef2929, d52929
+
+# Configuration
 
 theme:
   name: material
@@ -28,26 +44,20 @@ theme:
   language: fr
   logo: assets/images/icon-128x128.png
   favicon: assets/images/favicon.png
-  palette:
-    primary: black
-    accent: red
   features:
     - navigation.sections
     - navigation.tabs
+  palette:
+    primary: black
+    accent: red
 
-reveal:
-  path: reveal.js/dist
-  transition: slide
-  theme:
-    name: white.css
-    path: theme
-  plugin:
-    path: reveal.js/plugin
+# Extra
 
 extra:
   author:
     name: fhiegel
     icon: fontawesome/solid/blog
+    link: https://fhiegel.github.io
     #  https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons/
     #  icon: /fontawesome/solid/blog
     #  icon: fontawesome/solid/arrow-alt-circle-up
@@ -55,7 +65,14 @@ extra:
     #  icon: fontawesome/regular/lemon
     #  icon: fontawesome/regular/id-badge
     #  icon: fontawesome/solid/dice-d20
-    link: https://fhiegel.github.io
+  reveal:
+    path: reveal.js/dist
+    transition: slide
+    theme:
+      name: white.css
+      path: theme
+    plugin:
+      path: reveal.js/plugin
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/fhiegel
@@ -70,21 +87,42 @@ extra:
 # Extensions
 markdown_extensions:
   - admonition
-  - extra
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
   - meta
-  - tables
-  - toc
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.tabbed
-  - pymdownx.tasklist
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 plugins:
   - search
-  - macros

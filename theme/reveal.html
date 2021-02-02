@@ -13,13 +13,13 @@
   <base href="{{ config.site_url }}">
   <link rel="canonical" href="{{ config.site_url }}">
 
-  <link rel="stylesheet" href="{{ config.reveal.path }}/reset.css">
-  <link rel="stylesheet" href="{{ config.reveal.path }}/reveal.css">
-  <link rel="stylesheet" href="{{ config.reveal.path }}/{{ config.reveal.theme.path }}/{{ config.reveal.theme.name }}"
+  <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reset.css">
+  <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reveal.css">
+  <link rel="stylesheet" href="{{ config.extra.reveal.path }}/{{ config.extra.reveal.theme.path }}/{{ config.extra.reveal.theme.name }}"
         id="theme">
 
   <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="{{ config.reveal.plugin.path }}/highlight/monokai.css" id="highlight-theme">
+  <link rel="stylesheet" href="{{ config.extra.reveal.plugin.path }}/highlight/monokai.css" id="highlight-theme">
 </head>
 <body>
 
@@ -41,12 +41,12 @@
   </div>
 </div>
 
-<script src="{{ config.reveal.path }}/reveal.js"></script>
+<script src="{{ config.extra.reveal.path }}/reveal.js"></script>
 
-<script src="{{ config.reveal.plugin.path }}/markdown/markdown.js"></script>
-<script src="{{ config.reveal.plugin.path }}/highlight/highlight.js"></script>
-<script src="{{ config.reveal.plugin.path }}/zoom/zoom.js"></script>
-<script src="{{ config.reveal.plugin.path }}/notes/notes.js"></script>
+<script src="{{ config.extra.reveal.plugin.path }}/markdown/markdown.js"></script>
+<script src="{{ config.extra.reveal.plugin.path }}/highlight/highlight.js"></script>
+<script src="{{ config.extra.reveal.plugin.path }}/zoom/zoom.js"></script>
+<script src="{{ config.extra.reveal.plugin.path }}/notes/notes.js"></script>
 
 <script>
   // Full list of configuration options available here:
@@ -58,7 +58,7 @@
     center: true,
     hash: true,
 
-    transition: '{{ config.reveal.transition }}', // default/cube/page/concave/zoom/linear/fade/none
+    transition: '{{ config.extra.reveal.transition }}', // default/cube/page/concave/zoom/linear/fade/none
     // Learn about plugins: https://revealjs.com/plugins/
     plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
   });

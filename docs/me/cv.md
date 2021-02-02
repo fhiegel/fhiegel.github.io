@@ -1,7 +1,9 @@
 ---
 title: "No CV"
-template: "page"
-socialImage: "/media/me/fhiegel.jpg"
+
+[comment]: <> (template: "page")
+
+[comment]: <> (socialImage: "/media/me/fhiegel.jpg")
 ---
 > To be generated
 

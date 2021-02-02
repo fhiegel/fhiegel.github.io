@@ -1,5 +1,6 @@
 ---
 template: reveal.html
+title: CodingDojo
 ---
 
 <!-- .slide: data-background="assets/images/dojo.jpg" -->
