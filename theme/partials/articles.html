@@ -1,0 +1,56 @@
+<!-- Edit button -->
+{% if page.edit_url %}
+<a
+        href="{{ page.edit_url }}"
+        title="{{ lang.t('edit.link.title') }}"
+        class="md-content__button md-icon"
+>
+  {% include ".icons/material/pencil.svg" %}
+</a>
+{% endif %}
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it
+  doesn't, the page title (or respectively site name) is used
+  as the main headline.
+-->
+{% if not "\x3ch1" in page.content %}
+<h1>{{ page.title | d(config.site_name, true) }}</h1>
+{% endif %}
+
+<!-- Content -->
+{{ page.content }}
+
+<p>/!\ Draft blog-like, in progress </p>
+
+<h3>Pages as Files</h3>
+<ul>
+  {% set articles = [] %}
+  {% for item in pages %}
+  {% if item.src_path.startswith('blog') and not item.page == page %}
+  {% set articles = articles.append( item ) %}
+  {% endif %}
+  {% endfor %}
+
+  {% for item in articles|sort(attribute='page.meta.date', reverse=True) %}
+  <li>
+    <a
+      href="{{ item.page.url | url}}"
+      class=""
+    >
+      {{ item.page.title }}
+    </a>
+    <br>
+    {{ item.page.meta.description }}<br>
+    {{ item.page.meta.date }}<br>
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- Last update of source file -->
+{% if page and page.meta %}
+{% if page.meta.git_revision_date_localized or
+page.meta.revision_date %}
+{% include "partials/source-date.html" %}
+{% endif %}
+{% endif %}

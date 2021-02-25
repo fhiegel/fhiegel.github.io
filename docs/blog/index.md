@@ -1,7 +1,8 @@
 ---
 title: Blog
 description: Espace pour blogguer
-template: blog/home.html
+template: blog.html
+date: 2021-02-01
 ---
 
-TODO : générer un blog :)
+Test

@@ -1,3 +1,7 @@
+---
+date: 2021-01-24
+---
+
 # Le jeu de rôle : méthodologie de développement en informatique ?
 
 

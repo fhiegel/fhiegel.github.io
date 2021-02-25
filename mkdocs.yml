@@ -9,6 +9,7 @@ edit_uri: ""
 
 nav:
   - Accueil: index.md
+  - Blog: blog/index.md
   - S'entraîner:
     - Deliberate Practice: practices/deliberate-practice/index.md
     - Katas: practices/katas/index.md

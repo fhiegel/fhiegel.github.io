@@ -3,7 +3,7 @@ title: 'HOWTO: Use of JaCoCo'
 description: >
   Comment produire un rapport de couverture de code, sur une application Java multi-module,
   avec et sans, les tests d'intégration, à l'aide de JaCoCo.
-date: "2019-04-04"
+date: 2019-04-04
 
 template: blog/post.html
 

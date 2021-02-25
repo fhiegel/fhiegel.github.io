@@ -1,13 +1,8 @@
 ---
-title: 'HOWTO: Use of JaCoCo'
-description: >
-Comment produire un rapport de couverture de code, sur une application Java multi-module,
-avec et sans, les tests d'intégration, à l'aide de JaCoCo.
-date: "2019-04-04"
-
-[comment]: <> (template: "post")
-draft: true
+title: "A la rencontre d'une pratique le Pair-Programming"
+date: 2020-04-04
 ---
+
 # A la rencontre d'une pratique : le Pair-Programming
 
 Vous en avez probablement déjà entendu parler, peut-être que vous l'utilisez déjà, le Pair-Programming est une pratique de développement mettant deux développeurs à contribution, pour développer ensemble un même logiciel.
