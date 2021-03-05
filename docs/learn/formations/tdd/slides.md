@@ -1,0 +1,123 @@
+---
+title: TDD
+template: reveal.html
+---
+
+## Test Driven Development
+### aka. TDD
+
+---
+
+# Qu'est-ce que c'est ?
+
+--
+
+<!-- .slide: data-background-color="#111111" data-background-opacity="1" -->
+<!-- .slide: data-background-image="https://trello-attachments.s3.amazonaws.com/5f81d2636d0d1780ea6d078a/800x604/a89e88dc35eb67acd1bfb2e5cf472e51/TDD_-_Not_a_testing_Strategy.png" data-background-opacity="1" -->
+
+--
+
+<!-- .slide: data-background-image="https://trello-attachments.s3.amazonaws.com/5f81d2636d0d1780ea6d078a/800x604/a89e88dc35eb67acd1bfb2e5cf472e51/TDD_-_Not_a_testing_Strategy.png" data-background-opacity="0.5" -->
+
+### Méthodologie de développement informatique
+
+Objectif : produire du code de prod !
+
+---
+
+# Trois règles
+par ["Uncle Bob"](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
+
+--
+
+You are not allowed to write any production code
+unless it is to make a failing unit test pass
+
+Note:
+
+Interdit 
+Écrire du code de prod, avant un test en échec
+Objectif du code de prod : faire passer un test.
+
+--
+
+You are not allowed to write any more of a unit test than
+is sufficient to fail; and compilation failures are failures
+
+--
+
+You are not allowed to write any more production code
+than is sufficient to pass the one failing unit test
+
+---
+
+# Comment on fait
+
+--
+
+# <!-- .element: style="color:red" --> Red
+## Make it fail
+
+Note:
+No code without a failing test
+
+Declare & Name
+Arrange-Act-Assert
+Given-When-Then
+
+
+--
+
+# <!-- .element: style="color:green" --> Green
+## Make it work
+
+Note:
+A simply as possible
+→ Frugalité
+
+Implement solution
+Fake it
+Start over
+
+
+--
+
+# <!-- .element: style="color:blue" --> Refactor
+## Make it Better
+
+--
+
+# <!-- .element: style="color:blue" --> Refactor
+
+Note:
+RED: Make it fail > No code without a failing test
+GREEN : Make it work > A simply as possible
+REFACTOR: Make it better > No new functionality
+
+---
+
+# Pourquoi faire ?
+
+--
+
+You can test all you want,
+if you don’t know
+how to approach the problem,
+you’re not going to get a solution
+
+Note:
+Tu peux tester autant que tu veux,
+Si tu ne sais pas comment aborder le problème
+Tu n’es pas prêt de trouver une solution
+
+--
+
+## TDD == GPS
+
+<p class="fragment">Savoir où on va</p>
+<p class="fragment">Avancer pas à pas</p>
+
+--
+
+<!-- .slide: data-background-image="assets/images/TDD-is-GPS.png"
+data-background-opacity="1" -->

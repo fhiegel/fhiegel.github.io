@@ -10,8 +10,9 @@
   {%- if config.author -%}
   <meta name="author" content="{{ config.author }}">
   {%- endif -%}
-  <base href="{{ config.site_url }}">
-  <link rel="canonical" href="{{ config.site_url }}">
+  <base href="{{ config.site_url | url }}">
+  <link rel="canonical" href="{{ config.site_url | url }}">
+  <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
 
   <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reset.css">
   <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reveal.css">

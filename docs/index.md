@@ -1,20 +1,18 @@
 ---
-title: Bienvenue
 template: home.html
 ---
 
-# Bienvenue
-
+## Edito 
 Bienvenue.
 
-Ce site est mon espace d'expression. 
+Ce site est mon espace d'expression.<br> 
 J'y ajoute ce qui m'amuse à un moment donné.
 
 Mais attention : la plupart des pages ici sont inachevées.
 
-Si vous trouvez des sujets qui vous intéressent, servez-vous.
+* Si vous trouvez des sujets qui vous intéressent, servez-vous.
+* Si vous voulez plus de précisions sur un sujet, ou un article/support plus détaillé, contactez-moi.
 
-Si vous voulez plus de précisions sur un sujet, ou un article/sup^port plus détaillé, contactez-moi.
 __
 
 Fabien

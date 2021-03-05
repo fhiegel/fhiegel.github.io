@@ -1,6 +1,7 @@
 ---
 title: "A la rencontre d'une pratique le Pair-Programming"
 date: 2020-04-04
+draft: true
 ---
 
 # A la rencontre d'une pratique : le Pair-Programming

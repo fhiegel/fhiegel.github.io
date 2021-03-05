@@ -26,6 +26,10 @@ Cette formation contient différents modules.
 Les premiers modules de sensibilisation sont accessibles à toute personne en lien avec le développement informatique.
 Les derniers modules sont plus techniques et sont destinés à des profils orientés développeurs.
 
+## Slides
+
+- [Quicky](slides.md)
+
 
 *[Kata] : Exercice de code
 *[TDD] : Test Driven Development

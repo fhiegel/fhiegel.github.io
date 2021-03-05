@@ -9,7 +9,6 @@ edit_uri: ""
 
 nav:
   - Accueil: index.md
-  - Blog: blog/index.md
   - S'entraîner:
     - Deliberate Practice: practices/deliberate-practice/index.md
     - Katas: practices/katas/index.md
@@ -28,6 +27,7 @@ nav:
         - Tests Unitaires - Sensibiliser sans coder: learn/serious-games/sensibiliser-aux-tests-unitaires.md
       - 💬 Présentations:
         - Gamification: learn/presentations/gamification/index.md
+        - Gooo Morning Learning: learn/presentations/good-morning-learning/index.md
 #  - Veiller: blog/
 #    - posts/2019-04-04---Howto--the-use-of-JaCoCo.md
 #    - posts/A la rencontre d'une pratique  le Pair programming.md
