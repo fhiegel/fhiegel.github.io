@@ -1,5 +1,7 @@
 ---
 template: reveal.html
+background-image: assets/images/default.jpg
+background-opacity: 0.2
 ---
 <style>
 blockquote.quote {
@@ -10,9 +12,16 @@ blockquote.quote {
 }
 </style>
 
+<!-- .slide: data-background-color="#f0f0c0" data-background-opacity="1" -->
+<!-- .slide: data-background-image="assets/images/growing-lightbulb.png" data-background-opacity="0.5"-->
+
 # Good Morning Learning
+## 🌞🎓
+
+[comment]: <> (☀️🎓)
 
 ---
+
 
 # Qu'est-ce que c'est ?
 
@@ -89,12 +98,15 @@ Conservez une taille humaine
 
 --
 
+<!-- .slide: data-background-color="#090909" data-background-opacity="1" -->
+<!-- .slide: data-background-image="assets/images/learning-sketchnote.webp" data-background-opacity="0.5"-->
+
 ## <!-- .element: class="fragment" --> Apprendre
 ## <!-- .element: class="fragment" --> Ensemble
 
 ---
 
-# Pourquoi faire ?
+# Pourquoi ça fonctionne ?
 
 --
 
@@ -130,8 +142,8 @@ In the end, you will remember better
 
 --
 
-# Apprentissages 
-# croisés
+## Apprentissages 
+## croisés
 
 Note:
 Découvrir les sujets 
@@ -179,3 +191,4 @@ Exceller Ensemble
 ---
 
 # Merci
+## 🌞🎓
