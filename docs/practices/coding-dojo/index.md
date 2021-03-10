@@ -5,13 +5,17 @@ description: >
 ---
 
 # Coding Dojo
-Objectif
-Apprendre quelque chose de nouveau, en s'amusant, à l'aide d'un exercice de code, dans un espace ouvert aux erreurs et à l'expérimentation.
+**Objectif**
+
+Apprendre quelque chose de nouveau, en s'amusant, à l'aide d'un exercice de code,
+dans un espace ouvert aux erreurs et à l'expérimentation.
 
 !!! info "Un Coding Dojo"
 	🕗 2h | 5-15 Personnes (optimal: 8)
 
 	Répéter régulièrement
+
+> Voir les [slides](slides)
 
 ## Déroulé
 

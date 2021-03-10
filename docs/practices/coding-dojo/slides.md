@@ -10,7 +10,7 @@ title: CodingDojo
 
 # Objectif
 
-Objectif : Apprendre quelque chose de nouveau, à l'aide d'un exercice de code, en s'amusant, dans un espace bienveillant et ouvert aux erreurs.
+Apprendre quelque chose de nouveau, à l'aide d'un exercice de code, en s'amusant, dans un espace bienveillant et ouvert aux erreurs.
 
 --
 

@@ -1,7 +1,8 @@
 ---
 template: reveal.html
-background-image: assets/images/default.jpg
-background-opacity: 0.2
+background-image: assets/images/growing-lightbulb.png
+background-opacity: 0.3
+
 ---
 <style>
 blockquote.quote {
@@ -13,12 +14,10 @@ blockquote.quote {
 </style>
 
 <!-- .slide: data-background-color="#f0f0c0" data-background-opacity="1" -->
-<!-- .slide: data-background-image="assets/images/growing-lightbulb.png" data-background-opacity="0.5"-->
+<!-- .slide: data-background-image="assets/images/growing-lightbulb.png" data-background-opacity="0.6"-->
 
 # Good Morning Learning
 ## 🌞🎓
-
-[comment]: <> (☀️🎓)
 
 ---
 
@@ -85,11 +84,9 @@ Conservez une taille humaine
 
 ## Temps de trajet
 
-
-* Avant confinement <!-- .element: class="fragment" -->
-  * 50 minutes <!-- .element: class="fragment" -->
-* Pendant confinement <!-- .element: class="fragment" -->
-  * 50 secondes <!-- .element: class="fragment" -->
+| Avant confinement <!-- .element: class="fragment" data-fragment-index="1" --> | Après confinement <!-- .element: class="fragment" data-fragment-index="3"-->|
+|---|---|
+| 50 minutes <!-- .element: class="fragment" data-fragment-index="2" --> | 50 secondes <!-- .element: class="fragment" data-fragment-index="4" -->|
 
 --
 
@@ -132,10 +129,12 @@ La pression sociale de devoir "présenter" vous rend plus efficace
 --
 
 ## Durable
-### Active recall en action
+### "Rappel actif" en action
 
 Note:
 Rappel Actif
+Reformuler à vos collègues vous force à organiser vos pensées et vos connaissances.
+Au final, vous vous en souviendrez mieux.
 
 Reformulating for your colleagues forces you to organize your new knowledge
 In the end, you will remember better
@@ -146,7 +145,7 @@ In the end, you will remember better
 ## croisés
 
 Note:
-Découvrir les sujets 
+Découvrir les sujets des autres participants 
 
 --
 
@@ -189,6 +188,9 @@ Exceller Ensemble
    * une personne d'une autre équipe <!-- .element: class="fragment" -->
 
 ---
+
+<!-- .slide: data-background-color="#f0f0c0" data-background-opacity="1" -->
+<!-- .slide: data-background-image="assets/images/growing-lightbulb.png" data-background-opacity="0.6"-->
 
 # Merci
 ## 🌞🎓
