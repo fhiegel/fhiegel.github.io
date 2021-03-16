@@ -27,6 +27,14 @@ blockquote.quote {
 --
 
 # Atelier
+## Intelligence collective
+
+Note:
+Restez à la page sur votre expertise collective.
+Venez apprendre quotidiennement en groupe, et partagez vos acquis pour voir plus loin, et plus longtemps.
+
+--
+
 ## 5 Règles
 
 --
@@ -186,6 +194,54 @@ Exceller Ensemble
 1. Invitez <!-- .element: class="fragment" --> 
    * vos participants <!-- .element: class="fragment" -->
    * une personne d'une autre équipe <!-- .element: class="fragment" -->
+
+---
+
+# Tips
+### Lecture rapide
+### Quelques clés 
+
+Note:
+
+Lire la 4ième de couverture
+* Analyser la structure du livre
+* Identifier le ou les chapitres clés
+Lire uniquement ce que l’on souhaite
+Prendre des notes
+* Mind-map
+* Trouver les pépites
+* Capter les 2-3 idées clés par page
+
+TODO : trouver une représentation graphique de la lecture rapide
+-> Infographie
+
+--
+
+## Lire le **Résumé**
+### Se Projeter dans le livre
+
+
+--
+
+## **Analyser** la structure du livre
+
+### Synthétiser
+### Identifier les **Mots-Clés**
+
+--
+
+## Ne **lire** que ce que vous **voulez**
+
+### Choix de la **Valeur**
+### Livre = **Mine d’or**
+### -> Trouver **Pépite**
+
+--
+
+## Prendre des **notes**
+
+### Construire des **Mind-Map**
+
 
 ---
 
