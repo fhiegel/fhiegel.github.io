@@ -11,6 +11,11 @@ blockquote.quote {
     border-radius: 3rem;
     padding: 3rem;
 }
+
+.small {
+    font-size: 0.5em; 
+}
+
 </style>
 
 <!-- .slide: data-background-color="#f0f0c0" data-background-opacity="1" -->
@@ -86,7 +91,7 @@ Conservez une taille humaine
 
 # Origine
 
-[Good Morning Learning par Philippe Bourgau](https://philippe.bourgau.net/growth-mindset-coaching-turn-remote-work-commutes-into-team-learning)
+https://philippe.bourgau.net/growth-mindset-coaching-turn-remote-work-commutes-into-team-learning  <!-- .element: class="small" -->
 
 --
 
