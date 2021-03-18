@@ -60,10 +60,9 @@ Effet Boule de neige
 Note:
 
 Utilisez **tous** les supports à votre disposition : vidéo, livres, articles, podacast, ebook, e-learning
+Expérimentez.
 Vous pouvez même faire une interview d'un expert interne, ou faire/suivre une présentation de 20 minutes (temps de questions inclus). 
-
-It can be watching a video, reading a book, reading an ebook, 
-reading a blog, or anything else that will provide you with learning contents.
+Ou quoi que ce soit qui puisse pour apprendre quelque chose.
 
 --
 
@@ -85,6 +84,7 @@ Le meilleur moyen d’apprendre, est d’enseigner
 #### Invitez des ambassadeurs
 
 Note:
+
 Aux invités venant d'une autre équipe
 
 --
@@ -93,8 +93,10 @@ Aux invités venant d'une autre équipe
 #### Maintenez chaque groupe à taille humaine
 
 Note:
+
 Si vous devenez trop nombreux, faites des groupes plus petits
 Conservez une taille humaine
+Séparez lorsque 10 minutes ne sont plus suffisantes pour que tout le monde partage.
 
 --
 
@@ -141,16 +143,12 @@ https://philippe.bourgau.net/growth-mindset-coaching-turn-remote-work-commutes-i
 ## Motivant
 
 Note:
-It’s motivating!
-Daniel Pink told us in Drive that Mastery is a crucial element to intrinsic motivation. 
-Growing your mastery on your topic, before anything else, 
-will make every day feel more valuable!
 
-Apprendre : ça nous parle de nous !
-
-La maîtrise est un élément crucial de la motivation intrinsèque
+La maîtrise est un élément crucial de la motivation intrinsèque (Daniel Pink, dans son livre "Drive")
 Améliorer votre maitrise sur un sujet, avant toute chose dans la journée ;
 vous fait voir chaque jour comme étant plus enrichissant
+
+Apprendre : ça nous parle de nous !
 
 --
 
@@ -167,12 +165,8 @@ La pression sociale de devoir "présenter" vous rend plus efficace
 
 Note:
 
-Rappel Actif
 Reformuler à vos collègues vous force à organiser vos pensées et vos connaissances.
 Au final, vous vous en souviendrez mieux.
-
-Reformulating for your colleagues forces you to organize your new knowledge
-In the end, you will remember better
 
 --
 
@@ -266,18 +260,20 @@ TODO : trouver une représentation graphique de la lecture rapide
 ## Support
 
 * Articles / Blogs <!-- .element: class="fragment" -->
-* Livres / Ebook <!-- .element: class="fragment" -->
-* Podacast <!-- .element: class="fragment" -->
-* Vidéo <!-- .element: class="fragment" -->
+* Livres / Ebooks <!-- .element: class="fragment" -->
+* Podacasts <!-- .element: class="fragment" -->
+* Vidéos <!-- .element: class="fragment" -->
 * E-learning <!-- .element: class="fragment" -->
 
 Note:
 
-Si vous avez une idée pour apprendre su quelque chose qui n'est pas ici ; c'est la bonne !
+Si vous avez une idée pour apprendre quelque : c'est la bonne ! Faites-le !
 
 Redite : 
 * Utilisez **tous** les supports à votre disposition : vidéo, livres, articles, podacast, ebook, e-learning
-* Vous pouvez même faire une interview d'un expert interne, ou faire/suivre une présentation de 20 minutes (temps de questions inclus).
+* Expérimentez.
+* Vous pouvez même faire une interview d'un expert interne, ou faire/suivre une présentation de 20 minutes (temps de questions inclus). 
+* Ou quoi que ce soit qui puisse pour apprendre quelque chose.
 
 --
 
@@ -286,6 +282,7 @@ Redite :
 #### Se _projeter_ dans le support
 
 Note:
+
 Se Projeter dans le support
 Savoir à quoi s'attendre
 
@@ -307,7 +304,7 @@ Identifier les **Idées Clés**
 
 Note:
 
-Choix de la **Valeur** pour appartient
+Choix de la **Valeur** vous appartient
 Support (Article/Livre/Vidéo) = **Mine d’or**
 Valeur = Trouver vos **Pépites**
 
@@ -340,6 +337,10 @@ Les ressources pertinentes :
 
 ## Mes quoi ?...
 
+Note:
+
+Tour de table pour savoir qui a besoin de travailler sur son "Backlog de veille"
+
 --
 
 ## Quels sujets vous intéressent ?
@@ -365,5 +366,5 @@ Utilisez la barre de recherche avec vos mots-clés / centres d'intérêts
 <!-- .slide: data-background-color="#f0f0c0" data-background-opacity="1" -->
 <!-- .slide: data-background-image="assets/images/growing-lightbulb.png" data-background-opacity="0.6"-->
 
-# Merci
+# Merci !
 ## 🌞🎓
