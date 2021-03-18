@@ -6,4 +6,4 @@ dans cet article: [Introduce Team G Morning Learning Sessions to Coach the Growt
 ## [Slides](slides)
 
 - [:fr: Français](slides)
-- [:gb:/:us: English](slides)
+- [:gb:/:us: English](slides/en)
