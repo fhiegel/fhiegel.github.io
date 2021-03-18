@@ -6,8 +6,8 @@ background-opacity: 0.3
 ---
 <style>
 blockquote.quote {
-    background-color:white;
-    opacity: 0.8;
+    background-color: #f0f0c0;
+    opacity: 0.6;
     border-radius: 3rem;
     padding: 3rem;
 }
@@ -26,15 +26,16 @@ blockquote.quote {
 
 ---
 
-
 # Qu'est-ce que c'est ?
 
 --
 
 # Atelier
-## Intelligence collective
+### Apprendre & Partager
+🕓 30 mins
 
 Note:
+
 Restez à la page sur votre expertise collective.
 Venez apprendre quotidiennement en groupe, et partagez vos acquis pour voir plus loin, et plus longtemps.
 
@@ -49,25 +50,42 @@ Venez apprendre quotidiennement en groupe, et partagez vos acquis pour voir plus
 Note:
 
 Faites-le tous les jours
+Effet Boule de neige
 
 --
 
 ### #2 Apprendre intensivement
-#### 20 minutes
+🕓 20 mins
 
 Note:
+
+Utilisez **tous** les supports à votre disposition : vidéo, livres, articles, podacast, ebook, e-learning
+Vous pouvez même faire une interview d'un expert interne, ou faire/suivre une présentation de 20 minutes (temps de questions inclus). 
+
 It can be watching a video, reading a book, reading an ebook, 
 reading a blog, or anything else that will provide you with learning contents.
 
 --
 
 ### #3 Partager
-#### 10 minutes
+🕓 10 mins
+
+Note:
+Qu'est-ce que vous avez appris ?
+Quelles sont les idées clés que vous voulez partager ?
+
+Lire puis présenter
+est incroyablement efficace pour apprendre et enseigner
+
+Le meilleur moyen d’apprendre, est d’enseigner
 
 --
 
 ### #4 Propager
-#### Aux invités venant d'une autre équipe
+#### Invitez des ambassadeurs
+
+Note:
+Aux invités venant d'une autre équipe
 
 --
 
@@ -128,6 +146,8 @@ Daniel Pink told us in Drive that Mastery is a crucial element to intrinsic moti
 Growing your mastery on your topic, before anything else, 
 will make every day feel more valuable!
 
+Apprendre : ça nous parle de nous !
+
 La maîtrise est un élément crucial de la motivation intrinsèque
 Améliorer votre maitrise sur un sujet, avant toute chose dans la journée ;
 vous fait voir chaque jour comme étant plus enrichissant
@@ -137,6 +157,7 @@ vous fait voir chaque jour comme étant plus enrichissant
 ## Efficace
 
 Note:
+
 La pression sociale de devoir "présenter" vous rend plus efficace 
 
 --
@@ -145,6 +166,7 @@ La pression sociale de devoir "présenter" vous rend plus efficace
 ### "Rappel actif" en action
 
 Note:
+
 Rappel Actif
 Reformuler à vos collègues vous force à organiser vos pensées et vos connaissances.
 Au final, vous vous en souviendrez mieux.
@@ -158,16 +180,23 @@ In the end, you will remember better
 ## croisés
 
 Note:
-Découvrir les sujets des autres participants 
+
+Découvrir les sujets des autres participants
 
 --
 
-## Propagation
+## Engouement
+## du partage
+
+> <!-- .element: class="quote" -->
+> La connaissance est la seule chose qui grandit quand on la partage.
+> <br> -- Sacha Boudjema
 
 Note:
-Inviter une personne d'une autre équipe est crucial.
+
+Inviter une personne d'une autre équipe est crucial. (Ambassadeur)
 La plupart du temps, il va répliquer la pratique dans son équipe lorsque
-le groupe grandis et doit se diviser.
+le groupe grandit et doit se diviser.
 
 --
 
@@ -177,22 +206,23 @@ le groupe grandis et doit se diviser.
 Note:
 Exceller Ensemble
 
---- 
-
-# Comment ?
-
---
-
-## Good Morning Learning
-
 ---
 
-# Par où commencer ?
+# Comment
+# commencer ?
 
 --
 
-1. Ouvrir son agenda.  <!-- .element: class="fragment" -->
-1. Planifier un rendez-vous   <!-- .element: class="fragment" -->
+<!-- .slide: data-visibility="hidden" -->
+<!-- .slide: data-background-image="https://www.everyvowel.com/wp-content/uploads/2017/05/one-day-or-day-one.png" data-background-size="contain" -->
+
+Note:
+Credit : https://www.everyvowel.com/evcartoon/one-day-day-one/
+
+--
+
+1. Ouvrir son agenda
+1. Planifier un rendez-vous <!-- .element: class="fragment" -->
    * quotidien <!-- .element: class="fragment" -->
    * de 30 minutes <!-- .element: class="fragment" -->
    * en tout début de journée <!-- .element: class="fragment" -->
@@ -203,6 +233,17 @@ Exceller Ensemble
 ---
 
 # Tips
+
+#### pour Apprendre et Partager
+
+Note:
+
+Quelques clés
+
+--
+
+<!-- .slide: data-visibility="hidden" -->
+
 ### Lecture rapide
 ### Quelques clés 
 
@@ -222,31 +263,102 @@ TODO : trouver une représentation graphique de la lecture rapide
 
 --
 
-## Lire le **Résumé**
-### Se Projeter dans le livre
+## Support
 
+* Articles / Blogs <!-- .element: class="fragment" -->
+* Livres / Ebook <!-- .element: class="fragment" -->
+* Podacast <!-- .element: class="fragment" -->
+* Vidéo <!-- .element: class="fragment" -->
+* E-learning <!-- .element: class="fragment" -->
+
+Note:
+
+Si vous avez une idée pour apprendre su quelque chose qui n'est pas ici ; c'est la bonne !
+
+Redite : 
+* Utilisez **tous** les supports à votre disposition : vidéo, livres, articles, podacast, ebook, e-learning
+* Vous pouvez même faire une interview d'un expert interne, ou faire/suivre une présentation de 20 minutes (temps de questions inclus).
 
 --
 
-## **Analyser** la structure du livre
+## Lire le _Résumé_      
 
-### Synthétiser
-### Identifier les **Mots-Clés**
+#### Se _projeter_ dans le support
+
+Note:
+Se Projeter dans le support
+Savoir à quoi s'attendre
 
 --
 
-## Ne **lire** que ce que vous **voulez**
+## Analyser
 
-### Choix de la **Valeur**
-### Livre = **Mine d’or**
-### -> Trouver **Pépite**
+#### la structure du support
+
+Note: 
+
+Synthétiser
+Identifier les **Idées Clés**
+
+--
+
+## Ne **prenez** que 
+## ce que _vous_ **voulez**
+
+Note:
+
+Choix de la **Valeur** pour appartient
+Support (Article/Livre/Vidéo) = **Mine d’or**
+Valeur = Trouver vos **Pépites**
 
 --
 
 ## Prendre des **notes**
 
-### Construire des **Mind-Map**
+Note:
 
+Papier / Numérique peu importe
+Construire des **Mind-Map** fonctionne bien pour moi
+Sketchnotes
+
+---
+
+# Apprendre 
+## ...mais quoi ?
+
+--
+
+## Ressources de Veille
+
+Note:
+
+Les ressources pertinentes : 
+ - pour votre maîtrise/spécialité 
+ - pour vos centres d’intérêt 
+
+--
+
+## Mes quoi ?...
+
+--
+
+## Quels sujets vous intéressent ?
+
+--
+
+## Par où commencer ?
+
+[dev.to](https://dev.to)
+
+[Medium](https://medium.com)
+
+Note:
+
+Utilisez la barre de recherche avec vos mots-clés / centres d'intérêts
+
+--
+
+## ... Et voilà !
 
 ---
 
