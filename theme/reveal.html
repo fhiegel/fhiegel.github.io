@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   {% if config.title %}<title>{{ config.title }}</title>{% endif %}
   {%- if config.description -%}
-  <meta name="description" content="{{ config.description }}">
+    <meta name="description" content="{{ config.description }}">
   {%- endif -%}
   {%- if config.author -%}
-  <meta name="author" content="{{ config.author }}">
+    <meta name="author" content="{{ config.author }}">
   {%- endif -%}
   <base href="{{ config.site_url | url }}">
   <link rel="canonical" href="{{ config.site_url | url }}">
@@ -16,8 +16,10 @@
 
   <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reset.css">
   <link rel="stylesheet" href="{{ config.extra.reveal.path }}/reveal.css">
-  <link rel="stylesheet" href="{{ config.extra.reveal.path }}/{{ config.extra.reveal.theme.path }}/{{ config.extra.reveal.theme.name }}"
+  <link rel="stylesheet"
+        href="{{ config.extra.reveal.path }}/{{ config.extra.reveal.theme.path }}/{{ config.extra.reveal.theme.name }}"
         id="theme">
+  <link rel="stylesheet" href="{{ base_url }}/css/theme-overrdes.css">
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="{{ config.extra.reveal.plugin.path }}/highlight/monokai.css" id="highlight-theme">
@@ -30,11 +32,15 @@
              data-separator="^\n---\n$"
              data-separator-vertical="^\n--\n$"
              data-notes="^Note:"
-             {% if page.meta['background-image'] %} data-background-image="{{ page.meta['background-image'] }}" {% endif %}
-             {% if page.meta['background-position'] %} data-background-position="{{ page.meta['background-position'] }}" {% endif %}
-             {% if page.meta['background-opacity'] %} data-background-opacity="{{ page.meta['background-opacity'] }}" {% endif %}
-             {% if page.meta['background-size'] %} data-background-size="{{ page.meta['background-size'] }}" {% endif %}
-             {% if page.meta['background-color'] %} data-background-color="{{ page.meta['background-color'] }}" {% endif %}
+            {% if page.meta['background-image'] %}
+             data-background-image="{{ page.meta['background-image'] }}" {% endif %}
+            {% if page.meta['background-position'] %}
+             data-background-position="{{ page.meta['background-position'] }}" {% endif %}
+            {% if page.meta['background-opacity'] %}
+             data-background-opacity="{{ page.meta['background-opacity'] }}" {% endif %}
+            {% if page.meta['background-size'] %} data-background-size="{{ page.meta['background-size'] }}" {% endif %}
+            {% if page.meta['background-color'] %}
+             data-background-color="{{ page.meta['background-color'] }}" {% endif %}
     >
       <script type="text/template">
         {{ page.markdown }}
@@ -42,6 +48,19 @@
     </section>
   </div>
 </div>
+
+<footer>
+  <div id="licence-cc">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Licence Creative Commons"
+           style="border-width:0"
+           src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a>
+    Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license"
+                                                                   href="http://creativecommons.org/licenses/by/4.0/">Licence
+    Creative Commons Attribution 4.0 International</a>.
+  </div>
+</footer>
+
 
 <script src="{{ config.extra.reveal.path }}/reveal.js"></script>
 
