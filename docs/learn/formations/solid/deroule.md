@@ -52,20 +52,20 @@ Intoduction et présentation du Kata.
 
 Itération 1: ""Implémenter l'addition""
 Introduction au Kata
-Introduction de SRP (Single Responsibility Principle)
+Introduction du SRP (Single Responsibility Principle)
 Refactor et échanges
 
 Itération 2: ""Implémenter la multiplication""
 Présentation des UseCases
-Introduction de OCP (Open-Close Principle)
+Introduction du OCP (Open-Close Principle)
 Refactor et échanges
 
 Itération 3: ""Implémenter la division""
 Présentation des UseCases
-Introduction de LSP (Liskov Substitution Principle)
+Introduction du LSP (Liskov Substitution Principle)
 Refactor et échanges
 
 Itération 4: ""Implémenter un calculateur 'normal'""
 Présentation des UsesCases
-Introduction de DIP (Dependency Inversion Principle)
+Introduction du DIP (Dependency Inversion Principle)
 Refactor et échanges"
