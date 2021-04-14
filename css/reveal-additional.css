@@ -1,0 +1,24 @@
+/*
+blockquote.quote {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+blockquote.quote {
+    background-color: #f0f0c0;
+    opacity: 0.6;
+    border-radius: 3rem;
+    padding: 3rem;
+}
+*/
+
+.cells {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    font-size: 0.5em;
+}
