@@ -1,5 +1,13 @@
 # – Xtrem Reading –
 
+> Q: Qu'est-ce que tu penses de l'XtremReading, et à quoi ça sert ?
+> 
+> R: "J'adhère complètement à l'XtremReading. Cette pratique me force à m'investir dans les livres que j'achète, 
+> ou que l'on me prête. Alors qu'en temps normal je ne prends pas le temps de lire tous ces livres et je les laisse de côté
+> En plus, l'Xtrem Reading me permet de rencontrer d'autres collègues que je ne croise pas d'habitude. 
+> Enfin, même si la durée de la session limite la lecture à une exploration en largeur et non en profondeur,
+> je trouve que les concepts que je tire des livres sont plus faciles à réexpliquer par la suite." 
+
 > Disclaimer : Pratique créée par Cédric Tamavond & Yoan Thirion.
 >
 > Voir aussi : https://www.xtrem-reading.com
