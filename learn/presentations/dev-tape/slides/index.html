@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <base href="https://fhiegel.github.io">
   <link rel="canonical" href="https://fhiegel.github.io">
-  <link rel="shortcut icon" href="../../../../../assets/images/favicon.png">
+  <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
 
   <link rel="stylesheet" href="reveal.js/dist/reset.css">
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <link rel="stylesheet"
         href="reveal.js/dist/theme/white.css"
         id="theme">
-  <link rel="stylesheet" href="../../../../../css/theme-overrdes.css">
-  <link rel="stylesheet" href="../../../../../css/reveal-additional.css">
+  <link rel="stylesheet" href="../../../../css/theme-overrdes.css">
+  <link rel="stylesheet" href="../../../../css/reveal-additional.css">
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
@@ -31,49 +31,121 @@
             
             
             
+             data-background-color="#dddddd" 
     >
       <script type="text/template">
-        # Liskov Substitution Principle
+        <style>
+blockquote.quote {
+    background-color:white;
+    opacity: 0.8;
+    border-radius: 3rem;
+    padding: 3rem;
+}
 
-### Par la pratique du RPN Calculator
+.punchline:not(section) {
+    background-image: url("https://images.unsplash.com/photo-1611517976630-163467322778?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+}
+section.punchline {
+    background-color: yellow;
+}
+</style>
 
----
-
-# Slide 2
-
-Let q(x) be a property provable about objects of x of type T.
-Then q(y) should be provable for objects y of type S where S is a subtype of T.
-
-Every subclass/derived class should be substitutable for their base/parent class
-
-Smells
-You have to check for the type provided (e.g. instanceof)
-
-
-
-This principle is just an extension of the Open Close Principle and it means that we must make sure that new derived classes are extending the base classes without changing their behavior.
-every subclass/derived class should be substitutable for their base/parent class
-
-
-Preconditions cannot be strengthened in a subtype
-Postconditions cannot be weakened in a subtype
-Invariants of the supertype must be preserved in a subtype
-Exceptions Should Be Stricter
-
---
-
-### Vertical
-
-TODO
+# Dev T.A.P.E
 
 ---
 
-# Slide 3
+# Transmettre
 
 --
 
-> Some stuff
+## Colle
+## Design Pattern
 
+Notes :
+En classe prépa, on avait des "colles"
+Une colle, c'est un contrôle oral, où on évalue les connaissances, et, parfois, on prend le temps de réexpliquer les concepts. 
+
+--
+
+Code Review
+
+--
+
+Git Flow like
+
+Note:
+Décrire le process 'Pris en charge' > Analyse > Analysé > Corrigé > Correction validée > Code Review 
+
+--
+
+> <!-- .element: class="quote" -->
+> “Clean code always looks like it was written by someone who cares.”
+>
+> -- Michael Feathers
+
+Notes:
+
+Michael Feathers, author of Working with Legacy Code, quoted in Clean Code
+
+Faire attention à ce que l'on produit
+Comment on produit les choses
+
+--
+
+Important : Etat d'esprit Face au code
+
+--
+
+> <!-- .element: class="quote" -->
+> Perpétuer ce qui a de la **valeur**
+
+--
+
+## La valeur, c'est...
+# VOUS
+
+---
+
+<!-- .slide: class="punchline" -->
+
+## Transmettre
+## Totalité du Trésor
+
+---
+
+# Apprendre
+
+---
+
+# Aptitude à s'Amuser de ce qui est Ardu
+
+---
+
+# Partager
+
+---
+
+# Progresser auprès de vos Pairs
+
+---
+
+# Et ... ?
+
+Note:
+
+TAPE, est quelque chose d'indispensable à mon quotidien de développeur
+Agir -> recul sur action
+
+Transmettre est une question de valeur(s) et pas seulement de code
+Apprendre = Enseigner = Vivre = S'amuser => Bénéfice direct
+Partager = Progresser avec ses Pairs
+
+**Exceller Ensemble dans un processus d'Épanouissement continue**
+
+
+---
+
+# Merci
 
       </script>
     </section>
