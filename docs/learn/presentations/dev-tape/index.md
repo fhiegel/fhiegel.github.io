@@ -1,10 +1,11 @@
 # Dev TAPE
 
-Transmettre, Apprendre et Partager.
-Les compétences recherchées chez les développeurs des développeurs sont multiples et variée, et le marché du travail nous en demande toujours davantage.
-Les profils en "T-Shaped" y sont recherchés.
-Comment faire pour alimenter notre bagage technologique, dans un quotidien bien chargé ?
-En 20 minutes, je vous propose un retour sur quelques outils (softs skills) m'ayant permis de 
-construire / prendre du recul sur mon quotidien pour progresser continuellement.
+En tant que développeur, je voudrais coder, coder et encore mieux coder. Mais dans quel langage ? Avec quel Framework ? Le marché du travail nous sollicite sur de multiples compétences, toujours plus nombreuses. Les personnes autours de moi ont un profil en "T-Shape", mais, quel que soit le sujet, j'ai l'impression de ne pas être à leur niveau.
+Comment faire pour alimenter son bagage technologique, dans un quotidien bien chargé ?
+
+Vous reconnaissez-vous dans ce laïus ?
+
+Sur cette présentation, je vous propose un retour sur quelques compétences humaines, non techniques et accessibles à tous.
+L'enjeu de ces compétences ? Prendre du recul sur son quotidien, et les utiliser comme moteur pour faire avancer ses compétences techniques.
 
 > [🗂️ Slides](slides)
