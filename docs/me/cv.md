@@ -1,6 +1,5 @@
 ---
-socialImage: "/media/me/fhiegel.jpg"
-title: "No CV"
+title: "CV"
 ---
 
 ## Formation
