@@ -1,3 +1,19 @@
+#back-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.has-dark-background > #back-button {
+    color: white;
+}
+
+*:not(.has-dark-background) > #back-button {
+    color: red;
+}
+
 #licence-cc {
     display: block;
     position: absolute;
