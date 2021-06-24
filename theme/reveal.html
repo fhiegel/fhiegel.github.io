@@ -21,6 +21,7 @@
         id="theme">
   <link rel="stylesheet" href="{{ base_url }}/css/theme-overrdes.css">
   <link rel="stylesheet" href="{{ base_url }}/css/reveal-additional.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="{{ config.extra.reveal.plugin.path }}/highlight/monokai.css" id="highlight-theme">
@@ -28,6 +29,13 @@
 <body>
 
 <div class="reveal">
+    {% if page.meta['back-url'] %}
+    <a      id="back-button"
+            href="{{ page.meta['back-url'] | url }}"
+            title="{{ page.meta['back-label'] | default("Back button", true) }}">
+        <span class="material-icons">chevron_left</span>
+    </a>
+    {% endif %}
   <div class="slides">
     <section data-markdown
              data-separator="^\n---\n$"

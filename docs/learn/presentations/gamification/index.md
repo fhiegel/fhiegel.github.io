@@ -1,3 +1,4 @@
 # La Gamification
 
-[Présentation](slides)
+
+[Présentation](slides/)
