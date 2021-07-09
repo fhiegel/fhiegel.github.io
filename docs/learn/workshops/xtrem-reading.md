@@ -1,4 +1,14 @@
-# – Xtrem Reading –
+---
+title: XtremReading
+---
+Venez lire autrement, en cultivant votre intelligence collective
+
+Vous avez des livres qui prennent la poussière ? <br>
+Vous avez vraiment envie de les lire mais vous ne trouvez pas le temps ? <br>
+Cet atelier est fait pour vous !<br>
+Venez apprendre à lire en groupe, et lisez 2 livres en 1 heure.<br>
+
+## Xtrem Reading 
 
 > Q: Qu'est-ce que tu penses de l'XtremReading, et à quoi ça sert ?
 > 
@@ -13,12 +23,9 @@
 > Voir aussi : https://www.xtrem-reading.com
  
 Introduction
-Venez lire autrement, en cultivant votre intelligence collective
-Vous avez des livres qui prennent la poussière ?
-Vous avez vraiment envie de les lire mais vous ne trouvez pas le temps ?
 
-Cet atelier est fait pour vous !
-Venez apprendre à lire en groupe, et lisez 2 livres en 1 heure.
+
+
 
 Public / Cible
 Tout public

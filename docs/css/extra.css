@@ -1,0 +1,4 @@
+.icon-accent {
+    color:var(--md-accent-fg-color);
+    opacity: 0.5;
+}

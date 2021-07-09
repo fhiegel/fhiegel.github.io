@@ -54,6 +54,8 @@ theme:
     accent: red
 
 # Extra
+extra_css:
+  - css/extra.css
 
 extra:
   author:

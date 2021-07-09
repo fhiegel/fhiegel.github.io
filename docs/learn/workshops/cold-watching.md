@@ -1,5 +1,14 @@
 # – Cold Watching –
 
+La meilleure façon d’apprendre, c’est d’enseigner !
+
+Objectif :  Echanger et expliquer sa propre compréhension du podcast pour mieux le comprendre et aller plus loin.
+
+Déroulé de la session :
+- ⌚ 5mins : Accueil
+- ⌚ 45mins : Tour de table et échange sur le podcast, à l’aide de Miro
+- ⌚ 10 mins : ROTI sur la séance
+
 > NB: La version "à froid" de l'Xtrem Watching.
 > 
 > Devrait décire le Miro et le process derrière

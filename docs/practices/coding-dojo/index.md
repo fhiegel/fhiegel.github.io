@@ -4,7 +4,7 @@ description: >
   Qu'est-ce que le Coding Dojo, et à quoi ça sert ?
 ---
 
-# Coding Dojo
+# <i class="accented">:fontawesome-solid-torii-gate:</i> Coding Dojo <i class="accented">:fontawesome-solid-torii-gate:</i>
 **Objectif**
 
 Apprendre quelque chose de nouveau, en s'amusant, à l'aide d'un exercice de code,
