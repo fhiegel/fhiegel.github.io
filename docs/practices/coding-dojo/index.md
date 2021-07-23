@@ -15,7 +15,7 @@ dans un espace ouvert aux erreurs et à l'expérimentation.
 
 	Répéter régulièrement
 
-> Voir les [slides](slides)
+> Voir les [slides](slides) / [Google Docs](https://docs.google.com/presentation/d/e/2PACX-1vTxTDfWUeYECIuVduRoc-jWB_0koE5vzbmAuc0ujBW-R0gWDpQNx1NqUbBFtA7H5Nlv2FVbGBq7H7bY/embed?slide=id.p)
 
 ## Déroulé
 

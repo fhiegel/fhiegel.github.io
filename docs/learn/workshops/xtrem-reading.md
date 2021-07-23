@@ -8,6 +8,8 @@ Vous avez vraiment envie de les lire mais vous ne trouvez pas le temps ? <br>
 Cet atelier est fait pour vous !<br>
 Venez apprendre à lire en groupe, et lisez 2 livres en 1 heure.<br>
 
+> Slides [Google Docs](https://docs.google.com/presentation/d/e/2PACX-1vTYsqF5D6hindyp4SBCoPdrewDlpwY6zzLHGs_tHQodwHxuQ1DogbmRMB8092whsr8BqqyOu0JwAlWB/embed)
+
 ## Xtrem Reading 
 
 > Q: Qu'est-ce que tu penses de l'XtremReading, et à quoi ça sert ?
