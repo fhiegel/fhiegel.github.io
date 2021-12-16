@@ -42,6 +42,19 @@ title: "CV"
 
 ## Expériences
 
+### Shodo Nantes -- Depuis Septembre 2021
+
+> _Transparence, Confiance et redistribution des richesses. Pour mettre ces valeurs en pratiques, Shodo propose un modèle d'entreprise novateur.
+> Une grille de salaire transparente et publique, ainsi que des marges fixes 
+et toutes aussi transparentes, Shodo souhaite redonner du sens au salariat,
+tout en garantissant des prestations de qualité._
+>
+> _Tous les membres de Shodo sont des développeuses et développeurs convaincu.e.s par les principes du Software Craftsmanship et aggueri.e.s aux bonnes pratiques de développement. 
+> Chacun ajuste sa rémunération et son temps libre pour se former, échanger ou se reposer, dans le respect des engagements clients pris._
+
+### Maisons du Monde via Shodo Nantes -- Depuis Septembre 2021
+_Développeur Senior. Animateur de communauté._
+
 ### E-Voyageurs Technologies -- Décembre 2018 - Septembre 2021
 _Développeur Java, Senior, puis Lead. Animateur de communauté._
 

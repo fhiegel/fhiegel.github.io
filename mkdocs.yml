@@ -33,6 +33,7 @@ nav:
 #    - posts/Le jeu de rôle  méthodologie de développement en informatique.md
 #    - posts/97-things\index.md
   - A propos:
+    - Bio: me/bio.md
     - CV: me/cv.md
     - NoCV: me/nocv.md
 
