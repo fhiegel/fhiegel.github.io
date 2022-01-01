@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <base href="https://fhiegel.github.io/">
+  <link rel="canonical" href="https://fhiegel.github.io/">
+  <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet"
+        href="reveal.js/dist/theme/white.css"
+        id="theme">
+  <link rel="stylesheet" href="../../../../css/theme-overrdes.css">
+  <link rel="stylesheet" href="../../../../css/reveal-additional.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+
+<div class="reveal">
+    
+  <div class="slides">
+    <section data-markdown
+             data-separator="^\n---\n$"
+             data-separator-vertical="^\n--\n$"
+             data-separator-notes="^Notes?\W?:"
+            
+            
+            
+            
+            
+    >
+      <script type="text/template">
+        # Dependency Inversion Principle
+
+### Par la pratique du RPN Calculator
+
+---
+
+# Slide 2
+
+This reduces coupling, and makes abstract code reusable
+Keep Abstractions clean // Keep Abstractions Reusable // Focus On Abstraction, Not Detail
+It can be thought of the natural progression of the Liskov Substitution Principle, the Open Closed Principle and even the Single Responsibility Principle.
+
+
+
+Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions.
+
+Smells
+Dependencies between classes (vs interface)
+Monolithic architecture
+Abstraction depends on details/implementation
+
+
+--
+
+### Vertical
+
+TODO
+
+---
+
+# Slide 3
+
+--
+
+> Some stuff
+
+
+      </script>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div id="licence-cc">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Licence Creative Commons"
+           style="border-width:0"
+           src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a>
+    Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license"
+                                                                   href="http://creativecommons.org/licenses/by/4.0/">Licence
+    Creative Commons Attribution 4.0 International</a>.
+  </div>
+</footer>
+
+
+<script src="reveal.js/dist/reveal.js"></script>
+
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script src="reveal.js/plugin/zoom/zoom.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    hash: true,
+
+    transition: 'slide', // default/cube/page/concave/zoom/linear/fade/none
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+  });
+</script>
+
+</body>
+</html>
