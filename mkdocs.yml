@@ -1,5 +1,5 @@
 # Project information
-site_name: Juste un dev
+site_name: Exceller Ensemble
 site_url: https://fhiegel.github.io
 site_description: Mu Own Website
 repo_url: https://github.com/fhiegel/fhiegel.github.io
@@ -9,24 +9,25 @@ edit_uri: ""
 
 nav:
   - Accueil: index.md
+  - Blog: blog/index.md
   - S'entraîner:
-    - Deliberate Practice: practices/deliberate-practice/index.md
-    - Katas: practices/katas/index.md
-    - Coding Dojo: practices/coding-dojo/index.md
+    - Deliberate Practice: topics/deliberate-practice/index.md
+    - Katas: topics/katas/index.md
+    - Coding Dojo: topics/coding-dojo/index.md
     - Katalogue:
-      - FizzBuzz: practices/katas/FizzBuzz/index.md
-      - Diamound: practices/katas/Diamound/index.md
+      - FizzBuzz: topics/katas/FizzBuzz/index.md
+      - Diamound: topics/katas/Diamound/index.md
   - Apprendre:
-      - Disclaimer: learn/index.md
+      - Disclaimer: topics/learn.md
       - 🎓 Formations:
-        - TDD: learn/formations/tdd/index.md
-        - S.O.L.I.D: learn/formations/solid/index.md
+        - TDD: topics/tdd/index.md
+        - S.O.L.I.D: topics/solid/index.md
       - 🧩 Serious Games:
-        - Tests Unitaires - Sensibiliser sans coder: learn/serious-games/sensibiliser-aux-tests-unitaires.md
+        - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
       - 💬 Présentations:
-        - Gamification: learn/presentations/gamification/index.md
-        - Good Morning Learning: learn/presentations/good-morning-learning/index.md
-        - Pair-Programming: learn/presentations/pair-programming/index.md
+        - Gamification: topics/gamification/index.md
+        - Good Morning Learning: topics/good-morning-learning/index.md
+        - Pair-Programming: topics/pair-programming/index.md
 #  - Veiller: blog/
 #    - posts/2019-04-04---Howto--the-use-of-JaCoCo.md
 #    - posts/A la rencontre d'une pratique  le Pair programming.md
@@ -56,7 +57,7 @@ theme:
 
 # Extra
 extra_css:
-  - css/extra.css
+  - assets/css/extra.css
 
 extra:
   author:
@@ -131,3 +132,6 @@ markdown_extensions:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'learn/presentations/good-morning-learning/slides/en.md': 'https://fhiegel.github.io/mnemorize'

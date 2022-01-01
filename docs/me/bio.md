@@ -1,3 +1,6 @@
+---
+title: "Bio"
+---
 Développeur passionné ; quel que soit le langage de programmation, tout est prétexte à créer et à y prendre du plaisir.
 Par mes diverses expériences, j'ai découvert et aiguisé mes pratiques du craft, notamment par des ateliers de partage et de veille collective.
 

@@ -2,7 +2,7 @@
 
 {% set articles = [] %}
 {% for item in pages %}
-{% if item.src_path.startswith('blog') and not item.page == page and not item.page.meta.draft %}
+{% if item.page.meta.template == 'blog/post.html' and not item.page == page and not item.page.meta.draft %}
 {% set articles = articles.append( item ) %}
 {% endif %}
 {% endfor %}
