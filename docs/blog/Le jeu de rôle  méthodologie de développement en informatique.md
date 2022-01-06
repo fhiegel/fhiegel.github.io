@@ -5,8 +5,7 @@ draft: true
 # Le jeu de rôle : méthodologie de développement en informatique ?
 
 
-
-HEllo
+Hello
 
 Vous aimer jouer ? Moi oui. Ca tombe bien, l'amusement rest le meilleur levier/moteur de l'apprendtissage (voir source) et de l'évolution.
 

@@ -1,4 +1,5 @@
 ---
-template: blog.html
+template: blog/home.html
+title: Blog
+hide: toc
 ---
- OK

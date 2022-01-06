@@ -9,16 +9,19 @@ edit_uri: ""
 
 nav:
   - Accueil: index.md
-  - Blog: blog/index.md
-  - S'entraîner:
+  - Blog:
+    - Tous les articles: blog/index.md
+    - 2022:
+      - blog/2022/01/06/retour-du-blog.md
+  - Apprendre:
     - Deliberate Practice: topics/deliberate-practice/index.md
     - Katas: topics/katas/index.md
     - Coding Dojo: topics/coding-dojo/index.md
     - Katalogue:
       - FizzBuzz: topics/katas/FizzBuzz/index.md
       - Diamound: topics/katas/Diamound/index.md
-  - Apprendre:
-      - Disclaimer: topics/learn.md
+  - Partager:
+      - topics/learn/index.md
       - 🎓 Formations:
         - TDD: topics/tdd/index.md
         - S.O.L.I.D: topics/solid/index.md
@@ -49,6 +52,7 @@ theme:
   logo: assets/images/icon-128x128.png
   favicon: assets/images/favicon.png
   features:
+#    - navigation.indexes
     - navigation.sections
     - navigation.tabs
   palette:

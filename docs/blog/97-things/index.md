@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 97 choses que tout développeur devrait savoir (25/97)
 date: 2020-09-11
 description: |
