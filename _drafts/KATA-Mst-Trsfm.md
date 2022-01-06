@@ -3,6 +3,7 @@ title: 'Kata: Monster Transformations'
 date: 2019-07-02
 author: Faby
 ---
+https://gamefaqs.gamespot.com/gameboy/563273-the-final-fantasy-legend/faqs/16731
 
 When a monster beat another, he may receive a piece of meat, and have the possibility to eat it.
 Monsters can change into other monsters depending on what meat they eat. This
