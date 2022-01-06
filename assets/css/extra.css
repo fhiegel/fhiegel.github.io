@@ -1,4 +1,59 @@
 .icon-accent {
-    color:var(--md-accent-fg-color);
+    color: var(--md-accent-fg-color);
     opacity: 0.5;
+}
+
+/**
+* BLOG HOME
+*/
+
+.blog__item-teaser {
+}
+
+.blog__item-teaser:not(:first-child) {
+    border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+    display: flow-root;
+    margin: 1.5em 0;
+}
+
+h2.blog__item-title {
+    margin: 1em 0 0;
+}
+
+.blog__item-info {
+    display: flex;
+    font-size: .7em
+}
+
+.blog__item-info :not(:first-child)::before {
+    content: "\00a0|";
+}
+
+.blog__item-excerpt {
+    margin: 1.6em 0 0;
+}
+
+.blog__item-continue-reading{
+    font-weight: bold;
+}
+
+/**
+* POST
+*/
+
+.post--header h1 {
+    margin: 0;
+}
+
+.post--header {
+    margin: 0 0 1.25em;
+}
+
+.post--info {
+    display: flex;
+    font-size: .8em;
+}
+
+.post--info :not(:first-child)::before {
+    content: "\00a0|\00a0";
 }
