@@ -138,4 +138,6 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        'learn/presentations/good-morning-learning/slides/en.md': 'https://fhiegel.github.io/mnemorize'
+        'learn/presentations/good-morning-learning/': 'topics/good-morning-learning/index.md'
+        'learn/presentations/good-morning-learning/slides/': 'topics/good-morning-learning/slides/index.md'
+        'learn/presentations/good-morning-learning/slides/en.md': 'topics/good-morning-learning/slides/en.md'
