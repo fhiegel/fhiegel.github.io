@@ -1,6 +1,5 @@
 ---
 draft: true
-
 title: 'HOWTO: Use of JaCoCo'
 description: >
   Comment produire un rapport de couverture de code, sur une application Java multi-module,
