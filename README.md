@@ -21,7 +21,7 @@ If you forgot the "--recursive" part, don't worry and do the following
 
 Install MkDocs and plugins, then run it
 
-    pip install mkdocs mkdocs-material
+    pip install "jinja2>=2.11.1" mkdocs mkdocs-material "mkdocs-redirects>=1.0.3"
     mkdocs serve
 
 

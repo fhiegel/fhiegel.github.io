@@ -1,7 +1,8 @@
 # Project information
 site_name: Exceller Ensemble
 site_url: https://fhiegel.github.io
-site_description: Mu Own Website
+site_description: >
+    Mon espace d'expression, permettant d'apprendre et de partager ma vision de l'Agilité ert du Software Craftsmanship, dans le fun et poure le plaisir.
 repo_url: https://github.com/fhiegel/fhiegel.github.io
 edit_uri: ""
 

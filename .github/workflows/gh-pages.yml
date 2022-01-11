@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          pip install jinja2~=2.11.1 mkdocs mkdocs-material mkdocs-redirects==1.0.3
+          pip install "jinja2>=2.11.1" mkdocs mkdocs-material "mkdocs-redirects>=1.0.3"
           mkdocs build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
