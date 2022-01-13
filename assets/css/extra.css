@@ -57,3 +57,27 @@ h2.blog__item-title {
 .post--info :not(:first-child)::before {
     content: "\00a0|\00a0";
 }
+
+/**
+* Decorated blockquote
+*/
+
+blockquote .decorated {
+    padding-left: 1.3rem;
+    position:relative;
+}
+
+blockquote .decorated:before {
+    content: "";
+    position:absolute;
+    height: 1rem;
+    width: 1rem;
+    left: 0;
+    background-color: #9e9e9e;
+    -webkit-mask-image: var(--md-admonition-icon--quote);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-image: var(--md-admonition-icon--quote);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
