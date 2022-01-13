@@ -1,14 +1,15 @@
 ---
 template: blog/post.html
+date: 2022-01-06
 title: Le Retour du blog
 description: >
     Le retour de blog : Comment relancer un rythme de production pour un gain toujours plus malin.
     J'ai décidé de me (re)mettre à produire du contenu, et voici mon plan d'action.
-date: 2022-01-06
 tags:
 - Veille
 - Motivation
 - Partage
+done: in-time
 ---
 
 Comme je ne cesse de parler autour de moi de veille active et passive, il est temps de passer la seconde pour améliorer mon propre process de veille avec davantage de proactivité. 
@@ -32,7 +33,7 @@ Pour moi, sera donc l'article sous vos yeux.
 ### Gamifier
 
 Je trouve que les mécanismes autour de la [gamification][] (ou ludification en français), sont très intéressantes.
-Elles agissent sur des leviers de motivations en trouvant des façons de rendre amusantes, des choses qui ne le sont pas.
+Elles agissent sur des leviers de motivations en trouvant des façons de rendre amusantes des choses qui ne le sont pas.
 
 Mon objectif est de publier une fois par semaine, le jeudi.
 Aussi, je vais compter et afficher sur une fresque les fois où j'arrive à publier le jeudi.
@@ -42,9 +43,9 @@ Cette manière de faire va activer les motivations fondamentales :
 
 - **"Accomplissement"** : voir que j'arrive à produire des choses
 - **"Peur de la perte"** : si je rate le coche, je perds une "case verte" et je me vois infliger une "case rouge".
-    Je ne sais pas encore exactement commet je vais illustrer cette fresque,
+    Je ne sais pas encore exactement comment je vais illustrer cette fresque,
     mais l'idée est de représenter la perte par une action négative (ex: se faire manger par un zombie) et d'éviter cette situation.
-- **"Pression sociale"** : afficher mes réalisations en public, entraîne une pression qui me force à tenir mes engagements. Je détaille ci-dessous
+- **"Pression sociale"** : afficher mes réalisations en public, entraîne une pression qui me force à tenir mes engagements. Je détaille ci-dessous.
 
 ### Travailler et apprendre en public
 
@@ -53,7 +54,7 @@ Cette manière de faire va activer les motivations fondamentales :
 Travailler sous les yeux d'autres personnes, est un moyen de mettre une pression positive sur son travail.
 Par la volonté de bien faire pour les autres, elle permet d'améliorer l'attention portée à la réalisation et la motivation à achever la tâche.
 Il s'agit d'une manière de faire assez répandue chez les pratiquants du Pair-Programming et du Mob-Programming. 
-D'aileurs, dans le cadre du Pair-Programming, cette pression s'appelle la "Pair Pressure".
+D'ailleurs, dans le cadre du Pair-Programming, cette pression s'appelle la "Pair Pressure".
  
 Mais cette pratique est abordée dans d'autres contextes.
 
@@ -110,8 +111,9 @@ Quelques buzzwords en vrac :
 Au demeurant, j'envisage de ne rien aborder de très technologique, mais plutôt des pistes pour évoluer et s'adapter dans un écosystème riche et effervescent.
 Et le tout, en français !
 
-<hr>
-Merci de m'avoir lu, et bonne journée 🌞
+--- 
+
+Merci de m'avoir lu et bonne journée 🌞
 <br>
 Fabien
 

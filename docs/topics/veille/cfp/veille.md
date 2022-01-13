@@ -1,17 +1,17 @@
 ---
-title: "Comment apprendre en continue avec ma veille technologique"
+title: "Comment apprendre en continu avec ma veille technologique"
 ---
 
 # Formation de Noël
 
-## Comment apprendre en continue avec ma veille technologique
+## Comment apprendre en continu avec ma veille technologique
 
 Description
 
-Qu'est ce que "Apprendre" ? Est ce quelque chose que vous faites régulièrement ? Ponctuellement ? Seul ou en groupe ?
+Qu'est-ce que "Apprendre" ? Est-ce quelque chose que vous faites régulièrement ? Ponctuellement ? Seul ou en groupe ?
 En utilisant le prétexte de la veille technologique, nous explorerons quelques outils que nous pouvons mettre en place au quotidien, pour apprendre ensemble, en continu.
 
-Bénéfices participant
+Bénéfices participants
 
 Comprendre les mécanismes de la veille
 Découvrir une méthodologie et des outils, que vous pourrez adapter pour faire votre veille
@@ -23,7 +23,7 @@ S’approprier des arguments pour promouvoir la veille autour de vous
 
 Qui a déjà entendu la question "Comment est-ce que vous faites votre veille ?" en entretien de recrutement ? Cette question peut faire peur, bloquer un candidat, ou, au contraire ouvrir une discussion à condition de savoir ce qu'est la "veille technologique".
 
-📜  _Est-ce que vous avez déjà choisi un livre ?_
+📜 _Est-ce que vous avez déjà choisi un livre ?_
 
 Explorons cette question afin de mettre des mots sur la "veille".
 Regardons ce que la veille peut apporter, à nous-même, à notre projet et à notre entreprise.

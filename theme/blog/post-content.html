@@ -2,12 +2,14 @@
     <h1>{{ page.title | d(config.site_name, true)}}</h1>
     {# TODO: ici, les "mots" sont en fait l'ensemble des caractères de la page #}
     {% set words = page.content | list | length %}
-    {% set words_per_minute = page.words_per_minute | default(200 * 6) %}
+    {% set average_char_per_word = 6 %}
+    {% set words_per_minute = page.words_per_minute | default(200 * average_char_per_word) %}
     <div class="post--info">
         <span>📅 {{ page.meta.date }}</span>
         <span>🕓 {{ words // words_per_minute }} minutes de lecture</span>
         {% if page.meta.debug %}
-        <span>({{ words }} caractères)</span>
+        <span>📝 {{ words }} caractères</span>
+        <span>✒️ ~{{ words // average_char_per_word }} mots </span>
         {% endif %}
     </div>
 </div>

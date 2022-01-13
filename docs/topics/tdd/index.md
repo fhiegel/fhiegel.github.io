@@ -2,7 +2,7 @@
 title: 'Test Driven Development - Développer avec Qualité'
 description: >
     Centralisation des informations permettant de développer et tester des applications
-    dans un contexte professionnel
+    dans un contexte professionnel.
 ---
 
 !!! quote "Raison d'être de la formation"
