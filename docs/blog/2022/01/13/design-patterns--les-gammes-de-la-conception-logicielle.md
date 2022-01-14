@@ -102,7 +102,7 @@ Voici une liste non exhaustive des Schémas de la Programmation :
 
 - Le livre [Design Patterns: Elements of Reusable Object-Oriented Software][], qui présente des Patterns comme la `Factory Method`, l'`Observer`, le `Decorator`.
 - Les Patterns d'Architecture, par exemple ceux de Martin Fowler : [Catalog of Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/), avec des choses comme le `Repository`, les `Layers`, le `MVC`
-- [Les Anti-Patters de code](https://sourcemaking.com/antipatterns)
+- [Les Anti-Patterns de code](https://sourcemaking.com/antipatterns)
 - Les Principes [S.O.L.I.D](https://codersite.dev/solid-principles-the-definitive-guide/)
 - L'architecture Hexagonale, l'architecture en oignon
 
@@ -166,7 +166,7 @@ Fabien
 - 📖 [The Programmer's Brain][], par Felienne Hermans.
 - 🔗 [Catalog of Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/), par Martin Fowler.
 - 🔗 [Refactoring Guru - Patrons de Conception](https://refactoring.guru/fr/design-patterns)
-- 🔗 [Source Making - Les Anti-Patters](https://sourcemaking.com/antipatterns),
+- 🔗 [Source Making - Les Anti-Patterns](https://sourcemaking.com/antipatterns),
 
 
 *[GoF]: Gang Of Four : les quatre auteurs du livre 
