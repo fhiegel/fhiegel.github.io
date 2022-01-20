@@ -20,9 +20,18 @@
         <h2 class="blog__item-title">
             <a href="{{ item.page.url | url}}" class=""> {{ item.page.title }} </a>
         </h2>
-        {# TODO: ici, les "mots" sont en fait l'ensemble des caractères de la page #}
-        {% set words = item.page.content | list | length %}
-        {% set words_per_minute = item.page.words_per_minute | default(200 * 6) %}
+        {%- set average_char_per_word = 6 -%}
+        {%- set words_per_minute = item.page.words_per_minute | default(200) -%}
+        {%- if item.page.meta.characters -%}
+        {%- set characters = item.page.meta.characters -%}
+        {%- else -%}
+        {%- set characters = item.page.content | list | length -%}
+        {%- endif -%}
+        {%- if item.page.meta.words -%}
+        {%- set words = item.page.meta.words -%}
+        {%- else -%}
+        {%- set words = characters // average_char_per_word -%}
+        {%- endif %}
         <div class="blog__item-info">
             <span>
                 <span class="twemoji">{% include ".icons/octicons/calendar-24.svg" %}</span>
@@ -34,7 +43,7 @@
             </span>
             {% if item.page.meta.debug %}
             <span>
-                ({{ words }} caractères)
+                ({{ characters }} caractères)
             </span>
             {% endif %}
         </div>

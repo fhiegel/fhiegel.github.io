@@ -164,6 +164,7 @@ Fabien
 - 📖 [Design Patterns: Elements of Reusable Object-Oriented Software][], l'ouvrage de référence
 - 📖 [Patterns of Enterprise Application Architecture](https://martinfowler.com/books/eaa.html), par Martin Fowler.
 - 📖 [The Programmer's Brain][], par Felienne Hermans.
+- 🔗 [Design Patterns - Vince Huston](http://www.vincehuston.org/dp/), des schémas, des explications et des exemples de C++ et Java sur les Design Patterns du Gof.
 - 🔗 [Catalog of Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/), par Martin Fowler.
 - 🔗 [Refactoring Guru - Patrons de Conception](https://refactoring.guru/fr/design-patterns)
 - 🔗 [Source Making - Les Anti-Patterns](https://sourcemaking.com/antipatterns),

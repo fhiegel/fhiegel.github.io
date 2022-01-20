@@ -13,6 +13,7 @@ nav:
   - Blog:
     - Tous les articles: blog/index.md
     - 2022:
+      - blog/2022/01/20/design-patterns--factory-method.md
       - blog/2022/01/13/design-patterns--les-gammes-de-la-conception-logicielle.md
       - blog/2022/01/06/retour-du-blog.md
   - Apprendre:
@@ -135,6 +136,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
 
 plugins:
   - search
