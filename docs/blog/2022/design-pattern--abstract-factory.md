@@ -2,16 +2,29 @@
 debug: true
 draft: true
 template: blog/post.html
-date: 2022-01-13
-title: "Modèle pour un article"
+date: 2022-01-27
+title: "Martin et le Pattern \"Abstract Factory\"
 description: >
-    Ce fichier sert de modèle pour mettre en pace rapidement un article sur le blog.
+    On revient sur l'histoire de Martin, qui voudrait améliorer son atelier.
+    Il va utiliser une astuce et in troiduire le Design Pattern "Abstract Factory" 
 tags:
-- Veille
-- Motivation
-- Partage
+- Design Patterns
+- Création
+- Factory
+- Conception logicielle
+- Martin
 ---
+À charger le camion.
 
+- ordinjateur de jeu, + bureautique + "standard"
+- plusieurs construicteurs : Martyin, Dell :bell: , Apple
+
+=> Déjà implémenté !!!
+
+==> Clarification sure les différentes Fabriques/Factories
+- Factory method
+- Abstract factory
+- Constructeur nommé / Static factory
 
 **Sujet:** De quoi est ce que l'on souhaite parler[^1]
 **Public:** À qui est-ce que l'on s'adresse ?
@@ -31,6 +44,6 @@ Fabien
 - 🔗 [Factory Method - Vince Huston](http://www.vincehuston.org/dp/factory_method.html) : des schémas, des explications et des exemples de C++ et Java sur les Design Patterns du Gof.
 - 🔗 [Fabrique - Refactoring Guru](https://refactoring.guru/fr/design-patterns/factory-method) : toujours très complets, et en français.
 
-[^1]: Renvoie Pied de page, par exemple pour faire une parenthèse sur un sujet évoqué
-*[Auteur]: Note inlinée permettant de décrire un auteur (par exemple)
+[^1]: Renvoie Pied de page
+*[Public]: Note inlinée
 [transmettre]: /un/lien/vers/transmettre

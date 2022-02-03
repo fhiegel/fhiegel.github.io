@@ -5,7 +5,7 @@ template: blog/post.html
 date: 2022-01-20
 title: "Martin et le Pattern Factory Method"
 description: >
-    Partons à la découverte du "Factory Method", Pattern de Création issu du livre _Design Patterns: Elements of Reusable Object-Oriented Software_,
+    Partons à la découverte du "Factory Method", Pattern de Création issu du livre <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>,
     en suivant Martin, fin bricoleur, qui aide ses amis à construire leurs ordinateurs.
 tags:
 - Design Patterns
@@ -313,6 +313,3 @@ Fabien
 
 *[GoF]: Design Patterns: Elements of Reusable Object-Oriented Software
 *[refactorer]: Changer la structure du code, sans en changer le comportement.
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>

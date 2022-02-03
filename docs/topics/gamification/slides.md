@@ -166,7 +166,7 @@ https://yukaichou.com/gamification-study/8-core-drives-gamification-2-developmen
 ### Core #3
 
 Note:
-Encouragement à la créativité et au feedback
+Renforcement de la créativité et au feedback
 
 https://yukaichou.com/gamification-study/8-core-drives-gamification-3-empowerment-creativity-feedback/
 
@@ -215,7 +215,7 @@ https://yukaichou.com/gamification-study/the-8-core-drives-of-gamification-7-unp
 
 Note:
 "Perte & Évitement"
-https://yukaichou.com/gamification-study/8-loss-and-avoidance/
+    https://yukaichou.com/gamification-study/8-loss-and-avoidance/
 
 --
 
