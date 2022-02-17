@@ -13,6 +13,7 @@ nav:
   - Blog:
     - Tous les articles: blog/index.md
     - 2022:
+      - blog/2022/02/17/cafe-veille-vaisselle.md
       - blog/2022/02/03/la-procrastination.md
       - blog/2022/01/20/design-patterns--factory-method.md
       - blog/2022/01/13/design-patterns--les-gammes-de-la-conception-logicielle.md

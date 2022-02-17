@@ -28,8 +28,9 @@ Du coup, cette semaine, je vous explique ce qu'est la procrastination.
 ## Qu'est-ce que la procrastination
 
 !!! info "L'instant savant"
-Procrastiner, est un mot issu du latin, pro : « en avant », crastinatus « du lendemain ». Il s'agit de la tendance à «
-remettre les choses au lendemain ».
+
+    Procrastiner, est un mot issu du latin, pro : « en avant », crastinatus « du lendemain ».
+    Il s'agit de la tendance à «remettre les choses au lendemain ».
 
 Comme vous pourriez l'apprendre dans l'excellent MOOC [Learning How To Learn (Barbara Oakley)][Learning How To Learn],
 la procrastination est une réaction normale du cerveau face à une tâche désagréable. Le cerveau pense alors à quelque
