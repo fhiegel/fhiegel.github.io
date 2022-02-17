@@ -6,26 +6,26 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Mon espace d'expression, permettant d'apprendre et de partager ma vision de l'Agilité ert du Software Craftsmanship, dans le fun et poure le plaisir.
+        <meta name="description" content="Ce fichier sert de modèle pour mettre en pace rapidement un article sur le blog.
 ">
       
       
       
-        <link rel="canonical" href="https://fhiegel.github.io/blog/2022/design-pattern--abstract-factory/">
+        <link rel="canonical" href="https://fhiegel.github.io/blog/2022/02/10/fondamentaux--les%20katas/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>Design pattern abstract factory - Exceller Ensemble</title>
+        <title>Modèle pour un article - Exceller Ensemble</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.e6a45f82.min.css">
         
           
           
@@ -43,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/css/extra.css">
+      <link rel="stylesheet" href="../../../../../assets/css/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deliberate-practice" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Exceller Ensemble" class="md-header__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
+    <a href="../../../../.." title="Exceller Ensemble" class="md-header__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
       
-  <img src="../../../assets/images/icon-128x128.png" alt="logo">
+  <img src="../../../../../assets/images/icon-128x128.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Design pattern  abstract factory
+              Modèle pour un article
             
           </span>
         </div>
@@ -171,7 +176,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../../../../.." class="md-tabs__link">
       Accueil
     </a>
   </li>
@@ -186,7 +191,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../../../" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -202,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../topics/deliberate-practice/" class="md-tabs__link">
+      <a href="../../../../../topics/deliberate-practice/" class="md-tabs__link">
         Apprendre
       </a>
     </li>
@@ -218,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../topics/learn/" class="md-tabs__link">
+      <a href="../../../../../topics/learn/" class="md-tabs__link">
         Partager
       </a>
     </li>
@@ -234,7 +239,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../me/bio/" class="md-tabs__link">
+      <a href="../../../../../me/bio/" class="md-tabs__link">
         A propos
       </a>
     </li>
@@ -262,9 +267,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Exceller Ensemble" class="md-nav__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
+    <a href="../../../../.." title="Exceller Ensemble" class="md-nav__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
       
-  <img src="../../../assets/images/icon-128x128.png" alt="logo">
+  <img src="../../../../../assets/images/icon-128x128.png" alt="logo">
 
     </a>
     Exceller Ensemble
@@ -292,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         Accueil
       </a>
     </li>
@@ -333,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../../" class="md-nav__link">
         Tous les articles
       </a>
     </li>
@@ -375,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02/17/cafe-veille-vaisselle/" class="md-nav__link">
+      <a href="../../17/cafe-veille-vaisselle/" class="md-nav__link">
         Le Café, la Veille, ou comment j'ai pris l'habitude de faire la vaisselle.
       </a>
     </li>
@@ -389,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02/03/la-procrastination/" class="md-nav__link">
+      <a href="../../03/la-procrastination/" class="md-nav__link">
         La procrastination : le REX
       </a>
     </li>
@@ -403,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01/20/design-patterns--factory-method/" class="md-nav__link">
+      <a href="../../../01/20/design-patterns--factory-method/" class="md-nav__link">
         Martin et le Pattern Factory Method
       </a>
     </li>
@@ -417,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01/13/design-patterns--les-gammes-de-la-conception-logicielle/" class="md-nav__link">
+      <a href="../../../01/13/design-patterns--les-gammes-de-la-conception-logicielle/" class="md-nav__link">
         Les Design Patterns : les Gammes de la conception logicielle
       </a>
     </li>
@@ -431,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01/06/retour-du-blog/" class="md-nav__link">
+      <a href="../../../01/06/retour-du-blog/" class="md-nav__link">
         Le Retour du blog
       </a>
     </li>
@@ -486,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/deliberate-practice/" class="md-nav__link">
+      <a href="../../../../../topics/deliberate-practice/" class="md-nav__link">
         Deliberate Practice
       </a>
     </li>
@@ -500,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/katas/" class="md-nav__link">
+      <a href="../../../../../topics/katas/" class="md-nav__link">
         Katas
       </a>
     </li>
@@ -514,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/coding-dojo/" class="md-nav__link">
+      <a href="../../../../../topics/coding-dojo/" class="md-nav__link">
         Coding Dojo
       </a>
     </li>
@@ -556,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/katas/FizzBuzz/" class="md-nav__link">
+      <a href="../../../../../topics/katas/FizzBuzz/" class="md-nav__link">
         FizzBuzz
       </a>
     </li>
@@ -570,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/katas/Diamound/" class="md-nav__link">
+      <a href="../../../../../topics/katas/Diamound/" class="md-nav__link">
         Diamound
       </a>
     </li>
@@ -625,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/learn/" class="md-nav__link">
+      <a href="../../../../../topics/learn/" class="md-nav__link">
         Ateliers & Formations
       </a>
     </li>
@@ -667,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/tdd/" class="md-nav__link">
+      <a href="../../../../../topics/tdd/" class="md-nav__link">
         TDD
       </a>
     </li>
@@ -681,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/solid/" class="md-nav__link">
+      <a href="../../../../../topics/solid/" class="md-nav__link">
         S.O.L.I.D
       </a>
     </li>
@@ -730,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/sensibiliser-aux-tests-unitaires/" class="md-nav__link">
+      <a href="../../../../../topics/sensibiliser-aux-tests-unitaires/" class="md-nav__link">
         Tests Unitaires - Sensibiliser sans coder
       </a>
     </li>
@@ -779,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/gamification/" class="md-nav__link">
+      <a href="../../../../../topics/gamification/" class="md-nav__link">
         Gamification
       </a>
     </li>
@@ -793,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/good-morning-learning/" class="md-nav__link">
+      <a href="../../../../../topics/good-morning-learning/" class="md-nav__link">
         Good Morning Learning
       </a>
     </li>
@@ -807,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../topics/pair-programming/" class="md-nav__link">
+      <a href="../../../../../topics/pair-programming/" class="md-nav__link">
         Pair-Programming
       </a>
     </li>
@@ -862,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../me/bio/" class="md-nav__link">
+      <a href="../../../../../me/bio/" class="md-nav__link">
         Bio
       </a>
     </li>
@@ -876,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../me/cv/" class="md-nav__link">
+      <a href="../../../../../me/cv/" class="md-nav__link">
         CV
       </a>
     </li>
@@ -890,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../me/nocv/" class="md-nav__link">
+      <a href="../../../../../me/nocv/" class="md-nav__link">
         NoCV
       </a>
     </li>
@@ -911,37 +916,156 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deliberate-practice" class="md-nav__link">
+    Deliberate practice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratiquer-un-kata" class="md-nav__link">
+    Pratiquer un Kata
+  </a>
+  
+    <nav class="md-nav" aria-label="Pratiquer un Kata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercice" class="md-nav__link">
+    Exercice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contraintes" class="md-nav__link">
+    Contraintes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reussir-un-kata" class="md-nav__link">
+    Réussir un Kata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mises-en-situation-gammes" class="md-nav__link">
+    Mises en situation == Gammes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kata-prefere" class="md-nav__link">
+    Kata préféré
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-                
+<div class="post--header">
+    <h1>Modèle pour un article</h1>
+    <div class="post--info">
+        <span>📅 2022-01-13</span>
+        <span>🕓 3 minutes de lecture</span>
+        
+        <span>📝 4453 caractères</span>
+        <span>✒️ ~742 mots </span>
+        
+    </div>
+</div>
 
-
-  <h1>Design pattern  abstract factory</h1>
-
-<ul>
-<li>Design Patterns</li>
-<li>Création</li>
-<li>Factory</li>
-<li>Conception logicielle</li>
-<li>Martin</li>
-</ul>
-<hr />
-<p>À charger le camion.</p>
-<ul>
-<li>ordinjateur de jeu, + bureautique + "standard"</li>
-<li>plusieurs construicteurs : Martyin, Dell <img alt="🔔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f514.svg" title=":bell:" /> , Apple</li>
-</ul>
-<p>=&gt; Déjà implémenté !!!</p>
-<p>==&gt; Clarification sure les différentes Fabriques/Factories
-- Factory method
-- Abstract factory
-- Constructeur nommé / Static factory</p>
-<p><strong>Sujet:</strong> De quoi est ce que l'on souhaite parler<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
-<strong><abbr title="Note inlinée">Public</abbr>:</strong> À qui est-ce que l'on s'adresse ?
-<strong>Objectif:</strong> Que souhaite-t-on <a href="/un/lien/vers/transmettre">transmettre</a> à ce public ?
-<strong>Format:</strong> Quel Format pour le sujet ?</p>
+<!-- Markdown content -->
+<p>Kata dans les arts martiaux</p>
+<p>Kata dans le développement en informatique</p>
+<p>Dans le jargon informatique, un <strong>Kata</strong> est un exercice de programmation, où l'énoncé est relativement court,
+et de difficulté variable.
+Le terme <strong>Kata</strong> fait référence aux arts martiaux, car l'exercice est fait pour être pratiqué encore et encore, en
+découvrant à chaque fois de nouvelles choses.</p>
+<h2 id="deliberate-practice">Deliberate practice<a class="headerlink" href="#deliberate-practice" title="Permanent link">&para;</a></h2>
+<p>Objectif</p>
+<blockquote>
+<p>Entrainement en pleine conscience
+Pratique déterminée et systématique (purposeful and systematic)</p>
+<p>If nothing change, nothing will change</p>
+<p>Le plus dur c'est de rester concentré sur ce qu'on veut améliorer. effort + concentration</p>
+<p>Zanshin : complete awerness of body an mind. Anecdote du maînte en tir à l'arc</p>
+<p>Strop Learning and start practice :
+Passive Learning =&gt; knowledge
+Active Learning =&gt; skill</p>
+<p>Focus on the <strong>process</strong> not the product
+Focus on getting good, not making it big</p>
+</blockquote>
+<p><strong>Shu :</strong> le disciple apprend les fondamentaux en suivant les règles édictées par le maître
+<strong>Ha :</strong> ayant maîtrisé les fondamentaux, le disciple applique les règles en les questionnant, en comprenant leurs subtilités et en cherchant les exceptions
+<strong>Ri :</strong> le disciple ayant maîtrisé les règles, peut les transcender et les adapter</p>
+<h2 id="pratiquer-un-kata">Pratiquer un Kata<a class="headerlink" href="#pratiquer-un-kata" title="Permanent link">&para;</a></h2>
+<p>Dans le jargon informatique, un <strong>Kata</strong> est un exercice de programmation, où l'énoncé est relativement court,
+et de difficulté variable.
+Le terme <strong>Kata</strong> fait référence aux arts martiaux, car l'exercice est fait pour être pratiqué encore et encore, en
+découvrant à chaque fois de nouvelles choses.</p>
+<h3 id="exercice">Exercice<a class="headerlink" href="#exercice" title="Permanent link">&para;</a></h3>
+<p>Prétexte pour se mettre en situation
+Parallèle avec l'entraienement à l'alerte incendie </p>
+<h3 id="contraintes">Contraintes<a class="headerlink" href="#contraintes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>If nothing change, nothing will change</p>
+</blockquote>
+<h3 id="reussir-un-kata">Réussir un Kata<a class="headerlink" href="#reussir-un-kata" title="Permanent link">&para;</a></h3>
+<p>Réussir ou non un kata dépend de l'objectif que tu t'es fixé au moment de le commencer.</p>
+<p>Fabien  il y a 2 heures
+Quelques pistes :
+est-ce-que tu as appris quelque chose ?
+est-ce-que tu as eu plaisir à le faire ?
+est-ce que tu as essayé un nouveau kata ?
+est-ce que tu as "fini" le kata (ie. est-ce que tu as répondu à toutes les fonctionnalités demandées par l'énoncé)
+est-ce que tu as essayé un nouveau langage ?
+est-ce que tu as essayé un nouveau paradigme de programmation ?
+est-ce que tu as essayé une méthodologie de développement spécifique (TDD, TCR, micro-commit, etc.) ?
+est-ce tu as fait du Pair/Mob/Ensemble_ Programming ?
+est-ce que ton kata se déploie sur un environnement de "prod" ?</p>
+<h2 id="mises-en-situation-gammes">Mises en situation == Gammes<a class="headerlink" href="#mises-en-situation-gammes" title="Permanent link">&para;</a></h2>
+<p>(- Dojo -&gt; J'aimerai éviter d'en parler)</p>
+<h2 id="kata-prefere">Kata préféré<a class="headerlink" href="#kata-prefere" title="Permanent link">&para;</a></h2>
+<p>Où on met tout ce qu'on connais de la discipline.
+À comparer avec le chef-d'œuvre des compagnons</p>
+<p>Les kata - compilation pour adresser tous les problèmes du dev</p>
 <hr />
 <p>Merci de m'avoir lu et bonne journée 🌞
 <br>
@@ -956,12 +1080,14 @@ Fabien</p>
 <hr />
 <ol>
 <li id="fn:1">
-<p>Renvoie Pied de page&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Renvoie Pied de page, par exemple pour faire une parenthèse sur un sujet évoqué&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
 
-              
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
             </article>
           </div>
         </div>
@@ -1012,10 +1138,10 @@ Fabien</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../../../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8aa65030.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>
