@@ -1,0 +1,249 @@
+---
+template: reveal.html
+back-url: '/learn/presentations/gamification/'
+back-label: Gamification
+---
+<style>
+blockquote.quote {
+    background-color:white;
+    opacity: 0.8;
+    border-radius: 3rem;
+    padding: 3rem;
+    box-shadow: none;
+}
+
+.cells {
+    display: flex;
+    justify-content: space-between;
+}
+
+</style>
+
+<!-- .slide: data-background-color="#111111" data-background-opacity="1" -->
+<!-- .slide: data-background-image="https://images.unsplash.com/photo-1553481187-be93c21490a9" data-background-opacity="0.7"-->
+
+# Gamification
+## Ludification
+
+---
+
+# Le Jeu
+
+Note :
+
+Activité destinée à faire passer agréablement le temps à celui qui s'y livre.
+
+--
+
+> <!-- .element: class="quote" -->
+> Les jeux sont des obstacles optionnels auxquels nous nous confrontons volontairement
+>
+> -- Jane McGonigal
+
+Note:
+
+Chaque obstacle vient avec son propre mécanisme et sa propre manière se de faire surmonter.
+
+**Jane McGonigal** est une conceptrice de jeux américaine et auteure qui prône l'utilisation des technologies
+numériques, la psychologie positive et la coopération.
+
+--
+
+> <!-- .element: class="quote" -->
+> La Gamification est l'art de détourner tous les éléments amusants et attrayants des jeux,
+> pour les utiliser dans le monde réel, ou sur des activités de production.
+>
+> -- Yu-kai Chou
+ 
+Note:
+
+Auteur du livre « Actionable Gamification ».
+
+Yu-Kai Chou est un auteur taïwano-américain qui travaille depuis une quinzaine d’années sur le sujet de la gamification.
+Il a aidé de nombreuses entreprises (Lego, ebay, Volkswagen, …) à rendre l’expérience de leurs clients ou de leurs employés plus ludiques.
+
+--
+
+## Gamification <br>≠<br> Créer un jeu
+
+--
+
+## Gamification <br>≠<br> Outils
+
+
+Notes:
+
+Points, Badges and Leaderboards ne sont pas de la gamification
+
+Gamification : l'industrie du jeu a été la première à maîtriser le "human-focused design" permettant d'influer sur la motivation et l'engagement.
+Aujourd'hui, nous aprenons à partir des jeux.
+
+--
+
+## Human-Focused <br> Design
+
+Note:
+
+Se poser la question "Qu'est ce qui va faire que les personnes intéressées utilisent ce que je propose ?"
+
+A ne pas confondre avec Human Centered Design, ou User-Centric Design
+
+Fonction-focused = faire le boulot vite et efficacement.
+Human-Focused Design = optimise la motivation des êtres humains qui l'utilisent, plutôt que de s'intéresser à une pure efficacité fonctionnelle.
+
+--
+
+### Finalité
+
+<h2 class="fragment">Changer les comportements</h3>
+<h2 class="fragment">Inciter à l'action</h3>
+<h2 class="fragment">Créer des habitudes</h3>
+
+---
+
+# Motivation
+
+--
+
+## Motivation == Energie
+
+Note:
+
+Motivation == Energie pour agir
+
+Core drive = Motivations fondamentale
+
+--
+
+<h2 class="fragment">Emotions</h2>
+<h2 class="fragment">Contraintes</h2>
+<h2 class="fragment">Relations</h2>
+<h2 class="fragment">Idée de progrès</h2>
+
+Note:
+
+4 Grandes dynamiques
+
+--
+
+## Intrinsèque
+
+Note:
+> Qui est inhérent, indépendamment de tous les facteurs extérieurs.
+
+La motivation dite intrinsèque, qui se procure par l’intérêt et le plaisir que l’individu trouve à l’action, sans attente de récompense externe
+
+--
+
+## Extrinsèque
+
+Note:
+> Qui est extérieur à l'objet que l'on considère; qui ne lui appartient pas mais dépend des circonstances, de faits accessoires.
+
+logique de gain de points ou de badges, et une mise en importance de sa place par le biais de classements.
+
+---
+
+# Comment réussir sa gamification ?
+
+
+Notes: 
+5 Composants clés
+
+--
+
+## Objectifs
+
+Notes :
+
+Busniess Metrics == Game Objectives
+
+--
+
+## Joueurs
+
+Notes :
+
+Users == Players.
+Il faut connaître ses joueurs pour les satisfaire.
+Il existe des modèles pour les catégoriser.
+
+Richard Bartle: 
+- Les Accomplisseurs veulent agir sur le monde
+- Les Explorateurs veulent interagir avec le monde
+- Les Socialisateurs veulent interagir avec les joueurs.
+- Les Tueurs veulent agir sur les joueurs.
+
+Andrzej Marczewski qui va encore plus loin
+
+<!--
+- Les joueurs qui préfèrent accomplir des actions dans le contexte du jeu. 
+  Ces joueurs se donnent des objectifs précis et cherchent « rigoureusement » à les accomplir.
+  Trouver des trésors ou tuer une large quantité de monstres en sont des exemples types. Il les nomme les accomplisseurs [achievers].
+    - Les “Achievers” (qu’on pourrait traduire imparfaitement par “Accomplisseurs”) sont motivés par le fait de **progresser** et de **maitriser** le jeu. 
+      Ils vont chercher à maitriser tel geste technique ou telle stratégie.
+      Ils sont à l’affût de **challenges** et de **récompenses** qui les aident à avancer.
+- Les joueurs qui préfèrent explorer le jeu.
+  Ceux-ci cherchent à en savoir le plus possible sur l’univers médiatisé.
+  Au départ, on parle de la topologie du monde (explorer son étendue), éventuellement ceux-ci cherchent à expérimenter à l’intérieur du monde (explorer sa profondeur). Il les nomme les explorateurs.
+    - Les “Explorateurs” constituent le groupe le moins représenté dans la population.
+      Leur principale motivation réside dans l’**exploration** et la **découverte**.
+      Ce sont des joueurs très à l’aise dans les jeux qui offrent de **vastes mondes et univers à découvrir**.
+      Ils apprécient également de découvrir sans cesse de nouveaux jeux.
+- Les joueurs qui préfèrent socialiser avec les autres. 
+  Ceux-ci cherchent à interagir avec les autres joueurs, que ce soit par le biais de leur personnage fictionnel ou sur leur vie quotidienne. Il les nomme les socialisateurs.
+    - Les joueurs “Sociaux” apprécient avant tout le jeu quel qu’il soit (sport, jeu de société, jeux vidéo…) pour son côté **social**, 
+      pour la possibilité de **partager une expérience** avec d’autres personnes.
+      Ils apprécient tout particulièrement de jouer en équipe.
+- Les joueurs qui préfèrent s’imposer aux autres.
+  Ceux-ci trouvent tous les moyens qu’ils peuvent pour limiter le pouvoir d’action des autres et pour agir sur la « persona » des autres joueurs. Il les nomme les tueurs.
+    - Les “Combattants” (Fighters) jouent dans l’optique de **se mesurer aux autres**.
+      Si, comme les “Sociaux”, ils apprécient de jouer avec d’autres personnes, c’est avant tout dans une optique de **compétition**.
+      Rien ne compte plus qu’un bon **classement** ou une victoire à leurs yeux.
+-->
+
+--
+
+## Règles du jeu
+### Actions attendues
+
+Notes:
+
+Desired Actions = Win-States.
+Il faut dire aux joueurs ce qu'ils peuvent et ne peuvent pas faire.
+Dès qu'ils ont le comportement attendu, il faut pouvoir les récompenser.
+
+--
+
+## Mécaniques de Feedback
+
+Notes:
+
+Boucles de rétroaction
+Indices pour savoir s'ils sont en train de gagner/perdre
+
+--
+
+## Récompenses
+
+Notes:
+Incentives = Rewards
+
+Récompense possible dans le cadre de votre périmètre, pour récompenser les actions allant dans le sens attendu.
+Exemple : Stackoverflow
+
+Rajouter 2 autres Composants clés, facultatifs :
+- ne pas forcer les utilisateurs à utilsier ces éléments de jeu
+- Leur permettre d'échouer : pas de pression sociale
+
+---
+
+# Le Jeu a <br> un Cycle de vie
+
+Note:
+
+Notion de différentes étapes dans la vie d'un jeu.
+
+---
+
+# Merci ! 🧩
