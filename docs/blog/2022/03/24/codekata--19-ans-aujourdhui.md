@@ -1,5 +1,5 @@
 ---
-debug: true
+debug: false
 draft: false
 template: blog/post.html
 date: 2022-03-24

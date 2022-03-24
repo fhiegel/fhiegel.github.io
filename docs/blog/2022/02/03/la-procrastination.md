@@ -1,5 +1,5 @@
 ---
-debug: true 
+debug: false 
 words: 1670
 template: blog/post.html 
 date: 2022-02-03 
