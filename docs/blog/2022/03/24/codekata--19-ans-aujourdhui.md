@@ -1,6 +1,6 @@
 ---
 debug: false
-draft: false
+words: 2975
 template: blog/post.html
 date: 2022-03-24
 title: "Le CodeKata fête ses 19 ans : petit retour sur la pratique"
@@ -48,9 +48,8 @@ Dans le monde qui m'entoure, un **Kata** est un exercice de programmation, avec 
 
 Et souvent, ça s'arrête là. 
 
-Je trouve cela dommage, car la notion de **Kata**, prevenant des arts martiaux et plus précisément du karata, va plus loin. 
-Cette profondeur a bien été saisie par Dave Thomas[^1], qui introduit la notion de **CodeKata** 
-aux alentours du 24 mars 2003[^2] (:tada:) dans un article : [CodeKata: How It Started](http://codekata.com/kata/codekata-how-it-started/).
+Je trouve cela dommage, car la notion de **Kata**, prevenant des arts martiaux et plus précisément du karaté, va plus loin. 
+Cette profondeur a bien été saisie par Dave Thomas[^1], qui introduit la notion de **CodeKata** dans cet article : [CodeKata: How It Started](http://codekata.com/kata/codekata-how-it-started/), aux alentours du 24 mars 2003[^2] (:tada:).
 Cette paternité est également mentionnée dans le livre "The Coding Dojo Handbook" d'Emily Bache[^4].
 
 L'intention initiale du CodeKata allait bien au-delà de la réalisation d'un exercice de code.
@@ -101,7 +100,7 @@ Mais la pratique des Katas dans le Karaté ne s'arrête pas à l'excellence tech
 > À travers l'homme, les techniques deviennent un Art.<br>
 > L'Art ne fait pas l'Homme, l'Homme fait l'Art.
 >
-> -- Gichin Funakoshi, Karaté dô kyôhan : le livre du maître
+> -- Gichin Funakoshi, Karaté dô kyôhan
 
 La pratique des Katas utilise le prétexte de la technique pour entrainer le mental à faire face "au monde en toute lucidité" (_Karaté dô kyôhan_).
 Au-delà de la recherche de la perfection technique, en entretenant sa courtoisie, son ouverture aux critiques et son humilité,
@@ -311,7 +310,7 @@ connaître le langage que l'on utilise lors d'un CodeKata est indispensable.
 Et ce, même lorsque l'on choisit la contrainte "Nouveau langage".
 En ce cas, on va se concentrer sur un exercice simple pour découvrir les fonctionnalités du langage avant d'espérer aller plus loin.
 Pour aller plus loin sur un exercice, on aura toujours besoin d'un "maître", c'est-à-dire quelqu'un qui maitrise le langage 
-et vers qui se tourner lors de blocages : lors d'un CodoKata, rester bloqué ne nous permet pas d'apprendre. 
+et vers qui se tourner lors de blocages : lors d'un CodeKata, rester bloqué ne nous permet pas d'apprendre. 
 
 #### Les concepts
 
@@ -368,7 +367,7 @@ En se préparant à effectuer le CodeKata :
 > 
 > -- Kent Beck, about TCR 
 
-Je voudrais rappeler l'exemple de Kent Back[^5], qui, maîtrisant le TDD, a été confronté à une nouvelle pratique : 
+Je voudrais rappeler l'exemple de Kent Beck[^5], qui, maîtrisant le TDD, a été confronté à une nouvelle pratique : 
 le TCR (Test && Commit || Revert) ([article complet](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)). 
 Bien que détestant l'idée, il l'a essayé pour se forger une expérience ; c'est cet état d'esprit que je vous encourage à cultiver dans le CodeKata.
 
@@ -426,8 +425,7 @@ PS : j'ai réussi à écrire un article sur les Katas, sans parler de Dojo 😎
   Je l'ai toujours vu comme un catalogue de Kata. 
   Mais il contient également **toute la réflexion** autour de la question "Comment donner un cadre pour que les développeurs.seues s'entraînent ?".
 - 🔗 [Kata-Log](http://kata-log.rocks/)
-- [Karaté dô kyôhan][] - Le livre du maître - Gichin Funakoshi : il présente les textes fondateurs de la plume de maître Funakoshi ainsi que les photos du maître disparu
-- James Clear
+- Karaté dô kyôhan - Le livre du maître - Gichin Funakoshi : il présente les textes fondateurs de la plume de maître Funakoshi ainsi que les photos du maître disparu
 - [Gichin Funakoshi](https://www.franceshotokan.com/content/gichin-funakoshi) : Le fondateur du Karaté moderne
 
 [^1]: Dave Thomas | @PragDave | https://pragdave.me
@@ -437,7 +435,7 @@ Merci à Laurent Bossavit[^3] pour la confirmation de l'attribution et de la pé
 [archive internet de 2004](http://web.archive.org/web/20040507034122/http://www.codekata.com/cgi-bin/codekata.cgi)).
 [^3]: Laurent Bossavit | @Morendil | Technical Advisor at CodeWorks | Co-fondateur du Coding Dojo de Paris | https://leprechauns-book.tumblr.com
 [^4]: Emily Bache | @emilybache | http://coding-is-like-cooking.info
-[^5]: Kent Back | @KentBeck | Un des pères (si ce n'est LE) pères du TDD |Auteur de "Test Driven Development: By Example", "eXtreme Programmin Explained
-[^5]: Richard Hiegel | 5ième Dan du Karaté Shotokan, et 7ième Dan de la Fédération Française de Karaté | https://www.ten-no-mon.fr/a-propos-de-richard-hiegel/
+[^5]: Kent Beck | @KentBeck | Un des pères (si ce n'est LE) pères du TDD |Auteur de "Test Driven Development: By Example", "eXtreme Programmin Explained
+[^6]: Richard Hiegel | 5ième Dan du Karaté Shotokan, et 7ième Dan de la Fédération Française de Karaté | https://www.ten-no-mon.fr/a-propos-de-richard-hiegel/
 
 [refactoring-catalog]: https://refactoring.com/catalog/
