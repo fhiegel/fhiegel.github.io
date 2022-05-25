@@ -1,6 +1,9 @@
 ---
 template: reveal.html
 background-color: '#dddddd'
+tags:
+- Présentation
+- Pair-programming
 ---
 <style>
 blockquote.quote {
@@ -12,6 +15,7 @@ blockquote.quote {
 </style>
 
 # Pair-Programming
+## WIP Edition
 
 ---
 

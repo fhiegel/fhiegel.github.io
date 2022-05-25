@@ -425,8 +425,8 @@ PS : j'ai réussi à écrire un article sur les Katas, sans parler de Dojo 😎
   Je l'ai toujours vu comme un catalogue de Kata. 
   Mais il contient également **toute la réflexion** autour de la question "Comment donner un cadre pour que les développeurs.seues s'entraînent ?".
 - 🔗 [Kata-Log](http://kata-log.rocks/)
-- Karaté dô kyôhan - Le livre du maître - Gichin Funakoshi : il présente les textes fondateurs de la plume de maître Funakoshi ainsi que les photos du maître disparu
-- [Gichin Funakoshi](https://www.franceshotokan.com/content/gichin-funakoshi) : Le fondateur du Karaté moderne
+- 📚 Karaté dô kyôhan - Le livre du maître - Gichin Funakoshi : il présente les textes fondateurs de la plume de maître Funakoshi ainsi que les photos du maître disparu
+- 🧑 [Gichin Funakoshi](https://www.franceshotokan.com/content/gichin-funakoshi) : Le fondateur du Karaté moderne
 
 [^1]: Dave Thomas | @PragDave | https://pragdave.me
 [^2]: Cherchez la phrase "Yesterday I posted a blog entry about the importance of verbs." et constatez que le lien sur "blog entry", 

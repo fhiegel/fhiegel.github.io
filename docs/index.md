@@ -17,7 +17,7 @@ L'idée est aussi de **partager**. Il s'agit là de ma compréhension des sujets
     C'est-à-dire que vous pouvez en faire ce que vous voulez, à condition de créditer la ressource originelle (pas nécessairement de moi).
 * Si vous voulez plus de précisions sur un sujet, un article, un support, contactez-moi.
 
-Dans tous les cas, je prends tout les  retours _constructifs_ avec grand plaisir.
+Dans tous les cas, je prends tous les retours _constructifs_ avec grand plaisir.
 
 Bonne lecture et bonne journée 🌞
 <hr>

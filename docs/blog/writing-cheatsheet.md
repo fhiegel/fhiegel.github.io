@@ -1,6 +1,6 @@
 # Utiliser le modèle `.template.md` 
 
-Le modèle contient la structure technique nécessaire, et les question à se poser avnat de commencer à rédiger.
+Le modèle contient la structure technique nécessaire et les questions à se poser avant de commencer à rédiger.
 
 # Faire un plan et jeter ses idées
 
