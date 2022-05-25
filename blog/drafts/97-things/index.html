@@ -18,7 +18,7 @@ Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : Les
         <link rel="canonical" href="https://fhiegel.github.io/blog/drafts/97-things/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -26,10 +26,10 @@ Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : Les
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -378,6 +378,20 @@ Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : Les
           2022
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/05/25/pair-programming--pair-practice/" class="md-nav__link">
+        Pair-practice : Comment s'entraîner au pair-programming ?
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1330,16 +1344,16 @@ Ainsi, lorsque j'ai besoin de changer d'outils, je peux le faire facilement.</p>
 <p><img alt="image with no caption" src="images/dan_north.jpg" /></p>
 <p>Prenons l'exemple de deux codebases.</p>
 <p>Dans la première vous trouvez ceci :</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">portfolioIdsByTraderId</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">getId</span><span class="p">())</span>
-    <span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">portfolio</span><span class="p">.</span><span class="na">getId</span><span class="p">()))</span> <span class="p">{...}</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">portfolioIdsByTraderId</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">getId</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">portfolio</span><span class="p">.</span><span class="na">getId</span><span class="p">()))</span><span class="w"> </span><span class="p">{...}</span><span class="w"></span>
 </code></pre></div>
 <p>Après moults réflexions, vous vous rendez compte qu'il y a des associations de <code>portfolios</code> et de <code>trader</code>.
 Vous les trouvez dans un objet comme celui-ci :</p>
-<div class="highlight"><pre><span></span><code><span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">portfolioIdsByTraderId</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">portfolioIdsByTraderId</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Et, peu à peu, vous vous rendez compte que ce dictionnaire conditionne la visibilité des portfolios par trader.</p>
 <p>Dans la seconde code base, vous tombez sur ceci :</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">canView</span><span class="p">(</span><span class="n">portfolio</span><span class="p">))</span> <span class="p">{...}</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">trader</span><span class="p">.</span><span class="na">canView</span><span class="p">(</span><span class="n">portfolio</span><span class="p">))</span><span class="w"> </span><span class="p">{...}</span><span class="w"></span>
 </code></pre></div>
 <p>Pas de prise de tête. Vous savez ce que le code fait, même si vous ne savez pas comment. Peut-être qu'il s'agit de Map de Map, comme dans l'exemple précédent, mais il s'agit de la logique du <code>trader</code>, pas de la votre.</p>
 <p>Répondez franchement : sur quelle codebase préféreriez-vous travailler ?</p>
@@ -1601,7 +1615,7 @@ Je vous rappelle que, si vous cherchez à accéder aux textes originaux, ils son
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.748e2769.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>

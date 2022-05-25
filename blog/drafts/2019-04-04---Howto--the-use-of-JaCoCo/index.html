@@ -14,7 +14,7 @@
         <link rel="canonical" href="https://fhiegel.github.io/blog/drafts/2019-04-04---Howto--the-use-of-JaCoCo/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -374,6 +374,20 @@
           2022
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2022/05/25/pair-programming--pair-practice/" class="md-nav__link">
+        Pair-practice : Comment s'entraîner au pair-programming ?
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1094,7 +1108,7 @@
     <h1>HOWTO: Use of JaCoCo</h1>
     <div class="post--info">
         <span>📅 2019-04-04</span>
-        <span>🕓 31 minutes de lecture</span>
+        <span>🕓 33 minutes de lecture</span>
         
     </div>
 </div>
@@ -1571,36 +1585,36 @@ On configure le plugin, dans un profile spécifique:</p>
     mvn -Psonar sonar:sonar -Dsonar.host.url<span class="o">=</span>http://my.own.sonar.com
 </code></pre></div>
 <h3 id="integration-dans-une-pipeline-jenkins-multibranche">Intégration dans une pipeline Jenkins Multibranche<a class="headerlink" href="#integration-dans-une-pipeline-jenkins-multibranche" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">{</span>
-    <span class="n">agent</span> <span class="o">{</span> 
-        <span class="n">label</span> <span class="s1">&#39;maven3 &amp;&amp; java10&#39;</span> 
-    <span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">agent</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>
+<span class="w">        </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;maven3 &amp;&amp; java10&#39;</span><span class="w"> </span>
+<span class="w">    </span><span class="o">}</span><span class="w"></span>
 
-    <span class="n">stages</span> <span class="o">{</span>
-        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Checkout&#39;</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">steps</span> <span class="o">{</span>
-                <span class="n">checkout</span> <span class="n">scm</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
+<span class="w">    </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Checkout&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">checkout</span><span class="w"> </span><span class="n">scm</span><span class="w"></span>
+<span class="w">            </span><span class="o">}</span><span class="w"></span>
+<span class="w">        </span><span class="o">}</span><span class="w"></span>
 
-        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Generate JaCoCo Report&#39;</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">steps</span> <span class="o">{</span>
-                <span class="n">withMaven</span><span class="o">()</span> <span class="o">{</span>
-                    <span class="n">sh</span> <span class="s2">&quot;mvn -Pgenerate-jacoco-exec verify&quot;</span>
-                    <span class="n">sh</span> <span class="s2">&quot;mvn -Pgenerate-jacoco-report jacoco:report -N&quot;</span>
-                <span class="o">}</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
+<span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Generate JaCoCo Report&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">withMaven</span><span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">                    </span><span class="n">sh</span><span class="w"> </span><span class="s2">&quot;mvn -Pgenerate-jacoco-exec verify&quot;</span><span class="w"></span>
+<span class="w">                    </span><span class="n">sh</span><span class="w"> </span><span class="s2">&quot;mvn -Pgenerate-jacoco-report jacoco:report -N&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="o">}</span><span class="w"></span>
+<span class="w">            </span><span class="o">}</span><span class="w"></span>
+<span class="w">        </span><span class="o">}</span><span class="w"></span>
 
-        <span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Send to Sonar&#39;</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">steps</span> <span class="o">{</span>
-                <span class="n">withMaven</span><span class="o">()</span> <span class="o">{</span>
-                    <span class="n">sh</span> <span class="s2">&quot;mvn -Psonar sonar:sonar -Dsonar.host.url=http://my.own.sonar.com&quot;</span>
-                <span class="o">}</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span>
+<span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Send to Sonar&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">withMaven</span><span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">                    </span><span class="n">sh</span><span class="w"> </span><span class="s2">&quot;mvn -Psonar sonar:sonar -Dsonar.host.url=http://my.own.sonar.com&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="o">}</span><span class="w"></span>
+<span class="w">            </span><span class="o">}</span><span class="w"></span>
+<span class="w">        </span><span class="o">}</span><span class="w"></span>
+<span class="w">    </span><span class="o">}</span><span class="w"></span>
+<span class="o">}</span><span class="w"></span>
 </code></pre></div>
 <h1 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h1>
 <p>Générer un rapport Sonar cohérent, c'est possible avec JaCoCo.
@@ -1662,7 +1676,7 @@ Ce n'est qu'une question de configuration, avec des outils pas toujours homogèn
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.748e2769.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>
