@@ -1,4 +1,5 @@
 ---
+title: "Pair-Programming - Slides"
 template: reveal.html
 background-color: '#dddddd'
 tags:

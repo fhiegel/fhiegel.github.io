@@ -6,6 +6,7 @@ description: >
 # Le Kata : Quoi et pourquoi ? 
 
 ## Kata
+
 Dans le jargon informatique, un **Kata** est un exercice de programmation, où l'énoncé est relativement court,
 et de difficulté variable.
 Le terme **Kata** fait référence aux arts martiaux, car l'exercice est fait pour être pratiqué encore et encore, en 

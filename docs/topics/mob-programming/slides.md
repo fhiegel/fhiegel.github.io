@@ -1,5 +1,5 @@
 ---
-title: CodingDojo
+title: "Mob Programming - Slides"
 template: reveal.html
 ---
 # Mob Programming
