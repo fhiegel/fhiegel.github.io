@@ -79,7 +79,7 @@ nav:
           - topics/xtrem/xtrem-watching.md
 
   - A propos:
-      - Bio: me/bio.md
+      # - Bio: me/.bio.md
       - CV: me/cv.md
       - NoCV: me/nocv.md
 
@@ -178,3 +178,8 @@ markdown_extensions:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        'learn/presentations/good-morning-learning/index.md': 'topics/good-morning-learning/index.md'
+        'learn/presentations/good-morning-learning/slides/index.md': 'topics/good-morning-learning/slides/index.md'
+        'learn/presentations/good-morning-learning/slides/en.md': 'topics/good-morning-learning/slides/en.md'
