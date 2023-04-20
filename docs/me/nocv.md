@@ -2,15 +2,60 @@
 title: "No CV"
 ---
 
+## 2023
+
+* 2023-05-25 : NCraft
+* 2023-05-12 : SoCraTes Rennes 2023
+* 2023-04-12 : Seconde expérience de speaker au Devoxx Paris avec David FRANCK : Voyage au Centre de la Veille 
+* 2023-03-16 : "Xtrem Reading" en Brown-Bag-Lunch pour IRIS (Système U)
+* 2023-03-14 : Shoday Nantes #007
+* 2023-02-03 : Facilitation d'un EventStorming BigPicture (2 jours, 20 participants) chez Maisons du Monde
+* 2023-01-17 : Formateur TDD pour SHODO Nantes
+
+## 2022
+
+* 2022-12-06 : Facilitation d'un EventStorming BigPicture (2 jours, 20 participants) chez Maisons du Monde
+* 2022-12-05 : Software Craft le livre - Interview dans le podcast Artisan Développeur 
+* 2022-11-08 : Animation de la Code Retreat Shodo Nantes à l'occasion du GlobalDay Of Code Retreat 
+* 2022-11-03 : Agile Tour Nantais 
+* 2022-10-20 : Première expérience de speaker au DevFest Nantes avec David FRANCK : Voyage au Centre de la Veille 
+* 2022-09-25 : Shoday Nantes #005 
+* 2022-09-20 : "Craft Interview, avec les auteurs du livre Software Craft", au Software Craft luxembourg
+* 2022-06-30 : Shoday Nantes #004 
+* 2022-06-24 : SoCraTes Rennes 2022 
+* 2022-05-09 : Formateur TDD pour SHODO Nantes
+* 2022-04-27 : Publication du livre "Software Craft" aux éditions DUNOD
+* 2022-04-25 : Shoday Nantes #003
+* 2022-04-14 : Evolution de la mission vers du coaching craft : "Soutien Technique Supply" chez Maisons du Monde
+* 2022-04-13 : Pair-Programming : trucs et astuces, en Brown-Bag-Lunch, pour Maisons du Monde
+* 2022-04-07 : "La veille personnelle : en quête de l'apprentissage continu", au Software Craft luxembourg
+* 2022-03-31 : Premier EventStorming en tant que Facilitateur chez Maisons du Monde
+* 2022-03-23 : Lancement de Coding Dojo chez Maisons du Monde
+* 2022-03-17 : "Comment réussir sa veille techno" avec David FRANCK en Brown-Bag-Lunch pour SII
+* 2022-03-16 : Architecture Hexagonale : revue d'un exemple, pour Maisons du Monde
+* 2022-03-08 : Introduction à l'architecture Hexagonale en Brown-Bag-Lunch, pour Maisons du Monde
+* 2022-02-23 : Tournage d'un spot pour SHODO Nantes et Un Job A Nantes avec WeLoveDevs
+* 2022-02-22 : Shoday Nantes #002 - Crash test du Triangle du Developpement
+* 2022-01-14 : TDD: Le Triangle du Développement - Prototype #01
+* 2022-01-06 : Relance de mon blog
+
 ## 2021
 
+ * 2021-12-10 : Shoday Nantes #001
+ * 2021-12-09 : Formation "Veille" aux Formations de Noël avec David FRANCK
+ * 2021-11-18 : Introduction à la Veille en Brown-Bag-Lunch pour Maisons du Monde
+ * 2021-11-09 : Présentation des tests automatisés : brancher Jira/XRay sur des applications en recette via GitLab et Cucumber chez Maisons du Monde  
+ * 2021-10-21 : Découverte du Serious Game "A la découverte d'Accelerate" de Goeffrey GRAVEAUD au DevFest Nantes
+ * 2021-09-21 : Arrivée chez Maison du Monde en tant que Développeur Java
+ * 2021-09-20 : Début de l'aventure SHODO Nantes
+ * 2021-06-08 : Organisation du "Lean Coffe du RPG"
  * 2021-06-03 : Participe à l'atelier "Définition de la Core Team du Cercle Dev"
  * 2021-05-10 : Démarrage du Poc Inno : "Pay As You Go"
  * 2021-04-18 : Arrivée de \#3 : Balthazar.
  * 2021-04-14 : Formation : "Flutter"
  * 2021-04-12 : Fin du Mob-Programming à temps plein dans l'équipe
  * 2021-04-08 : Volontaire sur le site "Brown-Bag-Lunch"
- * 2021-03-23 : Début de l'écriture du Chapitre Pair-Programming du livre Dunod
+ * 2021-03-23 : Début de l'écriture du Chapitre Pair-Programming du livre "Software Craft" aux éditions DUNOD
  * 2021-03-23 : Animation d'un atelier "Gamification" sur le Poc Inno "Carbon tracker"
  * 2021-03-16 : Formation : "Architecting on AWS"
  * 2021-03-18 : Mise en place de la license Creative Commons, sur mes slides et le contenu de mon site
@@ -20,7 +65,7 @@ title: "No CV"
  * 2021-02-15 : Dev Mobile + Flutter
  * 2021-02-03 : Déploiement continue de "Gargoyles" (Typescript, Phaser, Webpack, Travis, Github Pages)
  * 2021-01-14 : Démarrage du Poc Inno : "Carbon tracker"
- * 2021-01-13 : Expérimentations perso sur Phaser avec un jeu : "Gargoyles"
+ * 2021-01-13 : Expérimentations personnelles sur Phaser avec un jeu : "Gargoyles"
  * 2021-01-11 : Livraison du Poc Inno : "Affluence dans les trains"
 
 ## 2020
