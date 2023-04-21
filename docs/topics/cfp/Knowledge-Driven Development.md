@@ -1,0 +1,285 @@
+---
+title: Knowledge-Driven Development
+template: reveal.html
+---
+
+# Knowledge-Driven Development
+
+Knowledge-Driven Development : les aventuriers du code perdu
+
+Knowledge-Driven Development : les aventuriers de la doc perdue
+
+Knowledge-Driven Development : les aventuriers de la connaissance perdue
+
+Notes:
+Midjourney
+/imagine https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/indy-raiders-of-lost-ark.jpg programmers as code archeologs like indiana jones
+
+--
+
+### Abstract
+
+Si vous n'avez jamais eu besoin ni de lire ou d'écrire de la documentation, ni de rechercher des informations sur internet, ni de poser des questions à des personnes, alors ce talk n'est pas pour vous.
+
+--
+
+Au contraire, vous avez peut-être déjà entendu des choses comme "Ah bon ? Tu ne sais pas ça ?", "Tout est dans la doc", "Read The Friendly Manual", ou encore "T'as bien écrit la doc ?".
+Peut-être étiez-vous sur des projets où, comprendre le contexte et transmettre la connaissance étaient importantes.
+
+--
+
+Dans cette présentation, nous verrons que la quête de la connaissance est au cœur du développement logiciel.
+Vous (re)découvrirez des pratiques de code et des ateliers permettant de remettre la connaissance au centre de votre métier.
+
+---
+
+### Fil rouge : les aventuriers du code perdu
+
+Des archéologues du code déterrent un projet
+
+---
+
+# Code Legacy
+
+--
+
+Quelques définitions
+
+--
+
+> Code qui nous fait souffrir
+> Thomas pierrain
+
+--
+
+> Code dont on a perdu le contexte d'émergence
+> Sylvain Coudret
+
+--
+
+> Code qui ne correspond pas à notre modèle mental
+> Sylvain Coudret
+
+--
+
+-> Factuel : il existe  
+-> C'est le mode d'emplois réel du logiciel  
+-> C'est l'opportunité d'apprendre de nos prédécesseurs
+
+--
+
+## Comment l'appréhender ? 
+# CodeReview  
+--> Se poser et lire du code pendant un temps, avec son équipe ou seul  
+--> Validation de PR/MR  
+--> Via du Pair/Mob Programming où on a en plus les explications verbales
+
+--
+
+## Comment l'appréhender ?
+🐶 Chiot à tuer ?
+
+Grille de lecture
+-> Connaître les codes smells et les schémas de lecture de notre contexte
+
+---
+
+## Parenthèse ?
+# Pourquoi le Legacy nous fait souffrir ?
+
+--
+
+# Modèle mental
+
+-> On a tous des modèles mentaux  
+-> Connaître ses modèles mentaux permet d'apprendre à se défait de ses préjugés (cf. 5ième Discipline de Peter Senge)  
+-> Ils influencent l'image que nous nous faisons du monde  
+-> Il s'agit des croyances, postulats, hypothèses ou représentation qu'a une personne sur elle même, les autres et le monde  
+-> Un concept, un système ou une manière de voir le monde qui nous aide à comprendre comment les choses fonctionnent  
+-> Tous les modèles sont faux, mais certains sont utiles (George Box,)  
+-> Modeling = coding
+
+---
+
+# Sortir du Legacy
+
+--
+
+# Documentation
+
+Documenter quoi ?
+Le logiciel ? Le code ? Le comportement ? #BDD
+
+--
+
+# 4 types de documentation
+(Daniele Procida / Divio)
+
+🐶 Chiot à tuer ?
+
+- Tutoriaux
+- HowTo
+- Référence
+- Explications
+
+--
+
+# Refactorer
+
+- Ca fait peur, mais c'est quoi ?
+  - <image indianajones aevc le sac de sable + statuette>
+- ![indiana-jones-face-statuette.png](indiana-jones-face-statuette.png)
+- pouruqoi on refactor
+  - Code maintenable
+  - Code évolutif => pour qui on code
+
+---
+
+Sortir du legacy : quelle destination ?
+=> Transmettre notre compréhension du code
+=> Le code est notre compréhension du métier
+
+# Clean Code
+
+--
+
+Quelques définitions
+
+--
+
+Clean Code = code maintenable ?  
+-> ça veut dire quoi "maintenable" ?  
+==> Maintenable = quelqu'un d'autre peut se l'approprier et corriger les defect/bugs/incompréhenssion  
+= le mieux que l'on puisse faire de notre point de vue aujourd'hui
+
+--
+
+# Clean Code
+
+-> Permet dans son contexte, de présenter des Normes et standards  
+-> permet de guider les équipeirs à adopter le modèle mental qui convient au contexte  
+--> Cela facilite l'apprentissage et l'onboarding  
+--> #CollectiveOwnership
+
+--
+
+# Clean Code
+
+-> Comment ? => Nommage  
+--> Se poser la question du nom des choses
+--> Atelier pour le nommage : 3 Step Model
+- Méthode : 3 Steps Models (Feitelson)
+- séparer développer  / nommer
+
+-> eXtreme Programming : Communication / system metaphor + Coding standards
+-> Ubiquitous language (DDD)  
+
+--
+
+# Clean Code
+
+-> Comment ? => Patterns  
+
+🐶 Chiot à tuer ?
+
+-> Les [[Design Patterns]] donnent une grille de lecture des problèmes qu'ils résolvent  
+
+--
+
+-> Comment ? => Modéliser le métier  
+--> Nommer les concepts  
+--> Réfléchir à la Cohésion/Couplage des notions métier rencontrées
+
+Modéliser = Clean Code lvl2
+
+---
+
+# Modéliser avec le DDD
+
+=> Connaître le métier
+=> EventStorming
+
+---
+
+# Clean Code
+
+-> Comment ? => Principes/Tips/Guides  
+-> Shu Ha Ri (Connaitre, Maîtriser, dépasser)  
+-> ne pas être dogmatique car c'est du gatekeeping  
+-> on convain mieux sans buzzwords  
+-> SOLID, Demeter, KiSS, YAGNI, DRY
+
+---
+
+# Clean Code vs Code Legacy  
+
+| Clean Code | Code Legacy |
+|---|---------------------------------------------|
+| Correspond à notre modèle mental | Ne Correspond **pas** à notre modèle mental |
+| => Code qui nous fait plaisir    | => Code qui nous fait souffrir |
+
+
+Notes:
+
+Code qui correspond à notre modèle mental => Code qui nous fait plaisir  
+vs.  
+Code qui ne correspond pas à notre modèle mentatl => Code qui nous fait souffrir
+
+--
+
+Refactor (posture d'écrivain) vs. Code review (posture de lecteur et 'apprenant)  
+<Schéma que j'arrivera pas à reproduire>  
+Adapter le code pour qu'il corresponde à notre modèle mental  
+vs.  
+Apprendre depuis le code et faire évoluer son propre modèle mental en conséquence
+
+--
+
+## Refactoriser
+
+= Passerelle entre le Clean Code et le Code legacy  
+-> passerelle passe par notre cerveau  
+"Writing is Thinking"
+
+--
+
+# Code Review
+
+= Passerelle entre le Code Legacy et Clean Brain/Code  
+-> passe par notre cerveau
+
+--
+
+## Zone de confort vs Inconnu
+
+🐶 Chiot à tuer ?
+
+<Schéma>  
+Confrt/Sécurité vs Peur/Douleur  
+Boucle entre les deux  
+-> Sortir de la zone de confort vers l'inconnu pour apprendre  
+-> Rentrer dans la zone de confort pour se rassurer/ réaffirmer ce que l'on sait.  
+? travailler sur une notion de Zone d'inconfort ?
+
+# 5 Pourquoi ?
+
+🐶 Chiot à tuer ?
+
+Pourquoi vous développez ?
+Pourquoi vous priorisez le client ?
+=> pas encore trouvé la suite , mais on devrait arriver aux motivations essentielles de la personne
+
+---
+
+# Knowledge-Driven Development
+(Conclusion)
+
+=> Comme Indiana dans l'Arche : ça ne sert à rien
+BigBang Theory | Indiana Jones plays no role | The Big Bang Theory (2007) - S07E04  The Raiders Minimization
+
+Buzzword, qui connecte des trucs d'autres pratiques
+- Clean Code => apprendre par le code
+  - Modélisation : clena code lvl2
+- DDD + knowledge crushing
+- Refactoring
+- Veille techno

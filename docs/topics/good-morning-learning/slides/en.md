@@ -2,7 +2,6 @@
 template: reveal.html
 background-image: assets/images/growing-lightbulb.png
 background-opacity: 0.3
-
 ---
 <style>
 blockquote.quote {

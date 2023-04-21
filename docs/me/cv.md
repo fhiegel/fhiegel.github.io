@@ -1,20 +1,17 @@
 ---
-title: "CV"
+title: "Bio"
 ---
-
-## Formation
-
-**2011 Diplôme d'ingénieur des Mines-- Douai**
+{!me/.bio.md!}
 
 ## Compétences
 
-- **OS** : WINDOWS, LINUX, OSX 
-- **Langages** : **JAVA**, KOTLIN, JAVASCRIPT, TYPESCRIPT, DART, PYTHON 
-- **Frameworks** : SPRING (BOOT, CORE, MVC, FLUX), REACT, ANGULAR, SPARK, FLUTTER, AWS 
-- **SGBD** : MONGODB, POSTGRE, MYSQL, 
-- **Outils** : INTELLIJ, MAVEN, NPM, JUNIT, JEST, GIT, GITLAB (&CI), JENKINS 
+- **OS** : WINDOWS, LINUX, OSX
+- **Langages** : **JAVA**, KOTLIN, JAVASCRIPT, TYPESCRIPT, DART, PYTHON
+- **Frameworks** : SPRING (BOOT, CORE, MVC, FLUX), REACT, ANGULAR, SPARK, FLUTTER, AWS
+- **SGBD** : MONGODB, POSTGRE, MYSQL,
+- **Outils** : INTELLIJ, MAVEN, NPM, JUNIT, JEST, GIT, GITLAB (&CI), JENKINS
 - **Packet Manager** : NPM, MAVEN
-- **Méthodologie** : SOFTWARE CRAFTSMANSHIP(**TDD, REFACTORING, CI, PAIR-PROGRAMMING), SCRUM, KANBAN
+- **Méthodologie** : Software Craftsmanship (**TDD, REFACTORING, CI, PAIR-PROGRAMMING), SCRUM, KANBAN
 
 **DOMAINES D'INTERVENTION**
 
@@ -22,17 +19,6 @@ title: "CV"
 - Sensibilisation et partage sur les pratiques craft
 - Mentoring autour des bonnes pratiques
 - Animation de communauté de pratiques
-
-**TRAINING & CONFERENCES SUIVIS**
-
-- Formation « Architecting on AWS » - Revolve 2021
-- Formation Flutter -- Zenika 2021
-- Formation Sfeir School Speaker -- Sfeir 2020
-- Conférence NCraft (2018-2019)
-- Formation Les bases su Machine Learning -- e-Voyageur Technologies 2019
-- Formation en ligne Sketchnoting -- Bloculus (2019)
-- Formation Refactoring -- Arolla 2017
-- Formation Domain Driven Design -- Arolla 2017
 
 **CENTRES D'INTERETS**
 
@@ -42,39 +28,93 @@ title: "CV"
 
 ## Expériences
 
-### Shodo Nantes -- Depuis Septembre 2021
+### Shodo Nantes | 2021
 
-> _Transparence, Confiance et redistribution des richesses. Pour mettre ces valeurs en pratiques, Shodo propose un modèle d'entreprise novateur.
-> Une grille de salaire transparente et publique, ainsi que des marges fixes 
+_Développeur Senior. Animateur de communauté._<br>| Septembre 2021 ➡
+
+
+> _Transparence, Confiance et redistribution des richesses. Pour mettre ces valeurs en pratiques, Shodo propose un
+modèle d'entreprise novateur.
+> Une grille de salaire transparente et publique, ainsi que des marges fixes
 et toutes aussi transparentes, Shodo souhaite redonner du sens au salariat,
 tout en garantissant des prestations de qualité._
 >
-> _Tous les membres de Shodo sont des développeuses et développeurs convaincu.e.s par les principes du Software Craftsmanship et aggueri.e.s aux bonnes pratiques de développement. 
-> Chacun ajuste sa rémunération et son temps libre pour se former, échanger ou se reposer, dans le respect des engagements clients pris._
+> _Tous les membres de Shodo sont des développeuses et développeurs convaincu.e.s par les principes du Software
+Craftsmanship et aggueri.e.s aux bonnes pratiques de développement.
+> Chacun ajuste sa rémunération et son temps libre pour se former, échanger ou se reposer, dans le respect des
+engagements clients pris._
 
-### Maisons du Monde via Shodo Nantes -- Depuis Septembre 2021
-_Développeur Senior. Animateur de communauté._
+#### Maisons du Monde
 
-### E-Voyageurs Technologies -- Décembre 2018 - Septembre 2021
-_Développeur Java, Senior, puis Lead. Animateur de communauté._
+_Développeur. Coach Agile Technique._ <br>| Septembre 2021 ➡
+
+> Maisons du Monde est une enseigne de distribution, d'ameublement et de décoration française
+
+L'essentiel de cette mission s'est déroulée dans le service de la DSI associé au domaine métier de la
+« Supply Chain Management ».
+
+**Depuis Février 2023, à plein temps en tant que « Soutien Technique Supply ».**
+
+Reprise d'applications fortement endettées, et animations
+
+- Accompagnement individuel des internes
+  - Montée en compétence
+  - 
+
+**De Avril 2022 à Février 2023, à mi-temps en tant que « Soutien Technique Supply »,
+et à mi-temps dans tout à tour dans les équipes « APPRO » et « TRP ».**
+
+- Animation d'ateliers d'Event Storming
+    - sur le process de Booking (équipe TRP)
+    - sur le process de Booking
+
+- Initiation du service aux pratiques Craft
+    - Présentations régulières (TDD, Clean Code, Pair-programming)
+    - Mise en place de Mob-Programming sur des sujets de refactor et
+      de partage de connaissance
+    - Animation de Coding Dojos, et d'atelier de travail sur le Pair-Programming, et Mob-Programming
+        - Animation de Serious Games :
+            - « Les Dés de la dette »,
+
+**De Septembre 2021 à Avril 2022, développeur dans l'équipe « TRP » (Transport).**
+
+Principales réalisations :
+
+- Industrialisation de la mise à jour du paramétrage du « MET » (Moteur d'Eligibilité Transporteur)
+    - Evolution des
+
+- Automatisation de test sur le MET
+    - Bootstrap de tests applicatifs automatisés utilisant Cucumber comme glue
+    - Exécution d'un pipeline GitLab orchestrant les tests
+    - Intégration l'exécution avec le plugin XRay de JIRA
+
+**Environnement :**
+
+Java, JUnit, Mockito, Cucumber, JavaScript (REACT, JEST), Spring, Git,
+Software Craftsmanship, Clean Code, TDD, Pair-Programming (& MOB),
+Docker, GitLab, Kubernetes, GCP, Formation, Animation, Facilitation
+
+### E-Voyageurs Technologies | 2018
+
+_Développeur Java, Senior, puis Lead. Animateur de communauté._ <br>| 🗓️ Décembre 2018 ➡ Septembre 2021
 
 > _E-Voyageur technologies est l'usine numérique derrière e-Voyageurs SNCF.
 > Ce pôle technologique d'environ 1000 personnes, est responsable du site
 > oui.sncf, mais également des application « Assistant SNCF », « TGV Pro »,
-> et d'autres briques technologies de la SNCF._ 
+> et d'autres briques technologies de la SNCF._
 
 **Depuis Avril 2019, en parallèle des projets IT,
 animateur en transverse dans la communauté de pratiques du « Cercle du Développement ».**
 
 - Création du « parcours d'accueil des développeurs », avec les RH en charge de la formation
-- Initiation des ateliers « Conception de formation » : 
+- Initiation des ateliers « Conception de formation » :
   TDD,CleanCode, SOLID, Apprendre à Apprendre : comment faire sa veille technologique
-- Initiation des ateliers de partage : 
+- Initiation des ateliers de partage :
     - Xtrem(Reading | Watching | Sharing | TechWatch)
     - GoodMorningLearning
 - Animation de Coding Dojos, et d'atelier de travail sur le Pair-Programming, et Mob-Programming
-- Animation de Serious Games : 
-    - « Qu'est-ce qu'un TU », 
+- Animation de Serious Games :
+    - « Qu'est-ce qu'un TU »,
     - « Pair-Programming : le comprendre sans coder »
 - Impliqué dans la redéfinition des rôles de la CoreTeam, et des objectifs de la structure
 
@@ -95,7 +135,7 @@ Principales réalisations :
     - Front : Flutter + Dart
     - Formation de l'équipe à la gamification
 
-**De Décembre 2019 à Novembre 2020, développeur senior dans une équipe de seniors, 
+**De Décembre 2019 à Novembre 2020, développeur senior dans une équipe de seniors,
 en charge de motoriser la personnalisation des applications e-Voyageurs Technologies,
 notamment via du Machine Learning.**
 
@@ -116,7 +156,7 @@ Sur la partie « Cross-Sell » sur le site de oui.sncf :
 - Initiation de l'équipe aux pratiques Craft
     - Présentations régulières (TDD, Clean Code, Pair-programming)
     - Mise en place de Mob-Programming sur des sujets de refactor et
-        de partage de connaissance
+      de partage de connaissance
 
 Lors de l'intégration de la solution « Kameleoon » pour comparer avec
 nos propres briques
@@ -124,8 +164,8 @@ nos propres briques
 - Intégration de la solution « Kameleoon » pour tester sa pertinence
     - Contribution transverse sur toutes les briques Front du site oui.sncf
     - Mise en place de bonnes pratiques de contribution (collaboration
-        avec équipe hôte, pair-programming, respect des conventions de
-        l'équipe hôte, post-mortem systématiques)
+      avec équipe hôte, pair-programming, respect des conventions de
+      l'équipe hôte, post-mortem systématiques)
     - Stacks hétérogènes : Angular, React, Vue
 
 - Participation au développement du moteur de recommandation transverse
@@ -133,11 +173,12 @@ nos propres briques
     - Moteur de scoring par règles métier,
     - Tests de charge du moteur par Gatling
     - Utilisation de différents modèles de Machine Learning pour
-        répondre à des contextes différents
+      répondre à des contextes différents
     - Mise en place d'un bus RxJS pour synchroniser les Front, tests
-        avec des MarbleTests
+      avec des MarbleTests
 
 Lors de la modélisation des modèles de machine Learning
+
 - Mise en place des tests de workflow (AWS Glue) de traitement de la donnée
 - Mise à jour de modèle de Machine Learning via AWS Sagemaker
 
@@ -148,8 +189,11 @@ Typescript (REACT, JEST), MongoDB, Spring, Python, Dart, Flutter, Git,
 Software Craftsmanship, Clean Code, TDD, Pair-Programming (& MOB),
 Docker, Jenkins, AWS, Formation, Animation, Facilitation
 
-### La Combe du Lion Vert via AROLLA -- Mai 2018 - Septembre 2018 
-_Formateur_
+### AROLLA | 2016
+
+#### La Combe du Lion Vert
+
+_Formateur_ <br>| 🗓️ Mai 2018 ➡ Septembre 2018
 
 > _La Combe du Lion Vert est une filiale d'Arolla, qui offre aux
 > développeurs en début de carrière un cursus de formation sur les
@@ -166,13 +210,13 @@ en tout)**
 
 Java, POO, SOFTWARE CRAFTSMANSHIP, Clean code, SOLID, TDD, FORMATION, COACHING
 
+#### VIDAL
 
-### VIDAL via AROLLA -- Juin 2016 - Décembre 2018
-_Développeur « Fullstack »_
+_Développeur « Fullstack »_ <br>| 🗓️ Novembre 2017 ➡ Décembre 2018
 
 > _VIDAL est l'entreprise éditant le « Dictionnaire VIDAL », catalogue des
-> produits et des médicaments, à destination des professionnels de santé._ 
- 
+> produits et des médicaments, à destination des professionnels de santé._
+
 **Intervention dans le cadre de plusieurs projets, portant sur
 différentes étapes du cycle de la génération du dictionnaire de santé
 VIDAL.**
@@ -183,15 +227,15 @@ projets suivants :
 - **Enrichissement des contrôles de Posologie HAS :**
     - Scenarii BDD (Prescription, Saisie du référentiel),
     - Montée de version AngularJS (1.2 vers 1.5) et introduction de
-        composants
+      composants
     - Full Pair-Programming, TDD
 
 - **Souscription & Nouvelle Facturation :**
     - Numérisation de l'envoi du dossier,
     - Génération des données de facturation
     - Prise en charge du rôle de Scrum Master (Facilitation des
-        ateliers suivants : Rétrospective, Backlog refinement,
-        Définition du DoD, Définition du DoR)
+      ateliers suivants : Rétrospective, Backlog refinement,
+      Définition du DoD, Définition du DoR)
 
 - **Reprise des posologies :**
     - 80 Go de données
@@ -202,27 +246,28 @@ projets suivants :
     - Java 11, Angular 6, MongoDB
     - TDD, Pair-Programming, et Code Reviews
     - Sensibilisation transverse aux pratiques crafts (présentation,
-        et ateliers de mise en pratique de TDD et Pair-Programming)
+      et ateliers de mise en pratique de TDD et Pair-Programming)
 
 **Environnement : Java, JUnit, Mockito, Cucumber, JavaScript (AngularJS,
 Jasmine), MongoDB, Spring, Hibernate, Git, SOFTWARE CRAFTSMANSHIP, Clean
 code, TDD, Pair-Programming, ANIMATION, FACILITATION**
 
-### DARTY via AROLLA -- Juin 2016 - Novembre 2017
-_Développeur JAVA JEE_
+#### Darty
+
+_Développeur JAVA JEE_ <br>| 🗓️ Juin 2016 ➡ Novembre 2017
 
 > _Darty.com, le site internet de vente en ligne de Darty, correspond au
-> premier magasin du groupe en terme de chiffre d 'affaire, totalisant
+> premier magasin du groupe en termes de chiffre d'affaires, totalisant
 > 14% des ventes de produits. Depuis 2014, Darty.com intègre également
 > la plateforme Mistergooddeal._
 >
 > _Ces sites permettent à tout internaute de consulter un large
 > catalogue de produits, pour ensuite les acheter en ligne, et
-> bénéficier des mêmes avantages que lors d 'un achat en magasin
+> bénéficier des mêmes avantages que lors d'un achat en magasin
 > (livraison, installation, etc.)._
 
-**Intervention dans le cadre d 'un projet d 'amélioration continue, sur
-un large panel d 'applications, aux stacks diversifiées, et de qualité
+**Intervention dans le cadre d'un projet d'amélioration continue, sur
+un large panel d'applications, aux stacks diversifiées, et de qualité
 hétérogène.**
 
 Au sein d'un projet d'une vingtaine de personnes, je suis intervenu sur
@@ -230,9 +275,9 @@ les applications suivantes :
 
 - Les applications dites du  "Back "
     - Darty WebSphère : monolithe très endetté, concentrant les
-        workflows et les dépendances externes historiques
+      workflows et les dépendances externes historiques
     - Order Management System (OMS) : orchestrateur de micro-services
-        dédiés au remplacement de WebSphère
+      dédiés au remplacement de WebSphère
     - BO-DCom : Back Office métier de Darty.com
 - Les applications dites du  "Front "
     - Le  "Front DCom " : Le site internet, en lui-même
@@ -252,7 +297,7 @@ Ma contribution a essentiellement été valorisée sur les aspects suivants :
 - Application de pratiques Agiles
     - Introduction aux cérémonies Agiles auprès de l 'équipe (Daily)
     - Rétrospectives de release (rétro bateau, rétro dont vous êtes le
-        héros)
+      héros)
 
 - Force de proposition sur les workflows
     - Introduction à la norme BPMN
@@ -263,8 +308,9 @@ JAVA, JAVASCRIPT (JQUERY, ANGULARJS), GUICE,
 DROPWIZARD, REST, JUNIT, MOCKITO, GIT, CLEAN CODE, TDD,
 PAIR-PROGRAMMING
 
-### OALIA -- Mars 2011 - Juin 2016
-_Développeur Java JEE_
+### OALIA | 2011
+
+_Développeur Java JEE_ <br>| 🗓️ Mars 2011 ➡ Juin 2016
 
 > _Oalia est un éditeur spécialisé dans la production de solutions
 > dédiées à l'optimisation du processus d'achats (prestations
@@ -281,7 +327,7 @@ entièrement méta-modélisée, modulaire et administrable.**
 (User Interface Object Model) qui est la couche de rendu de la nouvelle
 architecture OALIA**
 
-Elaboration de l'UIOM (*User Interface Object Model*) : un moteur de rendu HTML en Java, 
+Elaboration de l'UIOM (*User Interface Object Model*) : un moteur de rendu HTML en Java,
 venant s'intégrer avec le méta-modèle métier de l'application.
 Ce moteur constitue la première brique de la refonte du socle technique.
 
@@ -317,30 +363,30 @@ constituant le cœur d'IAM (*Interactive Application Model*) :
 - Modules complémentaires de l'UIOM
     - Mise en place de nouveaux composants via TDD
     - Création d'API de développements fluides et guidées (en suivant
-        le pattern *fluent interface*), permettant un gain de
-        productivité, et un raccourcissement du temps de prise en main
+      le pattern *fluent interface*), permettant un gain de
+      productivité, et un raccourcissement du temps de prise en main
     - Modélisation des composants graphiques
     - Intégration des modèles à un « Studio » disponible sur
-        l'application, permettant d'administrer les modèles de
-        composants
+      l'application, permettant d'administrer les modèles de
+      composants
 
 - Enrichissement du modèle de navigation
-  
+
 - Développement de la couche de modélisation des processus métier
     - Développement en TDD d'API de développements fluides et guidées
     - Mise en place d'une couche de validation des modèles de
-        processus, conformément au standard BPMN
+      processus, conformément au standard BPMN
 
 - Développements fonctionnels permettant le portage iso-fonctionnel de
-    modules métiers, depuis la technologie obsolète vers le nouveau
-    modèle.
+  modules métiers, depuis la technologie obsolète vers le nouveau
+  modèle.
 
 - Application de pratiques agiles basées sur SCRUM et XP :
     - Sprints de 2 semaines avec livraisons toutes les 6 semaines.
-        Suivi des cérémonies classiques (Planning, Stand-Up, Démo,
-        Rétro).
+      Suivi des cérémonies classiques (Planning, Stand-Up, Démo,
+      Rétro).
     - TDD et Pair-Programming (montée en compétences des nouveaux
-        développeurs, développements de fonctionnalités critiques).
+      développeurs, développements de fonctionnalités critiques).
 
 **Phase 4 (Mars 2014 -- Mai 2016) : Lead Développeur, Référent Technique IAM**
 
@@ -349,7 +395,7 @@ Au sein du même projet, en suivant la méthode Agile SCRUM ; intervention sur l
 - Outillage des tests :
     - Développement de runners JUnit pour tests d'intégration
     - Mise en place de Selenium-IDE, prélude à l'industrialisation de
-        Selenium
+      Selenium
 
 - Référent technique sur la couche applicative
     - Formation des nouveaux arrivants
@@ -363,11 +409,11 @@ Au sein du même projet, en suivant la méthode Agile SCRUM ; intervention sur l
 
 - Application de pratiques agiles basées sur SCRUM et XP :
     - Sprints de 2 semaines avec livraisons toutes les 6 semaines.
-           Suivi des cérémonies classiques (Planning, Stand-Up, Démo, Rétro).
+      Suivi des cérémonies classiques (Planning, Stand-Up, Démo, Rétro).
     - TDD et Pair-Programming (montée en compétences des nouveaux
-        développeurs, développements de fonctionnalités critiques).
+      développeurs, développements de fonctionnalités critiques).
     - Réflexions sur la mise en place d'une démarche Devops
-        (automatisation de scripts de déploiement)
+      (automatisation de scripts de déploiement)
 
 **Environnement :**
 
@@ -375,3 +421,19 @@ JAVA 7, JAVA-EE, JAVASCRIPT (JQUERY), SPRING (CORE,
 MVC), HIBERNATE (JPA), POSTRESQL, JUNIT, EASYMOCK, POWERMOCK, SELENIUM,
 GIT, DESIGN PATTERNS, CLEAN CODE, TDD, PAIR-PROGRAMMING, SCRUM & XP**
 
+## Formations
+
+**2011 Diplôme d'ingénieur des Mines -- Douai**
+
+### Training & Conferences suivis
+
+- Formation « Process Communication Model » -- Le pas d'après 2023
+- Formation « Domain-Driven Design Stratégique » -- Shodo 2023
+- Formation « Architecting on AWS » -- Revolve 2021
+- Formation Flutter -- Zenika 2021
+- Formation Sfeir School Speaker -- Sfeir 2020
+- Conférence NCraft (2018-2019)
+- Formation Les bases du Machine Learning -- e-Voyageur Technologies 2019
+- Formation en ligne Sketchnoting -- Bloculus (2019)
+- Formation Refactoring -- Arolla 2017
+- Formation Domain Driven Design -- Arolla 2017
