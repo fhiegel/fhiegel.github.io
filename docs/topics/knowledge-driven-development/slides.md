@@ -4,14 +4,13 @@ template: reveal.html
 ---
 
 # Knowledge-Driven Development
-
-Knowledge-Driven Development : les aventuriers du code perdu
-
-Knowledge-Driven Development : les aventuriers de la doc perdue
-
-Knowledge-Driven Development : les aventuriers de la connaissance perdue
+## les aventuriers du code perdu
 
 Notes:
+Knowledge-Driven Development : les aventuriers du code perdu
+Knowledge-Driven Development : les aventuriers de la doc perdue
+Knowledge-Driven Development : les aventuriers de la connaissance perdue
+
 Midjourney
 /imagine https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/indy-raiders-of-lost-ark.jpg programmers as code archeologs like indiana jones
 
@@ -19,17 +18,21 @@ Midjourney
 
 ### Abstract
 
-Si vous n'avez jamais eu besoin ni de lire ou d'écrire de la documentation, ni de rechercher des informations sur internet, ni de poser des questions à des personnes, alors ce talk n'est pas pour vous.
+Si vous n'avez jamais eu besoin 
+- de lire ou d'écrire de la documentation, 
+- de rechercher des informations sur internet, 
+- de poser des questions à des personnes, alors ce talk n'est pas pour vous.
+- de faire du passage de "co"
 
 --
 
-Au contraire, vous avez peut-être déjà entendu des choses comme "Ah bon ? Tu ne sais pas ça ?", "Tout est dans la doc", "Read The Friendly Manual", ou encore "T'as bien écrit la doc ?".
-Peut-être étiez-vous sur des projets où, comprendre le contexte et transmettre la connaissance étaient importantes.
+Au contraire, vous avez peut-être déjà entendu des choses comme "Ah bon ? Tu ne sais pas ça ?", "Tout est dans la doc", "RTFM (Read The F***g Manual)", ou encore "T'as bien écrit la doc ?".
+Peut-être étiez-vous sur des projets où, comprendre le contexte et transmettre la connaissance était importantes.
 
 --
 
 Dans cette présentation, nous verrons que la quête de la connaissance est au cœur du développement logiciel.
-Vous (re)découvrirez des pratiques de code et des ateliers permettant de remettre la connaissance au centre de votre métier.
+Vous (re)découvrirez des pratiques de code et des ateliers permettant de la remettre au centre de votre métier.
 
 ---
 
@@ -48,17 +51,20 @@ Quelques définitions
 --
 
 > Code qui nous fait souffrir
+>
 > Thomas pierrain
 
 --
 
 > Code dont on a perdu le contexte d'émergence
+>
 > Sylvain Coudret
 
 --
 
 > Code qui ne correspond pas à notre modèle mental
-> Sylvain Coudret
+>
+> Moi
 
 --
 
@@ -113,9 +119,7 @@ Le logiciel ? Le code ? Le comportement ? #BDD
 --
 
 # 4 types de documentation
-(Daniele Procida / Divio)
-
-🐶 Chiot à tuer ?
+(Daniele Procida / Divio / Diátaxis)
 
 - Tutoriaux
 - HowTo
@@ -272,6 +276,10 @@ Pourquoi vous priorisez le client ?
 ---
 
 # Knowledge-Driven Development
+
+_Un concept pour les gouverner tous et dans les 'binaires', les lier_
+_Un concept pour les gouverner tous et dans le code, les lier_
+
 (Conclusion)
 
 => Comme Indiana dans l'Arche : ça ne sert à rien
