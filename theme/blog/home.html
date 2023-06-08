@@ -10,6 +10,7 @@
     {% if item.src_path.startswith('blog')
             and not item.page == page
             and item.page.meta
+            and item.page.meta.date
             and not item.page.meta.draft %}
     {% set articles = articles.append( item ) %}
     {% endif %}

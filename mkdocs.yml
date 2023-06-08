@@ -147,6 +147,8 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - markdown_include.include:
+      base_path: docs
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
