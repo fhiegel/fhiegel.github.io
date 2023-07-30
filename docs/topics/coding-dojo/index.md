@@ -25,7 +25,7 @@ dans un espace ouvert aux erreurs et à l'expérimentation.
 **Rappel du contexte du Dojo**
 
 * Choix du Kata
-  Que cherchons nous à apprendre ?
+  Que cherchons-nous à apprendre ?
 * Choix du langage
   Un même langage pour tous dans la session
 * Choix du format

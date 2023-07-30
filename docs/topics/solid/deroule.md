@@ -48,7 +48,7 @@ Poser quelques contraintes :
 
 ---
 En Dojo (voir les règles du Dojo) sur le Kata ""Roman Numerals"", on abordera les 5 Principes S.O.L.I.D.
-Intoduction et présentation du Kata.
+Introduction et présentation du Kata.
 
 Itération 1: ""Implémenter l'addition""
 Introduction au Kata

@@ -11,7 +11,68 @@ edit_uri: ""
 # Nav
 
 nav:
-  - Accueil: index.md
+  - Accueil:
+      - index.md
+      - 🛠️ Software Craft:
+          - topics/craft/index.md
+          - 👥 Pair-Programming:
+              - topics/pair-programming/index.md
+              - topics/pair-programming/slides.md
+              - topics/mob-programming/slides.md
+              - Pair-Practice: topics/pair-programming/pair-practice.md
+              - Pair-Poetry: topics/pair-programming/pair-poetry.md
+          - ⛩️ La maîtrise personnelle:
+              - Katas: topics/katas/index.md
+              - Kata préféré (slides): topics/katas/lt.md
+              - Coding Dojo:
+                  - topics/coding-dojo/index.md
+                  - Coding Dojo (slides): topics/coding-dojo/slides.md
+              - Kata catalogue:
+                  - topics/katas/Diamound/index.md
+                  - topics/katas/FizzBuzz/index.md
+                  - topics/katas/Game-Of-Life.md
+          - Test-Driven Development:
+              - topics/tdd/index.md
+              - topics/tdd/objectifs-pédagogiques.md
+              - topics/tdd/ressources.md
+              - TDD - slides: topics/tdd/slides.md
+              - topics/tdd/vrac.md
+              - 🔺 Triangle: topics/tdd/triangle-du-developpement/index.md
+              - 🔺 Triangle - slides: topics/tdd/triangle-du-developpement/slides.md
+          - 🧱 S.O.L.I.D:
+              - Synopsis: topics/solid/index.md
+              - topics/solid/deroule.md
+              - Intro (slides): topics/solid/slides/intro.md
+              - SRP (slides): topics/solid/slides/srp.md
+              - OCP (slides): topics/solid/slides/ocp.md
+              - LSP (slides): topics/solid/slides/lsp.md
+              - ISP (slides): topics/solid/slides/isp.md
+              - DIP (slides): topics/solid/slides/dip.md
+          - Ateliers:
+              - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
+              - Good Morning Learning: topics/good-morning-learning/index.md
+          - Vrac:
+              - topics/knowledge-driven-development/clean-code-as-learning-media.md
+              - topics/knowledge-driven-development/slides.md
+      - 🎓 Veille:
+          - topics/veille/index.md
+          - topics/veille/activites.md
+          - topics/veille/cfp/veille.md
+          - topics/veille/cfp/2022/devoxx.md
+          - topics/veille/phare/index.md
+      - 🧩 Gamification:
+          - topics/gamification/index.md
+          - Gamification (slides): topics/gamification/slides.md
+          - Gamification (slides light): topics/gamification/lt.md
+      - ➿ Design Patterns:
+          - topics/design-patterns/index.md
+          - topics/design-patterns/gof/index.md
+          - topics/design-patterns/gof/factory.md
+      - 🚧 En chantier:
+          - topics/cold-watching.md
+          - topics/xtrem/xtrem-reading.md
+          - topics/xtrem/xtrem-tech-watch.md
+          - topics/xtrem/xtrem-watching.md
   - Blog:
       - Tous les articles: blog/index.md
       - 2022:
@@ -22,63 +83,7 @@ nav:
           - blog/2022/01/20/design-patterns--factory-method.md
           - blog/2022/01/13/design-patterns--les-gammes-de-la-conception-logicielle.md
           - blog/2022/01/06/retour-du-blog.md
-  - Ressources:
-      - topics/index.md
-      - 🛠️ Sofware Craft:
-          - topics/craft/index.md
-          - Pair-Programming:
-              - topics/pair-programming/index.md
-              - Pair-Practice: topics/pair-programming/pair-practice.md
-              - Pair-Poetry: topics/pair-programming/pair-poetry.md
-              - topics/pair-programming/slides.md
-          - La maîtrise personnelle:
-              - Katas: topics/katas/index.md
-              - topics/katas/lt.md
-              - Coding Dojo: topics/coding-dojo/index.md
-              - topics/coding-dojo/slides.md
-          - TDD: topics/tdd/index.md
-          - S.O.L.I.D: topics/solid/index.md
-          - Ateliers:
-              - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
-              - Good Morning Learning: topics/good-morning-learning/index.md
-      - 🎓 Veille:
-          - topics/veille/index.md
-      - 🧩 Gamification:
-          - topics/gamification/index.md
-          - topics/gamification/lt.md
-          - topics/gamification/slides.md
-      - En chantier:
-          - topics/cold-watching.md
-
-          - topics/design-patterns/index.md
-          - topics/design-patterns/gof/index.md
-          - topics/design-patterns/gof/factory.md
-          - topics/dev-tape/index.md
-
-          - topics/katas/Diamound/index.md
-          - topics/katas/FizzBuzz/index.md
-          - topics/mob-programming/slides.md
-          - topics/solid/deroule.md
-          - topics/solid/slides/dip.md
-          - topics/solid/slides/intro.md
-          - topics/solid/slides/isp.md
-          - topics/solid/slides/lsp.md
-          - topics/solid/slides/ocp.md
-          - topics/solid/slides/srp.md
-          - topics/tdd/objectifs-pédagogiques.md
-          - topics/tdd/ressources.md
-          - topics/tdd/slides.md
-          - topics/tdd/vrac.md
-          - topics/tdd/triangle-du-developpement/index.md
-          - topics/tdd/triangle-du-developpement/slides.md
-          - topics/veille/activites.md
-          - topics/veille/cfp/veille.md
-          - topics/veille/cfp/2022/devoxx.md
-          - topics/xtrem/xtrem-reading.md
-          - topics/xtrem/xtrem-tech-watch.md
-          - topics/xtrem/xtrem-watching.md
-
-  - A propos:
+  - A propos de moi:
       # - Bio: me/.bio.md
       - CV: me/cv.md
       - NoCV: me/nocv.md
@@ -95,8 +100,12 @@ theme:
   favicon: assets/images/favicon.png
   features:
     - navigation.tabs
-    - navigation.sections
-    # - navigation.indexes
+    - navigation.footer
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
   palette:
     primary: black
     accent: red
