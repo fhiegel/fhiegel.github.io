@@ -2,362 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://fhiegel.github.io/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/design-pattern--abstract-factory/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/diskworld-driven-development/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/how-to-take-smart-notes/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/modele-anemique-vs-riche/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/01/06/retour-du-blog/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/01/13/design-patterns--les-gammes-de-la-conception-logicielle/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/01/20/design-patterns--factory-method/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/02/03/la-procrastination/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/02/17/cafe-veille-vaisselle/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/03/24/codekata--19-ans-aujourdhui/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/2022/05/25/pair-programming--pair-practice/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/drafts/2019-04-04---Howto--the-use-of-JaCoCo/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/drafts/A%20la%20rencontre%20d%27une%20pratique%20%20le%20Pair%20programming/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/drafts/Le%20jeu%20de%20r%C3%B4le%20%20m%C3%A9thodologie%20de%20d%C3%A9veloppement%20en%20informatique/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/blog/drafts/97-things/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://fhiegel.github.io/learn/presentations/good-morning-learning/slides/keep/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/me/cv/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/me/nocv/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://fhiegel.github.io/topics/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/cold-watching/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/sensibiliser-aux-tests-unitaires/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/coding-dojo/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/coding-dojo/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/craft/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/design-patterns/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/design-patterns/gof/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/design-patterns/gof/factory/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://fhiegel.github.io/topics/dev-tape/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://fhiegel.github.io/topics/dev-tape/cfp/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://fhiegel.github.io/topics/dev-tape/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/gamification/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/gamification/lt/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/gamification/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/good-morning-learning/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/good-morning-learning/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/good-morning-learning/slides/en/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/katas/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/katas/Game-Of-Life/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/katas/lt/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/katas/Diamound/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/katas/FizzBuzz/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/knowledge-driven-development/clean-code-as-learning-media/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/knowledge-driven-development/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/mob-programming/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/pair-programming/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/pair-programming/pair-poetry/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/pair-programming/pair-practice/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/pair-programming/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/deroule/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/dip/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/intro/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/isp/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/lsp/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/ocp/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/srp/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/objectifs-p%C3%A9dagogiques/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/ressources/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/vrac/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/triangle-du-developpement/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/tdd/triangle-du-developpement/slides/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/veille/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/veille/activites/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/veille/cfp/veille/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/veille/cfp/2022/devoxx/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/veille/phare/</loc>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/xtrem/xtrem-reading/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/xtrem/xtrem-tech-watch/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/xtrem/xtrem-watching/</loc>
-         <lastmod>2023-06-09</lastmod>
+         <lastmod>2023-07-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
