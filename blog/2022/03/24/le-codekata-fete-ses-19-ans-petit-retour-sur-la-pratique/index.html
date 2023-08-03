@@ -1,0 +1,2631 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Mon espace d'expression, permettant d'apprendre et de partager ma vision de l'Agilité et du Software Craftsmanship,  dans le fun et pour le plaisir.
+">
+      
+      
+      
+        <link rel="canonical" href="https://fhiegel.github.io/blog/2022/03/24/le-codekata-fete-ses-19-ans-petit-retour-sur-la-pratique/">
+      
+      
+        <link rel="prev" href="../../../02/17/le-cafe-la-veille-ou-comment-jai-pris-lhabitude-de-faire-la-vaisselle/">
+      
+      
+        <link rel="next" href="../../../05/25/pair-practice-comment-sentrainer-au-pair-programming/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.0-b2">
+    
+    
+      
+        <title>Le CodeKata fête ses 19 ans : petit retour sur la pratique - Exceller Ensemble</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.83068744.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+
+  
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+  
+  <style>.md-tag--café{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.645 7.472c2.1.53 4.779.8 8.008.8 3.299 0 5.918-.27 8.008-.8 2.23-.52 3.299-1.22 3.299-1.88 0-.47-.48-.93-1.35-1.28.2.13.35.35.35.59 0 .67-1.01 1.22-3.039 1.68-1.88.41-4.279.7-7.198.7-2.82 0-5.329-.29-7.138-.68-1.95-.48-2.97-1-2.97-1.68 0-.28.13-.52.52-.8-1.22.47-1.88.87-1.88 1.47.07.68 1.16 1.36 3.39 1.88zm4.689-2.16c2.27-.2 2.929-1.659 5.588-1.899 1.31-.1 2.14.16 2.23.62.08.43-.57.72-1.36.78-1.09.11-1.54-.28-1.63-.65-.81.09-.94.43-.9.67.09.46 1.07.92 2.75.76 1.9-.15 2.54-.9 2.38-1.65-.2-.98-1.66-1.8-4.28-1.55-3.359.3-3.339 1.86-5.628 2.05-.94.09-1.46-.13-1.55-.5-.06-.37.4-.55.94-.59.5-.05 1.11.04 1.4.2.21-.11.28-.22.26-.35-.1-.35-.79-.5-1.66-.44-1.7.15-1.7.91-1.64 1.25.17.87 1.48 1.45 3.1 1.3zm11.417 3.84c-2.1.49-4.779.809-8.008.809-3.3 0-5.989-.34-8.078-.8-1.88-.48-2.88-1.01-3.23-1.56.18 1.23.49 2.42.89 3.55-.48.3-.91.67-1.3 1.17a4.519 4.519 0 0 0-1.019 3.098 3.6 3.599 0 0 0 1.42 2.62c.87.68 1.81.88 2.879.68.41-.07.87-.28 1.29-.42-.88 0-1.62-.28-2.36-.87a3.55 3.549 0 0 1-1.49-2.42c-.2-.94 0-1.81.53-2.579.12-.15.25-.28.39-.4.3.73.62 1.45.98 2.12.81 1.23 1.62 2.299 2.43 3.459.35.68.58 1.35.74 2.019a3.899 3.899 0 0 0 2.229 1.5c1.15.4 2.35.58 3.579.51h.13a10.197 10.197 0 0 0 3.689-.52 4.179 4.179 0 0 0 2.16-1.49h.07c.13-.67.35-1.34.67-2.02.799-1.17 1.619-2.229 2.419-3.458A20.995 20.993 0 0 0 24 7.612c-.43.6-1.44 1.13-3.25 1.54z"/></svg>');}.md-tag--craft{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M144 160a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm368 0a80 80 0 1 0 0-160 80 80 0 1 0 0 160zM0 298.7C0 310.4 9.6 320 21.3 320h214.1c-26.6-23.5-43.3-57.8-43.3-96 0-7.6.7-15 1.9-22.3-13.6-6.3-28.7-9.7-44.6-9.7h-42.7C47.8 192 0 239.8 0 298.7zM320 320c24 0 45.9-8.8 62.7-23.3 2.5-3.7 5.2-7.3 8-10.7 2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96 43 96 96 96zm65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.3C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7h300.5c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5v-4.6l-2.7-1.5zM533.3 192h-42.6c-15.9 0-31 3.5-44.6 9.7 1.3 7.2 1.9 14.7 1.9 22.3 0 17.4-3.5 33.9-9.7 49 2.5.9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6 7.9-1.2 16-1.9 24.2-1.9s16.3.6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3.7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7 2.3 2.8 4.5 5.8 6.6 8.7-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5-4.6-5.7-12.7-6.7-19-3L574.4 311c-8.9-7.6-19.1-13.6-30.4-17.6v-21c0-7.3-4.9-13.8-12.1-14.9-6.5-1-13.1-1.5-19.9-1.5s-13.4.5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v21c-11.2 4-21.5 10-30.4 17.6l-18.2-10.5c-6.3-3.6-14.4-2.6-19 3-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9-2.6 6.8.5 14.3 6.8 17.9l18.2 10.5c-1 5.7-1.6 11.6-1.6 17.6s.6 11.9 1.6 17.5l-18.2 10.5c-6.3 3.6-9.5 11.1-6.8 17.9 2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5 4.6 5.7 12.7 6.7 19 3l18.2-10.2c8.9 7.6 19.2 13.6 30.4 17.6v21c0 7.3 4.9 13.8 12.1 14.9 6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9v-21c11.2-4 21.5-10 30.4-17.6l18.2 10.5c6.3 3.6 14.4 2.6 19-3 3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8 2.6-6.8-.5-14.3-6.8-17.9l-18.2-10.5c1-5.7 1.6-11.6 1.6-17.5s-.6-11.9-1.6-17.6l18.2-10.5zM472 384a40 40 0 1 1 80 0 40 40 0 1 1-80 0z"/></svg>');}.md-tag--pair-programming{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M72 88a56 56 0 1 1 112 0 56 56 0 1 1-112 0zm-8 157.7c-10 11.2-16 26.1-16 42.3s6 31.1 16 42.3v-84.6zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32v-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416v-21.5c20-24.7 32-56.2 32-90.5 0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112 0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0 56 56 0 1 1-112 0zm120 157.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm-80 272c0 16.2 6 31 16 42.3v-84.6c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zm64 42.3c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32h-64c-17.7 0-32-14.3-32-32v-42.8c-37.8-18-64-56.5-64-101.2 0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"/></svg>');}</style>
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#le-codekata-fete-ses-19-ans-petit-retour-sur-la-pratique" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../../../.." title="Exceller Ensemble" class="md-header__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Exceller Ensemble
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Le CodeKata fête ses 19 ans : petit retour sur la pratique
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Accueil
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../me/cv/" class="md-tabs__link">
+          
+  
+    
+  
+  A propos de moi
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Exceller Ensemble" class="md-nav__button md-logo" aria-label="Exceller Ensemble" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/icon-128x128.png" alt="logo">
+
+    </a>
+    Exceller Ensemble
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fhiegel/fhiegel.github.io" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Accueil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/craft/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🛠️ Software Craft
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            🛠️ Software Craft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/pair-programming/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    👥 Pair-Programming
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            👥 Pair-Programming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/pair-programming/pair-practice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pair-Practice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/pair-programming/pair-poetry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pair-Poetry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/katas/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ⛩️ La maîtrise personnelle
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            ⛩️ La maîtrise personnelle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/coding-dojo/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Coding Dojo
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Coding Dojo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/katas/Diamound/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Kata catalogue
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_3_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Kata catalogue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/katas/FizzBuzz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FizzBuzz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/katas/Game-Of-Life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Game Of Life
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/tdd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Test-Driven Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/tdd/objectifs-p%C3%A9dagogiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objectifs Pédagogiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/tdd/ressources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documents de travail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/tdd/vrac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vrac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/tdd/triangle-du-developpement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔺 Triangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/solid/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🧱 S.O.L.I.D
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            🧱 S.O.L.I.D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/solid/deroule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deroule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/good-morning-learning/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Ateliers
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_2_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ateliers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/sensibiliser-aux-tests-unitaires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tests Unitaires - Sensibiliser sans coder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_7" >
+        
+          <label class="md-nav__link" for="__nav_1_2_7" id="__nav_1_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Vrac
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Vrac
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/knowledge-driven-development/clean-code-as-learning-media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clean Code as Learning path
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/veille/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🎓 Veille
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            🎓 Veille
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/veille/activites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/veille/cfp/veille/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comment apprendre en continu avec ma veille technologique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/veille/cfp/2022/devoxx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFP DevoxxFR : Veille
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/veille/phare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PHARE : construire sa veille et initier son gestionnaire personnel de connaissances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/gamification/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🧩 Gamification
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            🧩 Gamification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../topics/design-patterns/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ➿ Design Patterns
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            ➿ Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/design-patterns/gof/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/design-patterns/gof/factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factory Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    🚧 En chantier
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            🚧 En chantier
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/cold-watching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    – Cold Watching –
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/xtrem/xtrem-reading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XtremReading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/xtrem/xtrem-tech-watch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    – Xtrem Tech Watch –
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../topics/xtrem/xtrem-watching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    – Xtrem Watching –
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    A propos de moi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            A propos de moi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../me/cv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../me/nocv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NoCV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quest-ce-que-cest-quun-kata" class="md-nav__link">
+    Qu'est-ce que c'est qu'un Kata ?
+  </a>
+  
+    <nav class="md-nav" aria-label="Qu'est-ce que c'est qu'un Kata ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#une-discipline-martiale" class="md-nav__link">
+    Une discipline martiale
+  </a>
+  
+    <nav class="md-nav" aria-label="Une discipline martiale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kihon-les-fondamentaux" class="md-nav__link">
+    Kihon : les fondamentaux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-la-technique-jutsu-a-la-voie-do" class="md-nav__link">
+    De la technique (jutsu) à la voie (do)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratiquer-le-codekata" class="md-nav__link">
+    Pratiquer le CodeKata
+  </a>
+  
+    <nav class="md-nav" aria-label="Pratiquer le CodeKata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adopter-le-bon-etat-desprit" class="md-nav__link">
+    Adopter le bon état d'esprit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viser-un-objectif" class="md-nav__link">
+    Viser un objectif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choisir-lexercice" class="md-nav__link">
+    Choisir l'exercice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#se-mettre-des-contraintes" class="md-nav__link">
+    Se mettre des Contraintes
+  </a>
+  
+    <nav class="md-nav" aria-label="Se mettre des Contraintes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-contrainte-zero" class="md-nav__link">
+    La Contrainte Zéro
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-reussir-un-kata" class="md-nav__link">
+    Comment réussir un Kata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-aborder-un-nouveau-codekata" class="md-nav__link">
+    Comment aborder un nouveau CodeKata ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-do-et-le-craft-aller-plus-loin" class="md-nav__link">
+    Le Do et le Craft : Aller plus loin ?
+  </a>
+  
+    <nav class="md-nav" aria-label="Le Do et le Craft : Aller plus loin ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codification" class="md-nav__link">
+    Codification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codekihon-les-fondamentaux" class="md-nav__link">
+    CodeKihon : les fondamentaux
+  </a>
+  
+    <nav class="md-nav" aria-label="CodeKihon : les fondamentaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-outils" class="md-nav__link">
+    Les outils
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-language" class="md-nav__link">
+    Le language
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-concepts" class="md-nav__link">
+    Les concepts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-pratiques" class="md-nav__link">
+    Les pratiques
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letat-desprit" class="md-nav__link">
+    L'état d'esprit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kata-favori" class="md-nav__link">
+    Kata favori
+  </a>
+  
+    <nav class="md-nav" aria-label="Kata favori">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notre-approche-de-la-discipline" class="md-nav__link">
+    Notre approche de la discipline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-chef-duvre-des-compagnons-du-devoir" class="md-nav__link">
+    Le Chef-d'œuvre des compagnons du Devoir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                  <span class="md-ellipsis">
+                    Retourner à l'index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="/assets/fhiegel.jpeg" alt="Fabien Hiegel">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>Fabien Hiegel</strong><br>
+                      Knowledge worker
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__title">
+                <div class="md-nav__link">
+                  <span class="md-ellipsis">
+                    Metadonnées
+                  </span>
+                </div>
+              </li>
+              <li class="md-nav__item">
+                <div class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
+                  <time datetime="2022-03-24 00:00:00" class="md-ellipsis">24 mars 2022</time>
+                </div>
+              </li>
+              
+              
+                
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
+                    <span class="md-ellipsis">
+                      
+                        15 min de lecture
+                      
+                    </span>
+                  </div>
+                </li>
+              
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+        
+        
+          
+        
+      
+      
+        <a href="../../../../../tags/#software-craftsmanship" class="md-tag md-tag-icon md-tag--craft">Software Craftsmanship</a>
+      
+    
+      
+      
+        
+        
+      
+      
+        <a href="../../../../../tags/#pratique" class="md-tag md-tag-icon">Pratique</a>
+      
+    
+      
+      
+        
+        
+      
+      
+        <a href="../../../../../tags/#kata" class="md-tag md-tag-icon">Kata</a>
+      
+    
+      
+      
+        
+        
+      
+      
+        <a href="../../../../../tags/#dojo" class="md-tag md-tag-icon">Dojo</a>
+      
+    
+  </nav>
+
+
+
+
+<h1 id="le-codekata-fete-ses-19-ans-petit-retour-sur-la-pratique">Le CodeKata fête ses 19 ans : petit retour sur la pratique<a class="headerlink" href="#le-codekata-fete-ses-19-ans-petit-retour-sur-la-pratique" title="Permanent link">&para;</a></h1>
+<p>Aujourd'hui, silencieusement, le CodeKata fête son 19e anniversaire.
+Pour moi, il ne s'agit pas seulement de l'exercice de code que vous préférez faire,
+ni la contrainte que vous préférez vous imposer,
+ni l'objectif que vous préférez atteindre.
+C'est un peu tout cela à la fois, mais également beaucoup plus.</p>
+<!-- more -->
+
+<!--
+    En entretien de recrutement, vient le moment fatidique du "test technique".
+    Sa structure est aléatoire et dépend des entreprises : QCM pour certains, relecture de code pour d'autres.
+    Parfois, on vous demande même de réaliser un exercice de code. Un Kata.
+
+    Vous a-t-on déjà demandé "Montre-moi ton kata préféré" ?
+    Pourquoi cette question ? Qu'est-ce que le kata préféré ? 
+-->
+<p>En tant que développeur.euse en informatique (et probablement dans d'autres métiers techniques), vient un moment dans un processus
+d'embauche, où votre éventuel futur employeur souhaite évaluer vos compétences.
+Il vous propose un "test technique".</p>
+<p>Plusieurs choix s'offrent à lui :</p>
+<ul>
+<li>Utiliser la période d'essai pour vous évaluer en profondeur</li>
+<li>Demander des réponses à un questionnaire (par exemple un QCM)</li>
+<li>Engager la discussion entre le candidat et des experts internes</li>
+</ul>
+<p>Autour de moi, en quelques années, j'ai vu de plus en plus d'entreprises demander au candidat de réaliser des exercices de code au cours de l'entretien technique.</p>
+<p>Des Katas.</p>
+<p>Dans le contexte du développement logiciel, je trouve que ce terme est judicieusement choisi, mais mal utilisé.</p>
+<h2 id="quest-ce-que-cest-quun-kata">Qu'est-ce que c'est qu'un <strong>Kata</strong> ?<a class="headerlink" href="#quest-ce-que-cest-quun-kata" title="Permanent link">&para;</a></h2>
+<p>Dans le monde qui m'entoure, un <strong>Kata</strong> est un exercice de programmation, avec un énoncé relativement court et une difficulté variable.</p>
+<p>Et souvent, ça s'arrête là. </p>
+<p>Je trouve cela dommage, car la notion de <strong>Kata</strong>, prevenant des arts martiaux et plus précisément du karaté, va plus loin. 
+Cette profondeur a bien été saisie par Dave Thomas<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, qui introduit la notion de <strong>CodeKata</strong> dans cet article : <a href="http://codekata.com/kata/codekata-how-it-started/">CodeKata: How It Started</a>, aux alentours du 24 mars 2003<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> (<img alt="🎉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f389.svg" title=":tada:" />).
+Cette paternité est également mentionnée dans le livre "The Coding Dojo Handbook" d'Emily Bache<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+<p>L'intention initiale du CodeKata allait bien au-delà de la réalisation d'un exercice de code.</p>
+<h3 id="une-discipline-martiale">Une discipline martiale<a class="headerlink" href="#une-discipline-martiale" title="Permanent link">&para;</a></h3>
+<p>Le Kata provient du Karaté, je vais vous épargner sa définition Wikipédia, mais je vais vous en proposer une autre.</p>
+<blockquote>
+<p>KATA : Enchaînements de formes prédéfinies qui simulent des situations de combat</p>
+<p>-- <a href="https://www.franceshotokan.com/content/quest-ce-que-le-Karaté">Qu'est-ce-que le Karaté ?</a> - France Shotokan</p>
+</blockquote>
+<p>Lorsque Gichin Funakoshi, le fondateur du Karaté moderne, a codifié le Karaté dans son livre "Karaté dô kyôhan", il a retenu et compilé 19 Katas différents. 
+Cette selection lui permettait de balayer l'ensemble des caractéristiques du Karaté, tout en restant humainement assimilable.
+Chaque Kata permet d'aborder le Karaté par angle qui lui est propre, mais il existe un trio de Katas, permettant de travailler les fondamentaux
+par lesquels il est conseillé de commencer.</p>
+<p>Les Kata du Karaté sont une <strong>forme codifiée d'un enchainement de mouvements</strong>.</p>
+<h4 id="kihon-les-fondamentaux">Kihon : les fondamentaux<a class="headerlink" href="#kihon-les-fondamentaux" title="Permanent link">&para;</a></h4>
+<p>Avant le chapitre des Katas, dans le <em>Karaté dô kyôhan</em>, il y a cette petite phrase, pas si anodine que ça :</p>
+<blockquote>
+<p>Avant de pratiquer les Katas, apprenez à vous tenir bien et à frapper correctement des pieds.</p>
+<p>-- Gichin Funakoshi, Karaté dô kyôhan</p>
+</blockquote>
+<p>Si les Katas sont des enchainements de movements, il faut connaître les mouvements de base.</p>
+<p>Les fondamentaux.</p>
+<p>Les <strong>Kihon</strong>.</p>
+<p>Pour le Karaté, il s'agit de positions du corps, de déplacements, de coup de poings, coups de pieds ou blocages.</p>
+<!-- Quels seraient dans le développement logiciel nos Kihon ? -->
+
+<h4 id="de-la-technique-jutsu-a-la-voie-do">De la technique (jutsu) à la voie (do)<a class="headerlink" href="#de-la-technique-jutsu-a-la-voie-do" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Je ne crains pas l'homme qui a pratiqué 10.000 coups une fois, mais je crains l'homme qui a pratiqué un coup 10.000 fois.</p>
+<p>-- Bruce Lee</p>
+</blockquote>
+<p>Les Katas sont des exercices codifiés, faits pour être pratiqués encore et encore, afin de progresser dans la technicité.</p>
+<p>Mais la pratique des Katas dans le Karaté ne s'arrête pas à l'excellence technique.</p>
+<blockquote>
+<p>À travers l'homme, les techniques deviennent un Art.<br>
+L'Art ne fait pas l'Homme, l'Homme fait l'Art.</p>
+<p>-- Gichin Funakoshi, Karaté dô kyôhan</p>
+</blockquote>
+<p>La pratique des Katas utilise le prétexte de la technique pour entrainer le mental à faire face "au monde en toute lucidité" (<em>Karaté dô kyôhan</em>).
+Au-delà de la recherche de la perfection technique, en entretenant sa courtoisie, son ouverture aux critiques et son humilité,
+le karatéka peut espérer atteindre l'essence de sa discipline.</p>
+<p>Le travail du <strong>savoir-être</strong> est une étape indispensable pour s'améliorer dans le karaté.</p>
+<!--
+Tout le monde ne souhaite pas s'entraîner, ni pratiquer des Katas.
+Je pense que c'est à chacun de savoir s'il souhaite un travail alimentaire, s'il recherche une maîtrise technique ou s'il 
+part en quête de quelque chose de plus spirituel.
+-->
+
+<h2 id="pratiquer-le-codekata">Pratiquer le CodeKata<a class="headerlink" href="#pratiquer-le-codekata" title="Permanent link">&para;</a></h2>
+<p>Le Kata, par la recherche de l'amélioration continue, constitue une excellente inspiration pour le monde de l'informatique.
+Mais si, aujourd'hui, on me demande de dérouler un CodeKata, comment est-ce que je peux m'y prendre en tant que développeur ? </p>
+<h3 id="adopter-le-bon-etat-desprit">Adopter le bon état d'esprit<a class="headerlink" href="#adopter-le-bon-etat-desprit" title="Permanent link">&para;</a></h3>
+<p>Avant de coder, le praticien doit se préparer un minimum pour maximiser son expérience.</p>
+<p>Commencez par vous dégager un cadre sain et sécuritaire.
+L'objectif est de se rendre disponible temporellement (une plage de temps dédiée), et mentalement (pas d'autre sujet à penser), pour pouvoir profiter pleinement de l'exercice.</p>
+<blockquote>
+<p>The first is to take the pressure off every now and then.</p>
+<p>-- <a href="http://codekata.com/kata/codekata-how-it-started/">http://codekata.com/kata/codekata-how-it-started/</a></p>
+</blockquote>
+<p>Ensuite, il faut endosser un état d'esprit un peu particulier : Avoir envie de progresser.
+Envie d'apprendre. 
+Accepter les erreurs. 
+Se préparer à jouer avec le code. 
+Expérimenter.</p>
+<p>Prenez votre temps : le temps du Kata est un temps pour vous.
+Profitez-en et ne vous stressez pas.
+Ralentir permet à vos neurones de se connecter et favorise les apprentissages.</p>
+<p>Rappelez-vous : le temps du Kata n'est pas un temps pour reproduire votre quotidien.
+C'est un temps dédié à essayer autre chose. </p>
+<h3 id="viser-un-objectif">Viser un objectif<a class="headerlink" href="#viser-un-objectif" title="Permanent link">&para;</a></h3>
+<p>Fort de votre état d'esprit positif et enthousiaste, vous aller vous fixer un "objectif d'apprentissage".
+Il s'agit de <strong>votre</strong> réponse (personnelle) à la question "A la fin du temps que je m'accorde pour réaliser le CodeKata, avec quoi voudrais-je repartir ?".</p>
+<p>Le couplage de votre état d'esprit et de l'objectif est très similaire à la <a href="https://jamesclear.com/beginners-guide-deliberate-practice">Deliberate Practice</a>, 
+un entrainement en pleine conscience où l'on va chercher, par une approche systématique, à améliorer un et un seul aspect de notre façon de faire.</p>
+<h3 id="choisir-lexercice">Choisir l'exercice<a class="headerlink" href="#choisir-lexercice" title="Permanent link">&para;</a></h3>
+<p>Souvent, on part de l'exercice pour déterminer le CodeKata que l'on souhaite faire.
+Pourquoi ? 
+Parce que c'est facile : il existe pléthore de catalogues et choisir un élément dans une liste, reste moins engageant que de se poser les questions des paragraphes ci-dessus.</p>
+<p>Gardez tout de même en tête : il est plus pertinent d'adapter l'exercice à votre objectif, que d'adapter votre objectif à l'exercice.
+Il faut voir l'exercice comme un prétexte pour se mettre en situation, un peu comme les entrainements à l'alerte incendie</p>
+<p>Quelques catalogues de CodeKata :</p>
+<ul>
+<li><a href="https://github.com/gamontal/awesome-Kata">Awesome Kata</a></li>
+<li><a href="http://codekata.com/">Codekata</a></li>
+<li><a href="http://codingdojo.org/KataCatalogue">Codingdojo</a></li>
+<li><a href="https://cyber-dojo.org/creator/home">Cyber-dojo</a></li>
+<li><a href="https://github.com/emilybache?tab=repositories">Emily Bache repositories</a></li>
+<li><a href="http://kata-log.rocks/">Kata-Log</a></li>
+</ul>
+<h3 id="se-mettre-des-contraintes">Se mettre des Contraintes<a class="headerlink" href="#se-mettre-des-contraintes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>If Nothing Changes, Nothing Is Going to Change</p>
+<p>-- James Clear</p>
+</blockquote>
+<p>Répéter un exercice sans cesse et sans cesse ne permet pas nécessairement de progresser.
+Afin de mieux servir l'objectif que l'on se fixe, il faut parfois se fixer une contrainte.
+Il faut la voir comme un jeu, c'est-à-dire un <strong>obstacle</strong> auquel on va se <strong>confronter volontairement</strong> pour se dépasser.
+Par exemple, un coureur pourrait se mettre des poids aux chevilles ou s'imposer une course particulière (lever de genous, ou "talons-fesses") sur une distance finie. </p>
+<p>Quelques exemples de contraintes :</p>
+<ul>
+<li><a href="http://kata-log.rocks/">Kata-Log</a> propose un ensemble de contraintes</li>
+<li>Pratiquer le TDD (Test Driven Development)</li>
+<li>Pratiquer des Tests paramétrés</li>
+<li>Pratiquer du Property Based Testing</li>
+<li>Pratiquer le Pair-Programming </li>
+<li>Pratiquer le Mob-Programming</li>
+<li>Pratiquer le TCR (Test &amp;&amp; Commit || Revert)</li>
+<li>Appliquer le Clean Code</li>
+<li>Appliquer les principes SOLID</li>
+<li>Appliquer les contraintes des objets Calistenics</li>
+<li>Ne pas utiliser la Souris, ni le trackpad</li>
+<li>Essayer un nouvel Exercice</li>
+<li>Essayer un nouveau Langage</li>
+</ul>
+<h4 id="la-contrainte-zero">La Contrainte Zéro<a class="headerlink" href="#la-contrainte-zero" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Pas de Kata sans TDD (Test Driven Development)</p>
+<p>-- Random Coach Craft.</p>
+</blockquote>
+<p>Non.
+La première règle du Kata, c'est de se dégager un cadre sain et sécuritaire pour se donner la capacité d'apprendre.
+Pour pouvoir sortir de sa zone de confort, il faut commencer par en avoir une.
+Le TDD est une contrainte ; il faut laisser la liberté à chacun de pouvoir se l'imposer ou non.</p>
+<h3 id="comment-reussir-un-kata">Comment réussir un Kata<a class="headerlink" href="#comment-reussir-un-kata" title="Permanent link">&para;</a></h3>
+<p>Par définition un Kata ne sera jamais un échec.
+Commencer un Kata est une réussite en soi.</p>
+<p>Vous vous êtes donné un objectif vers lequel <strong>tendre</strong> ?
+Comment savoir si vous l'avez atteint ?</p>
+<p>Faites une auto-rétro en vous et vous-mêmes pour répondre à cette question. 
+Voici quelques questions à se poser sur le Kata que vous venez de pratiquer :</p>
+<ul>
+<li>est-ce-que j'ai appris quelque chose ?</li>
+<li>est-ce-que je me suis rapproché de l'objectif que je m'étais fixé ?</li>
+<li>est-ce-que j'ai réussi à me concentrer pleinement dessus et éviter les distractions ?</li>
+<li>est-ce-que j'ai eu plaisir à le faire ?</li>
+<li>est-ce que j'ai essayé un nouvel exercice ?</li>
+<li>est-ce que j'ai "fini" le kata (ie. est-ce que j'ai répondu à toutes les fonctionnalités demandées par l'énoncé)</li>
+<li>est-ce que j'ai essayé un nouveau langage ?</li>
+<li>est-ce que j'ai essayé un nouveau paradigme de programmation ?</li>
+<li>est-ce que j'ai essayé une méthodologie de développement spécifique (TDD, TCR, micro-commit, etc.) ?</li>
+<li>est-ce j'ai fait du Pair/Mob/Ensemble Programming ?</li>
+<li>est-ce que mon code se déploie sur un environnement de "prod" ?</li>
+</ul>
+<p>Si malheureusement, vous répondez par "Non" à toutes ces questions... 
+Alors, il ne vous reste plus qu'à pratiquer de nouveau, dans le but de vous améliorer ! </p>
+<h3 id="comment-aborder-un-nouveau-codekata">Comment aborder un nouveau CodeKata ?<a class="headerlink" href="#comment-aborder-un-nouveau-codekata" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Il est difficile d'apprendre un Kata d'une seule traite</p>
+<p>-- Gichin Funakoshi, Karaté dô kyôhan</p>
+</blockquote>
+<p>Aborder un nouveau CodeKata est une contrainte en tant que tel.
+Lorsque vous découvrez un nouvel exercice, essayez d'obtenir un tout petit résultat. 
+Il vous faudra peut-être deux ou trois fois avant de réussir à dérouler l'exercice jusqu'au bout des fonctionnalités demandées.
+Et une fois que vous êtes en mesure de le dérouler, vous pouvez commencer à corriger vos postures et ajouter des contraintes.</p>
+<h2 id="le-do-et-le-craft-aller-plus-loin">Le Do et le Craft : Aller plus loin ?<a class="headerlink" href="#le-do-et-le-craft-aller-plus-loin" title="Permanent link">&para;</a></h2>
+<p>Le CodeKata a réussi à reprendre beaucoup d'éléments du Kata d'origine.
+Seulement, voilà : le CodeKata est très centré sur la recherche de la perfection technique.
+La recherche mentale que l'on trouve dans le Karaté, me semble très peu présente dans la pratique du CodeKata.</p>
+<p>Y a-t-il des choses à notre portée, que nous pourrions ou souhaiterions apporter dans notre pratique ?</p>
+<h3 id="codification">Codification<a class="headerlink" href="#codification" title="Permanent link">&para;</a></h3>
+<p>La première difference que je trouve entre le Kata du Karaté et le Kata dans le développement logiciel, est : la codification.</p>
+<p>Il y a bien des vidéos d'experts qui démontrent leur manière de résoudre les problèmes (ex: <a href="https://www.youtube.com/watch?v=XHnuMjah6ps">Sandro Mancuso Outside-In TDD</a>),
+mais je ne connais pas de consensus sur un enchainement de référence des différents exercices que l'on qualifie de Kata.</p>
+<p>Peut-être qu'un jour, il y aura un collège d'experts qui sortiront le Manifeste de Développement Logiciel, avec 19 Katas 
+codifiés et qui serviront de référence pour les générations futures.
+À mon humble avis, si on en arrive là, alors le développement logiciel pourra être effectué par des intelligences artificielles.</p>
+<p>En revanche, il existe un panel d'exercices bien connus permettant d'aborder différents aspects du développement logiciel.
+Si une codification doit être mise en place, je pense qu'elle se fera davantage par les compétences sollicitées lors
+de la réalisation des exercices, que par la réalisation des exercices en elle-même.
+Encore une fois, allez voir du côté de <a href="http://kata-log.rocks/">Kata-Log</a>, </p>
+<p>Quelques Kata qui pourraient rentrer dans une telle codification (sachant qu'il y a certainement de la redondance dans les compétences) :</p>
+<ul>
+<li>Kata débutant / Algorithmie<ul>
+<li><a href="https://codingdojo.org/kata/FizzBuzz/">FizzBuzz</a> : un incontournable pour débuter.</li>
+<li><a href="https://codingdojo.org/kata/LeapYears/">Leap Year</a></li>
+<li><a href="https://codingdojo.org/kata/StringCalculator/">String Calculator</a></li>
+<li><a href="https://codingdojo.org/kata/RomanNumerals/">Roman Numeral</a></li>
+</ul>
+</li>
+<li>Kata de Conception<ul>
+<li><a href="https://codingdojo.org/kata/Bowling/">Bowling Kata</a></li>
+<li><a href="https://github.com/sandromancuso/Bank-kata">Bank Kata</a></li>
+<li><a href="https://codingdojo.org/kata/GameOfLife/">Game Of Life</a></li>
+</ul>
+</li>
+<li>Kata de Refactoring<ul>
+<li><a href="https://github.com/emilybache/GildedRose-Refactoring-Kata">GildedRose</a> : le kata de refactor par excellence</li>
+<li><a href="https://github.com/caradojo/trivia">Trivia</a></li>
+<li><a href="https://github.com/emilybache/Tennis-Refactoring-Kata">Tennis Game</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="codekihon-les-fondamentaux">CodeKihon : les fondamentaux<a class="headerlink" href="#codekihon-les-fondamentaux" title="Permanent link">&para;</a></h3>
+<p>Rappelons-le : au Karaté, avant de commencer un Kata, il faut connaître les mouvements fondamentaux.</p>
+<p>En poussant le parallèle, quels sont les fondamentaux que nous développeurs, devrions connaître et travailler dans les CodeKata ?</p>
+<h4 id="les-outils">Les outils<a class="headerlink" href="#les-outils" title="Permanent link">&para;</a></h4>
+<p>Les outils que l'on va utiliser lors du CodeKata doivent nous convenir.</p>
+<p>Nous devrions pouvoir nous exprimer dans notre IDE (Environnement de Développement Intégré).
+C'est-à-dire créer, éditer, supprimer des fichiers de code, mais aussi invoquer les compilateurs ou interpréteurs permettant de traduire
+le code en exécutable.</p>
+<p>Les raccourcis, les plugins et les fonctionnalités de notre IDE, font partie des CodeKihon,
+et sont souvent des extensions des autres points évoqués dans ce paragraphe.</p>
+<h4 id="le-language">Le language<a class="headerlink" href="#le-language" title="Permanent link">&para;</a></h4>
+<p>Le langage de programmation est le vecteur de l'expression du CodeKata.
+Si le choix du langage n'est pas fondamental, car on peut dérouler les exercices de code dans n'importe quel langage, 
+connaître le langage que l'on utilise lors d'un CodeKata est indispensable.</p>
+<p>Et ce, même lorsque l'on choisit la contrainte "Nouveau langage".
+En ce cas, on va se concentrer sur un exercice simple pour découvrir les fonctionnalités du langage avant d'espérer aller plus loin.
+Pour aller plus loin sur un exercice, on aura toujours besoin d'un "maître", c'est-à-dire quelqu'un qui maitrise le langage 
+et vers qui se tourner lors de blocages : lors d'un CodeKata, rester bloqué ne nous permet pas d'apprendre. </p>
+<h4 id="les-concepts">Les concepts<a class="headerlink" href="#les-concepts" title="Permanent link">&para;</a></h4>
+<p>Je pense que les concepts de la programmation logicielle font également partie des CodeKihon.
+Cela fait écho aux langages, mais aujourd'hui les languages comme Java ou C# mêlent différents concepts et paradigmes de programmation.</p>
+<p>Dans les concepts qui me viennent en tête :</p>
+<ul>
+<li>Savoir ce que sont des variables, des expressions, des fonctions, des méthodes, des classes et des interfaces</li>
+<li>Connaître les différents paradigmes de programmation (ex: procédural, programmation orientée objet, programmation fonctionnelle)</li>
+<li>D'autres concepts, peut-être moins fondamentaux, mais qui mériteraient qu'on s'y attarde :<ul>
+<li>les niveaux d'abstraction</li>
+<li>les callback</li>
+<li>ce qu'est une fonction pure</li>
+<li>le "tell dont ask"</li>
+</ul>
+</li>
+</ul>
+<h4 id="les-pratiques">Les pratiques<a class="headerlink" href="#les-pratiques" title="Permanent link">&para;</a></h4>
+<p>Comment est-ce que vous développez ?
+Répondre à cette question devrait mettre en lumière certaines des pratiques que vous considérez comme fondamentale</p>
+<p>Pour moi, ce serait :</p>
+<ul>
+<li>Développer en <strong>Test Driven Development</strong> (TDD) : c'est-à-dire suivre le circuit Red-Green-Refactor, en étapes atomiques.
+    Je pense que coder sans le TDD c'est comme pratiquer le karaté sans les coups de poings ; c'est moins efficace,
+    mais ça n'empêche pas de travailler son jeu de jambes et de s'amuser.</li>
+<li><strong>Refactorer</strong> par petites touches, et en continu. 
+    Chaque Refactoring est un CodeKihon : le catalogue de Martin Fowler (<a href="https://refactoring.com/catalog/">refactoring-catalog</a>) dresse un beau panel 
+    de petits mouvements à connaître. Pensez-bien à apprendre les raccourcis clavier dans votre IDE).</li>
+<li><strong>Ensemble programming</strong> : que ce soit du Pair (2 personnes) ou du Mob (3+) faire un kata à plusieurs apporte toujours plus qu de le faire tout seul.</li>
+<li><strong>Clean Code</strong> : se poser la question de la lisibilité du code, et tout ce qui en découle (SOLID, Simple Design)</li>
+</ul>
+<p>Si ces CodeKihon ne vous inspirent pas, oubliez-les et trouvez les vôtres.</p>
+<p>Je pense qu'il est plus efficace de prendre du plaisir à faire des CodeKata, qu'à s'imposer des contraintes qui nous en dégoûterons.
+Et ce, quitte à s'entraîner à des CodeKihon qui ne nous inspirent pas, lorsqu'on est à l'aise sur les autres sujets.</p>
+<h3 id="letat-desprit">L'état d'esprit<a class="headerlink" href="#letat-desprit" title="Permanent link">&para;</a></h3>
+<p>J'ai commencé à écrire des articles avec cette idée en tête : <strong>le Software Craftsmanship n'est pas un mouvement élitiste</strong>.
+L'état d'esprit décrit par Gichin Funakoshi fait écho à cette idée, et me paraît indispensable pour prendre plaisir à faire un CodeKata.</p>
+<p>En se préparant à effectuer le CodeKata :</p>
+<ul>
+<li>ouvrez votre esprit à la nouveauté : vous êtes là pour apprendre</li>
+<li>mettez de côté votre vanité, ça ne se mange pas</li>
+<li>restez humble face à vos réussites</li>
+<li>persévérer lors de vos échecs, ce ne sont que des apprentissages sur la voie de la réussite </li>
+<li>soyez courtois envers vous-même et envers les autres</li>
+</ul>
+<blockquote>
+<p>I hated the idea so I had to try it.</p>
+<p>-- Kent Beck, about TCR </p>
+</blockquote>
+<p>Je voudrais rappeler l'exemple de Kent Beck<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, qui, maîtrisant le TDD, a été confronté à une nouvelle pratique : 
+le TCR (Test &amp;&amp; Commit || Revert) (<a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864">article complet</a>). 
+Bien que détestant l'idée, il l'a essayé pour se forger une expérience ; c'est cet état d'esprit que je vous encourage à cultiver dans le CodeKata.</p>
+<h2 id="kata-favori">Kata favori<a class="headerlink" href="#kata-favori" title="Permanent link">&para;</a></h2>
+<h3 id="notre-approche-de-la-discipline">Notre approche de la discipline<a class="headerlink" href="#notre-approche-de-la-discipline" title="Permanent link">&para;</a></h3>
+<p>Dans le <em>Karaté dô kyôhan</em>, le kata favori est l'enchainement de techniques sur lequel un pratiquant est le plus à l'aise, et qu'il va être rapidement amené à maitriser.
+Mais, autant connaître ses forces et travailler dessus est une bonne chose, autant il faut éviter de négliger ses faiblesses.
+En discutant le sujet avec un expert familial du karaté<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>, il semblerait que le Kata favori soit également un moyen par 
+lequel le pratiquant expose l'ensemble de sa maîtrise.
+Et ce, même si un Kata n'est qu'un unique angle d'approche de la discipline.</p>
+<p>En informatique, nous n'avons pas cette restriction ; bien qu'il y ait des CodeKata permettant de travailler davantage 
+le Refactoring, ou la conception logicielle, la plupart des exercices de CodeKata permettent de solliciter un large panel de compétences.</p>
+<h3 id="le-chef-duvre-des-compagnons-du-devoir">Le Chef-d'œuvre des compagnons du Devoir<a class="headerlink" href="#le-chef-duvre-des-compagnons-du-devoir" title="Permanent link">&para;</a></h3>
+<p>Les Compagnons du Devoir sont, en France, un mouvement qui offre de l'apprentissage et une communauté autour de métier traditionnels 
+Le Chef-d'œuvre des compagnons est une coutume d'entrée, où un novice doit réaliser un objet
+propre à son artisanat, dans lequel il doit démontrer toute sa compréhension des techniques, et de ses qualités humaines.</p>
+<p>Le Software Craftsmanship fait beaucoup écho avec le mouvement des Compagnons du Devoir.
+Les deux mouvements partagent la vision de permettre à chacun de s'accomplir dans et par le métier, 
+dans un esprit d'ouverture et de partage</p>
+<p>Je suis persuadé que notre CodeKata favori et le Chef-d'œuvre, constituent un point commun supplémentaire entre les deux mouvements.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>J'en suis arrivé à la conclusion suivante : </p>
+<p><strong>Notre Kata favori, c'est la démonstration la plus aboutie de notre compréhension de la discipline.</strong></p>
+<p>Aussi, je pense que la meilleure question que l'on pourrait poser à un entretien technique, ce serait :</p>
+<p>Montre-moi ton kata favori.<br>
+Montre-moi le résultat de ton entrainement.</p>
+<hr />
+<p>Merci de m'avoir lu et bonne journée 🌞
+<br>
+Fabien</p>
+<p>PS : j'ai réussi à écrire un article sur les Katas, sans parler de Dojo 😎</p>
+<hr />
+<p><strong>Bibliographie et liens utiles</strong></p>
+<ul>
+<li>🔗 <a href="http://codekata.com">CodeKata - Because experience is the only teacher | Dave Thomas</a> : en écrivant cet article,
+  je me suis rendu compte à quel point j'ai négligé ce blog.
+  Je l'ai toujours vu comme un catalogue de Kata. 
+  Mais il contient également <strong>toute la réflexion</strong> autour de la question "Comment donner un cadre pour que les développeurs.seues s'entraînent ?".</li>
+<li>🔗 <a href="http://kata-log.rocks/">Kata-Log</a></li>
+<li>📚 Karaté dô kyôhan - Le livre du maître - Gichin Funakoshi : il présente les textes fondateurs de la plume de maître Funakoshi ainsi que les photos du maître disparu</li>
+<li>🧑 <a href="https://www.franceshotokan.com/content/gichin-funakoshi">Gichin Funakoshi</a> : Le fondateur du Karaté moderne</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Dave Thomas | <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/PragDave" title="GitHub User: PragDave">@PragDave</a> | <a href="https://pragdave.me">https://pragdave.me</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Cherchez la phrase "Yesterday I posted a blog entry about the importance of verbs." et constatez que le lien sur "blog entry", 
+pointe vers "<a href="http://pragdave.me/blog/2003/03/23/artifacting/">http://pragdave.me/blog/2003/03/23/artifacting/</a>". 
+Merci à Laurent Bossavit<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> pour la confirmation de l'attribution et de la période de temps via une
+<a href="http://web.archive.org/web/20040507034122/http://www.codekata.com/cgi-bin/codekata.cgi">archive internet de 2004</a>).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Laurent Bossavit | <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/Morendil" title="GitHub User: Morendil">@Morendil</a> | Technical Advisor at CodeWorks | Co-fondateur du Coding Dojo de Paris | <a href="https://leprechauns-book.tumblr.com">https://leprechauns-book.tumblr.com</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Emily Bache | <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/emilybache" title="GitHub User: emilybache">@emilybache</a> | <a href="http://coding-is-like-cooking.info">http://coding-is-like-cooking.info</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Kent Beck | <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/KentBeck" title="GitHub User: KentBeck">@KentBeck</a> | Un des pères (si ce n'est LE) pères du TDD |Auteur de "Test Driven Development: By Example", "eXtreme Programmin Explained&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Richard Hiegel | 5ième Dan du Karaté Shotokan, et 7ième Dan de la Fédération Française de Karaté | <a href="https://www.ten-no-mon.fr/a-propos-de-richard-hiegel/">https://www.ten-no-mon.fr/a-propos-de-richard-hiegel/</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/fhiegel" target="_blank" rel="noopener" title="fhiegel on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/fabien-hiegel-874416b5" target="_blank" rel="noopener" title="Fabien Hiegel on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+    <a href="https://techhub.social/@fhiegel" target="_blank" rel="noopener me" title="Fabien Hiegel on Mastodon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight"], "search": "../../../../../assets/javascripts/workers/search.dfff1995.min.js", "tags": {"Caf\u00e9": "caf\u00e9", "Craft": "craft", "Pair-programming": "pair-programming", "Software Craftsmanship": "craft", "craft": "craft"}, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.4e31edb1.min.js"></script>
+      
+    
+  </body>
+</html>
