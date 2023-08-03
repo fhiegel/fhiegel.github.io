@@ -1,18 +1,16 @@
 ---
-debug: false 
-words: 1670
-template: blog/post.html 
-date: 2022-02-03 
-title: "La procrastination : le REX"
-description: >
-    Le jeudi de la semaine dernière, je n'ai pas publié d'article. Aujourd'hui, je vous propose un REX sur ce qu'il s'est
-    passé et comment fonctionne la procrastination.
+date: 2022-02-03
+authors:
+- fhiegel
 tags:
 - Veille
 - Motivation
 - Partage
-- 
 ---
+#  La procrastination : le REX
+Le jeudi de la semaine dernière, je n'ai pas publié d'article. Aujourd'hui, je vous propose un REX sur ce qu'il s'est
+passé et comment fonctionne la procrastination.
+<!-- more -->
 
 La semaine dernière, je n'ai pas réussi à publier l'article "_Martin et le Pattern Abstract Factory_".
 

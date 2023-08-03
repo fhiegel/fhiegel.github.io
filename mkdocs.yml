@@ -8,8 +8,6 @@ site_description: >
 repo_url: https://github.com/fhiegel/fhiegel.github.io
 edit_uri: ""
 
-# Nav
-
 nav:
   - Accueil:
       - index.md
@@ -17,16 +15,14 @@ nav:
           - topics/craft/index.md
           - 👥 Pair-Programming:
               - topics/pair-programming/index.md
-              - topics/pair-programming/slides.md
-              - topics/mob-programming/slides.md
               - Pair-Practice: topics/pair-programming/pair-practice.md
               - Pair-Poetry: topics/pair-programming/pair-poetry.md
           - ⛩️ La maîtrise personnelle:
               - Katas: topics/katas/index.md
-              - Kata préféré (slides): topics/katas/lt.md
+
               - Coding Dojo:
                   - topics/coding-dojo/index.md
-                  - Coding Dojo (slides): topics/coding-dojo/slides.md
+
               - Kata catalogue:
                   - topics/katas/Diamound/index.md
                   - topics/katas/FizzBuzz/index.md
@@ -35,25 +31,19 @@ nav:
               - topics/tdd/index.md
               - topics/tdd/objectifs-pédagogiques.md
               - topics/tdd/ressources.md
-              - TDD - slides: topics/tdd/slides.md
               - topics/tdd/vrac.md
               - 🔺 Triangle: topics/tdd/triangle-du-developpement/index.md
-              - 🔺 Triangle - slides: topics/tdd/triangle-du-developpement/slides.md
+
           - 🧱 S.O.L.I.D:
               - Synopsis: topics/solid/index.md
               - topics/solid/deroule.md
-              - Intro (slides): topics/solid/slides/intro.md
-              - SRP (slides): topics/solid/slides/srp.md
-              - OCP (slides): topics/solid/slides/ocp.md
-              - LSP (slides): topics/solid/slides/lsp.md
-              - ISP (slides): topics/solid/slides/isp.md
-              - DIP (slides): topics/solid/slides/dip.md
+
           - Ateliers:
               - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
               - Good Morning Learning: topics/good-morning-learning/index.md
           - Vrac:
               - topics/knowledge-driven-development/clean-code-as-learning-media.md
-              - topics/knowledge-driven-development/slides.md
+
       - 🎓 Veille:
           - topics/veille/index.md
           - topics/veille/activites.md
@@ -62,8 +52,7 @@ nav:
           - topics/veille/phare/index.md
       - 🧩 Gamification:
           - topics/gamification/index.md
-          - Gamification (slides): topics/gamification/slides.md
-          - Gamification (slides light): topics/gamification/lt.md
+
       - ➿ Design Patterns:
           - topics/design-patterns/index.md
           - topics/design-patterns/gof/index.md
@@ -74,23 +63,30 @@ nav:
           - topics/xtrem/xtrem-tech-watch.md
           - topics/xtrem/xtrem-watching.md
   - Blog:
-      - Tous les articles: blog/index.md
-      - 2022:
-          - blog/2022/05/25/pair-programming--pair-practice.md
-          - blog/2022/03/24/codekata--19-ans-aujourdhui.md
-          - blog/2022/02/17/cafe-veille-vaisselle.md
-          - blog/2022/02/03/la-procrastination.md
-          - blog/2022/01/20/design-patterns--factory-method.md
-          - blog/2022/01/13/design-patterns--les-gammes-de-la-conception-logicielle.md
-          - blog/2022/01/06/retour-du-blog.md
+      - blog/index.md
   - A propos de moi:
       # - Bio: me/.bio.md
       - CV: me/cv.md
       - NoCV: me/nocv.md
-
-# Theme options ef2929, d52929
-
-# Configuration
+not_in_nav: |
+  tags.md
+  topics/good-morning-learning/slides/index.md
+  topics/good-morning-learning/slides/en.md
+  topics/gamification/slides.md
+  topics/gamification/lt.md
+  topics/knowledge-driven-development/slides.md
+  topics/solid/slides/intro.md
+  topics/solid/slides/srp.md
+  topics/solid/slides/ocp.md
+  topics/solid/slides/lsp.md
+  topics/solid/slides/isp.md
+  topics/solid/slides/dip.md
+  topics/tdd/triangle-du-developpement/slides.md
+  topics/tdd/slides.md
+  topics/coding-dojo/slides.md
+  topics/katas/lt.md
+  topics/pair-programming/slides.md
+  topics/mob-programming/slides.md
 
 theme:
   name: material
@@ -99,33 +95,39 @@ theme:
   logo: assets/images/icon-128x128.png
   favicon: assets/images/favicon.png
   features:
-    - navigation.tabs
-    - navigation.footer
-    - navigation.instant
-    - navigation.top
     - content.code.annotate
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
     - search.suggest
     - search.highlight
   palette:
     primary: black
     accent: red
+  icon: # Recherche : https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+    tag:
+      café: simple/coffeescript
+      craft: fontawesome/solid/users-gear
+      pair-programming: fontawesome/solid/people-group
 
 # Extra
 extra_css:
   - assets/css/extra.css
 
 extra:
+  tags:
+    Café: café
+    Pair-programming: pair-programming
+    Craft: craft
+    craft: craft
+    Software Craftsmanship: craft
   author:
     name: fhiegel
     icon: fontawesome/solid/blog
     link: https://fhiegel.github.io
-    #  https://github.com/squidfunk/mkdocs-material/tree/master/material/.icons/
-    #  icon: /fontawesome/solid/blog
-    #  icon: fontawesome/solid/arrow-alt-circle-up
-    #  icon: fontawesome/solid/angle-left
-    #  icon: fontawesome/regular/lemon
-    #  icon: fontawesome/regular/id-badge
-    #  icon: fontawesome/solid/dice-d20
   reveal:
     path: reveal.js/dist
     transition: slide
@@ -144,6 +146,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/fabien-hiegel-874416b5
       name: Fabien Hiegel on LinkedIn
+    - icon: fontawesome/brands/mastodon
+      link: https://techhub.social/@fhiegel
+      name: Fabien Hiegel on Mastodon
 
 # Extensions
 markdown_extensions:
@@ -188,7 +193,13 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
+  - blog:
+      blog_toc: true
+      post_excerpt: required
+      post_excerpt_separator: '<!-- more -->'
   - search
+  - tags:
+      tags_file: tags.md
   - redirects:
       redirect_maps:
         'learn/presentations/good-morning-learning/index.md': 'topics/good-morning-learning/index.md'

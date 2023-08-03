@@ -1,9 +1,6 @@
 ---
-debug: true
-draft: true
-template: blog/post.html
 date: 2022-01-27
-title: "Martin et le Pattern \"Abstract Factory\"
+title: "Martin et le Pattern \"Abstract Factory\""
 description: >
     On revient sur l'histoire de Martin, qui voudrait améliorer son atelier.
     Il va utiliser une astuce et in troiduire le Design Pattern "Abstract Factory" 

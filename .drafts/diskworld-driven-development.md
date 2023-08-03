@@ -1,7 +1,6 @@
 ---
 debug: true
 draft: true
-template: blog/post.html
 date: 2022-04-05
 title: "Le Disque monde comment analogie de développement"
 description: >

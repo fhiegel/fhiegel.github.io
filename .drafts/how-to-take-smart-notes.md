@@ -1,7 +1,6 @@
 ---
 debug: true
 draft: true
-template: blog/post.html
 date: 2022-01-20
 title: "Revue de livre : How To Take Smart Notes"
 description: >

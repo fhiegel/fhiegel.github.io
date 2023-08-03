@@ -17,14 +17,14 @@ template: reveal.html
 
 # Red
 
-![](/assets/images/topics/tdd/triangle-du-developpement/red.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/red.png)
 
 
 --
 
 ## Clarifier le besoin
 
-![](/assets/images/topics/tdd/triangle-du-developpement/desire.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/desire.png)
 
 Notes:
 
@@ -36,7 +36,7 @@ https://www.flaticon.com/free-icon/desire_1107497?term=need&related_id=1107497
 
 ## Clarifier l'usage
 
-![](/assets/images/topics/tdd/triangle-du-developpement/solution.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/solution.png)
 
 Notes:
 
@@ -69,7 +69,7 @@ QUOI
 # Green
 
 [//]: # (![]&#40;/assets/images/topics/tdd/triangle-du-developpement/checked.png&#41;)
-![](/assets/images/topics/tdd/triangle-du-developpement/control-system.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/control-system.png)
 
 Notes:
 
@@ -79,7 +79,7 @@ https://www.flaticon.com/free-icon/control-system_3712234
 
 ## Corriger le comportement
 
-![](/assets/images/topics/tdd/triangle-du-developpement/settings.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/settings.png)
 
 Notes:
 
@@ -91,7 +91,7 @@ https://www.flaticon.com/free-icon/settings_654705?term=repair%20gear&page=1&pos
 
 ## Livrer une application 
 
-![](/assets/images/topics/tdd/triangle-du-developpement/delivery-box.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/delivery-box.png)
 
 Notes:
 
@@ -103,7 +103,7 @@ https://www.flaticon.com/premium-icon/delivery-box_2982666
 
 ## Savoir quand on a terminé 
 
-![](/assets/images/topics/tdd/triangle-du-developpement/done.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/done.png)
 
 Notes:
 
@@ -115,7 +115,7 @@ ttps://www.flaticon.com/premium-icon/done_3082729
 
 ## S'affranchir de la pression de réussir
 
-![](/assets/images/topics/tdd/triangle-du-developpement/service.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/service.png)
 
 Notes:
 
@@ -125,13 +125,13 @@ POURQUOI
 
 # Refactor
 
-![](/assets/images/topics/tdd/triangle-du-developpement/refactor.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/refactor.png)
 
 --
 
 ## Design == Décision
 
-![](/assets/images/topics/tdd/triangle-du-developpement/puzzle.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/puzzle.png)
 
 Notes:
 
@@ -144,7 +144,7 @@ https://www.flaticon.com/free-icon/puzzle_6370962
 
 ## Faire fonctionner, n'est que la moitié
 
-![](/assets/images/topics/tdd/triangle-du-developpement/experience.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/experience.png)
 
 Notes:
 
@@ -156,7 +156,7 @@ https://www.flaticon.com/premium-icon/experience_2343257
 
 ## Corriger la structure
 
-![](/assets/images/topics/tdd/triangle-du-developpement/brickwall.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/brickwall.png)
 
 Notes:
 
@@ -167,7 +167,7 @@ https://www.flaticon.com/premium-icon/brickwall_3108854
 
 ## Livrer de la pérennité
 
-![](/assets/images/topics/tdd/triangle-du-developpement/wall.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/wall.png)
 
 Notes:
 
@@ -183,7 +183,7 @@ https://www.flaticon.com/free-icon/wall_1141844
 
 ## #1. Permis de coder
 
-![](/assets/images/topics/tdd/triangle-du-developpement/card.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/card.png)
 
 Notes:
 
@@ -198,7 +198,7 @@ https://www.flaticon.com/free-icon/card_2456552
 
 ## #2. Une seule question à la fois
 
-![](/assets/images/topics/tdd/triangle-du-developpement/filter.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/filter.png)
 
 Notes:
 
@@ -210,7 +210,7 @@ https://www.flaticon.com/free-icon/filter_4080734
 
 ## #3 Connaissez les limites !
 
-![](/assets/images/topics/tdd/triangle-du-developpement/limit.png)
+![](../../../assets/images/topics/tdd/triangle-du-developpement/limit.png)
 
 Notes:
 

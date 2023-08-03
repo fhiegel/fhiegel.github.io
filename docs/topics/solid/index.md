@@ -14,7 +14,7 @@ Cette formation s'adresser à vous.
 Présentations + Coding Dojo
 
 ## Programme
-cf. [Déroulé](deroule)
+cf. [Déroulé](deroule.md)
 
 ## Prérequis
 - Connaitre un langage de programmation (Java, JavaScript, PhP, Ruby)

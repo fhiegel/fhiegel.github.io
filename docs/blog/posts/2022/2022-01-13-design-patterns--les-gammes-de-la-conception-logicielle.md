@@ -1,10 +1,7 @@
 ---
-template: blog/post.html
 date: 2022-01-13
-title: "Les Design Patterns : les Gammes de la conception logicielle"
-description: > 
-    Que sont les Design Pattern ? Un gros mot ? Des solutions logicielles clé main ? Ou quelque chose de plus profond ?
-    Je présente ici en quoi les Design Pattern sont à de la programmation logicielle, l'équivalent des Gammes et en musique. 
+authors:
+- fhiegel
 tags:
 - Aristocode
 - Gammes et Arpèges
@@ -12,6 +9,11 @@ tags:
 - Design Patterns
 - Apprendre
 ---
+# Les Design Patterns : les Gammes de la conception logicielle
+
+Que sont les Design Pattern ? Un gros mot ? Des solutions logicielles clé main ? Ou quelque chose de plus profond ?
+Je présente ici en quoi les Design Pattern sont à de la programmation logicielle, l'équivalent des Gammes et en musique.
+<!-- more -->
 
 2011 a été l'année de mes débuts dans le développement logiciel professionnel. J'y ai commencé mon stage de fin d'étude
 sur une application en Java, avec très peu de librairies et de framework. C'est un positionnement que j'avais du mal à
@@ -30,7 +32,7 @@ minutes, je présentais ce que j'avais compris d'un Design Pattern spécifique.
 
 Retour, 10 ans plus tard, sur ce que j'ai appris sur cette période.
 
-## Qu'est-ce qu'un Design Patterns ?
+## Qu'est-ce qu'un Design Pattern ?
 
 D'après vous ?
 
@@ -173,7 +175,7 @@ Fabien
 *[GoF]: Gang Of Four : les quatre auteurs du livre 
 *[Felienne Hermans]: Felienne Hermans | @Felienne | https://www.felienne.com
 
-[design patterns]: /topics/design-patterns/
+[design patterns]: ../../../topics/design-patterns/index.md
 [The Programmer's Brain]: https://www.felienne.com/book
 [Design Patterns: Elements of Reusable Object-Oriented Software]: https://www.oreilly.com/library/view/design-patterns-elements/0201633612/
 

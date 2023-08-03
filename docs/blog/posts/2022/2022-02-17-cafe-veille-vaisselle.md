@@ -1,16 +1,18 @@
 ---
-template: blog/post.html
 date: 2022-02-17
-title: "Le Café, la Veille, ou comment j'ai pris l'habitude de faire la vaisselle."
-description: >
-    Parfois, on parle de certaines choses. D'autres fois, on réalise qu'on les applique.
-    Cette fois, je raconte comment je floute mon cerveau pour faire la vaisselle avec le même mécanisme que pour faire ma veille : le Café.
+authors:
+- fhiegel
 tags:
 - Veille
 - Motivation
 - Procrastination
 - Café
 ---
+# Le Café, la Veille, ou comment j'ai pris l'habitude de faire la vaisselle.
+
+Parfois, on parle de certaines choses. D'autres fois, on réalise qu'on les applique.
+Cette fois, je raconte comment je floute mon cerveau pour faire la vaisselle avec le même mécanisme que pour faire ma veille : le Café.
+<!-- more -->
 
 Parfois, on parle de certaines choses. D'autres fois, on réalise qu'on les applique.
 
@@ -82,4 +84,4 @@ Merci de m'avoir lu et bonne journée 🌞
 <br>
 Fabien
 
-[^1]: [La procrastination : le REX](/blog/2022/02/03/la-procrastination/)
+[^1]: [La procrastination : le REX](2022-02-03-la-procrastination.md)

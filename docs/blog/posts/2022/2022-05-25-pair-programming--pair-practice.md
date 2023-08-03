@@ -1,16 +1,19 @@
 ---
-template: blog/post.html
 date: 2022-05-25
-title: "Pair-practice : Comment s'entraîner au pair-programming ?"
-description: |
-  Le pair-programming est une pratique que je trouve super chouette.
-  Mais elle est parfois compliquée à utiliser et s'améliorer peut s'avérer difficile.<br>
-  Comment peut-on faire pour s'entraîner au pair-programming ? 
+authors:
+- fhiegel
 tags:
-- Craft
+- Software Craftsmanship
 - Pratique
 - Pair-programming
 ---
+# Pair-practice : Comment s'entraîner au pair-programming ?
+
+Le pair-programming est une pratique que je trouve super chouette.
+Mais elle est parfois compliquée à utiliser et s'améliorer peut s'avérer difficile.<br>
+Comment peut-on faire pour s'entraîner au pair-programming ? 
+
+<!-- more -->
 
 Le Pair-Programming. Vous en avez probablement déjà entendu parler. Peut-être que vous le pratiquez déjà ?
 
@@ -86,7 +89,7 @@ Fabien
 
 [software-craft-dunod]: https://www.dunod.com/sciences-techniques/software-craft-tdd-clean-code-et-autres-pratiques-essentielles
 [pair-practice]: https://xp123.com/articles/pair-practice/
-[pair-practice-mine]: /topics/pair-programming/pair-practice
+[pair-practice-mine]: ../../../topics/pair-programming/pair-practice.md
 [pair-poetry]: https://www.tastycupcakes.org/2019/08/pair-poetry/
-[pair-poetry-mine]: /topics/pair-programming/pair-poetry
-[coding-dojo]: /topics/coding-dojo
+[pair-poetry-mine]: ../../../topics/pair-programming/pair-poetry.md
+[coding-dojo]: ../../../topics/coding-dojo/index.md

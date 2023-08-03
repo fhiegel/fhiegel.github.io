@@ -1,19 +1,18 @@
 ---
-characters: 9287
-words: 1479
-template: blog/post.html
 date: 2022-01-20
-title: "Martin et le Pattern Factory Method"
-description: >
-    Partons à la découverte du "Factory Method", Pattern de Création issu du livre <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>,
-    en suivant Martin, fin bricoleur, qui aide ses amis à construire leurs ordinateurs.
+authors:
+- fhiegel
 tags:
 - Design Patterns
-- Création
-- Factory
 - Conception logicielle
 - Martin
 ---
+# Martin et le Pattern Factory Method
+
+Partons à la découverte du "Factory Method", Pattern de Création issu du livre <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>,
+en suivant Martin, fin bricoleur, qui aide ses amis à construire leurs ordinateurs.
+
+<!-- more -->
 
 Dans le dernier article[^1], je présentais des Design Patterns.
 Aujourd'hui, regardons l'histoire de Martin, qui assemble des ordinateurs.

@@ -1,17 +1,19 @@
 ---
-template: blog/post.html
 date: 2022-01-06
-title: Le Retour du blog
-description: >
-    Le retour de blog : Comment relancer un rythme de production pour un gain toujours plus malin.
-    J'ai décidé de me (re)mettre à produire du contenu, et voici mon plan d'action.
+authors:
+- fhiegel
 tags:
 - Veille
 - Motivation
 - Partage
 done: in-time
 ---
+# Le Retour du blog
 
+> Le retour de blog : Comment relancer un rythme de production pour un gain toujours plus malin.
+J'ai décidé de me (re)mettre à produire du contenu, et voici mon plan d'action.
+
+<!-- more -->
 Comme je ne cesse de parler autour de moi de veille active et passive, il est temps de passer la seconde pour améliorer mon propre process de veille avec davantage de proactivité. 
 Voici donc venu le temps de relancer ce blog moribond. 
 J'y publie erratiquement des choses depuis quelques années : introduisons un peu de régularité.
@@ -116,5 +118,5 @@ Merci de m'avoir lu et bonne journée 🌞
 Fabien
 
 *[swyx] : Shawn Swyx Wang | @swyx | https://www.swyx.io/
-[gamification]: /topics/gamification/
+[gamification]: ../../../topics/gamification/index.md
 [^1]: Learn In Public [Article](https://www.swyx.io/learn-in-public/){:target="_blank"} | [Vidéo](https://www.youtube.com/watch?v=znNxtSbuBjI){:target="_blank"}

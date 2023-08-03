@@ -1,10 +1,10 @@
-Un 𝗺𝗼𝗱𝗲̀𝗹𝗲 𝗺𝗲́𝘁𝗶𝗲𝗿 𝗮𝗻𝗲́𝗺𝗶𝗾𝘂𝗲 est un modèle de domaine logiciel où les objets de domaine contiennent peu ou pas de logique métier.
+Un modèle métier anémique modèle métier anémique est un modèle de domaine logiciel où les objets de domaine contiennent peu ou pas de logique métier.
 Les "objets métiers" sont des structures de données et la logique métier est déportée dans d'énormes classes de "service".
 
 * https://en.wikipedia.org/wiki/Anemic_domain_model
 * https://martinfowler.com/bliki/AnemicDomainModel.html
 
-Un 𝗺𝗼𝗱𝗲̀𝗹𝗲 𝗺𝗲́𝘁𝗶𝗲𝗿 𝗿𝗶𝗰𝗵𝗲 (le terme que j'avais choisi n'est peut-être pas judicieux) est un modèle de domaine logiciel où la logique métier est modélisée et porté par les objets du domaine.
+Un modèle métier riche (le terme que j'avais choisi n'est peut-être pas judicieux) est un modèle de domaine logiciel où la logique métier est modélisée et porté par les objets du domaine.
 Le Domaine devient une sphère de connaissance, d'influence et d'activité.
 
 * https://martinfowler.com/eaaCatalog/domainModel.html
@@ -78,8 +78,8 @@ Le Domaine devient une sphère de connaissance, d'influence et d'activité.
     - > Nicolas Fédou @CoulasFedou
       >
       > En plus des règles sur les fruits, tu peux ajouter des remises selon les clients pour croiser un peu les prises de décisions
-      > 
-     
+>
+
 > Johan Martinsson @johan_alps
 >
 >Peut-être bien. Ce code a toute la logique non pas dans le service mais carrément dans le contrôleur 😈

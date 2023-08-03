@@ -1,21 +1,22 @@
 ---
-debug: false
-words: 2975
-template: blog/post.html
 date: 2022-03-24
-title: "Le CodeKata fête ses 19 ans : petit retour sur la pratique"
-description: |
-    Aujourd'hui, silencieusement, le CodeKata fête son 19e anniversaire.
-    Pour moi, il ne s'agit pas seulement de l'exercice de code que vous préférez faire,
-    ni la contrainte que vous préférez vous imposer,
-    ni l'objectif que vous préférez atteindre.
-    C'est un peu tout cela à la fois, mais également beaucoup plus.
+authors:
+- fhiegel
 tags:
-- Craft
+- Software Craftsmanship
 - Pratique
 - Kata
 - Dojo
 ---
+# Le CodeKata fête ses 19 ans : petit retour sur la pratique
+
+Aujourd'hui, silencieusement, le CodeKata fête son 19e anniversaire.
+Pour moi, il ne s'agit pas seulement de l'exercice de code que vous préférez faire,
+ni la contrainte que vous préférez vous imposer,
+ni l'objectif que vous préférez atteindre.
+C'est un peu tout cela à la fois, mais également beaucoup plus.
+
+<!-- more -->
 
 <!--
     En entretien de recrutement, vient le moment fatidique du "test technique".
@@ -25,7 +26,6 @@ tags:
     Vous a-t-on déjà demandé "Montre-moi ton kata préféré" ?
     Pourquoi cette question ? Qu'est-ce que le kata préféré ? 
 -->
-
 En tant que développeur.euse en informatique (et probablement dans d'autres métiers techniques), vient un moment dans un processus
 d'embauche, où votre éventuel futur employeur souhaite évaluer vos compétences.
 Il vous propose un "test technique".

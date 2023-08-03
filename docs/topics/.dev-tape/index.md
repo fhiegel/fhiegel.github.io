@@ -10,4 +10,4 @@ Vous reconnaissez-vous dans ce laïus ?
 Sur cette présentation, je vous propose un retour sur quelques compétences humaines, non techniques et accessibles à tous.
 L'enjeu de ces compétences ? Prendre du recul sur son quotidien, et les utiliser comme moteur pour faire avancer ses compétences techniques.
 
-> [🗂️ Slides](slides)
+> [🗂️ Slides](slides.md)

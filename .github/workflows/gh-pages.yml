@@ -10,16 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3.5.3
         with:
           submodules: recursive
-
       - name: Install and Build 🔧
-        run: | 
-          pip install "jinja2<3.1,>=2.11.1" mkdocs mkdocs-material "mkdocs-redirects>=1.0.3" plantuml-markdown mkdocs-macros-plugin markdown-include
+        run: |
+          pip install mkdocs mkdocs-material==9.2.0b2 "mkdocs-redirects>=1.0.3" plantuml-markdown mkdocs-macros-plugin markdown-include
           mkdocs build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: site

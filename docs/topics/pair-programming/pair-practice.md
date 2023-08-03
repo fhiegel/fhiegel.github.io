@@ -68,7 +68,7 @@ L'objectif de l'exercice n'est pas de convaincre directement tous les participan
 
 Liste des tâches à imprimer (pdf) : 
 
-[![Liste de tâches sous format PDF](/assets/files/pair-practice-cards-task-list-preview.png)](/assets/files/pair-practice-cards-task-list.pdf)
+[![Liste de tâches sous format PDF](../../assets/files/pair-practice-cards-task-list-preview.png)](../../assets/files/pair-practice-cards-task-list.pdf)
 
 Liste des tâches :
 

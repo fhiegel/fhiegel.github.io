@@ -15,12 +15,12 @@ tout le temps.
 
 ## Présentation succincte
 
-> [🗂️ Slides](slides)
+> [🗂️ Slides](slides.md)
 
 ## Ateliers 
 
 - 🔗 [Pair Practice][pair-practice-mine]
 - 🔗 [Pair Poetry][pair-poetry-mine] 
 
-[pair-practice-mine]: /topics/pair-programming/pair-practice
-[pair-poetry-mine]: /topics/pair-programming/pair-poetry
+[pair-practice-mine]: pair-practice.md
+[pair-poetry-mine]: pair-poetry.md
