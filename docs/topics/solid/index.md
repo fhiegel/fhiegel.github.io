@@ -1,8 +1,10 @@
 ---
 title: SOLID
+tags: 
+- SOLID
 ---
 
-# Les principes S.O.L.I.D. par la pratique
+# Les principes SOLID. par la pratique
 
 Vous avez entendu parler de Clean Code et de certains principes, ou normes de coding.
 Les principes SOLID en font partie.

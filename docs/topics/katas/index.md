@@ -1,7 +1,9 @@
 ---
 title: Katas
 description: >
-  S'entrainer pour progresser 
+  S'entrainer pour progresser
+tags:
+- Kata
 ---
 # Le Kata : Quoi et pourquoi ? 
 

@@ -28,7 +28,7 @@ Les derniers modules sont plus techniques et sont destinés à des profils orien
 
 ## Slides
 
-- [Quicky](slides.md)
+- [Quicky](slides.md){:target="_blank"}
 
 
 *[Kata] : Exercice de code

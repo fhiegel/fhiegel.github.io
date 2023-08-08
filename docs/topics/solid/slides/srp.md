@@ -1,5 +1,9 @@
 ---
+title: 'SOLID: Single Responsibility Principle (Slides)' 
 template: reveal.html
+tags:
+- Slides
+- SOLID
 ---
 # Single Responsibility Principle
 

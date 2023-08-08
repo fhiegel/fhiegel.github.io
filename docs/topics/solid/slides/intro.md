@@ -1,9 +1,13 @@
 ---
+title: 'SOLID : Introduction (Slides)'
 template: reveal.html
 background-image: assets/images/solid.jpg
 background-opacity: 0.7
 background-position: left
 background-size: 30%
+tags:
+- Slides
+- SOLID
 ---
 # SOLID
 

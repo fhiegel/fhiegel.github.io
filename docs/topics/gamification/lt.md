@@ -1,7 +1,10 @@
 ---
 template: reveal.html
-back-url: '/learn/presentations/gamification/'
+back-url: '/topics/gamification/'
 back-label: Gamification
+title: Gamification (Lightning)
+tags:
+- Slides
 ---
 <style>
 blockquote.quote {

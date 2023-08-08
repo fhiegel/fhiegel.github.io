@@ -1,5 +1,9 @@
 ---
+title: 'SOLID : Dependency Inversion Principle (Slides)'
 template: reveal.html
+tags:
+- Slides
+- SOLID
 ---
 # Dependency Inversion Principle
 

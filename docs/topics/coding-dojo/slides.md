@@ -1,6 +1,9 @@
 ---
 template: reveal.html
-title: CodingDojo
+back-url: '/topics/coding-dojo/'
+title: ⛩️ Coding Dojo ⛩️
+tags:
+- Slides
 ---
 
 <!-- .slide: data-background="assets/images/dojo.jpg" -->

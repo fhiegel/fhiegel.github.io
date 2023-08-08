@@ -1,6 +1,8 @@
 ---
 title: TDD
 template: reveal.html
+tags:
+- Slides
 ---
 
 ## Test Driven Development

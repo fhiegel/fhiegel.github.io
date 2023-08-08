@@ -1,6 +1,9 @@
 ---
 template: reveal.html
 background-color: '#dddddd'
+title: Dev T.A.P.E
+tags:
+- Slides
 ---
 <style>
 blockquote.quote {

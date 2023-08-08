@@ -1,10 +1,10 @@
 ---
-title: "Pair-Programming - Slides"
+title: "Pair-Programming (Slides)"
 template: reveal.html
 background-color: '#dddddd'
 tags:
-- Présentation
 - Pair-programming
+- Slides
 ---
 <style>
 blockquote.quote {

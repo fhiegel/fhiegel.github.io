@@ -3,6 +3,8 @@ title: FizzBuzz
 description: >
   Le "Fizz-Buzz test" est une question d'entretien d'embauche, construite pour évincer 99.5% des candidats à un poste 
   de développeur qui n'ont pas la moindre idée de la manière de programmer.
+tags:
+- Kata
 ---
 Le "Fizz-Buzz" est une question d'entretien d'embauche, construite pour évincer 99.5% des candidats à un poste 
 de développeur qui n'ont pas la moindre idée de la manière de programmer.

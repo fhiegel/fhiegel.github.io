@@ -1,6 +1,9 @@
 ---
 title: Knowledge-Driven Development
 template: reveal.html
+tags:
+- Knowledge-Driven Development
+- Slides
 ---
 
 # Knowledge-Driven Development

@@ -1,3 +1,7 @@
+---
+tags:
+- Kata
+---
 Hello,
 Le Game Of Life de Conway est un exercice de programmation qu'on a utilisé deux-trois fois en Coding Dojo.
 Il permet de faire un peut de modélisation, tout en conservant des règles métier assez simples.

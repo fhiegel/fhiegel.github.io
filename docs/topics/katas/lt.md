@@ -1,7 +1,11 @@
 ---
+title: Quel est votre kata préféré ?
 template: reveal.html
 back-url: '/learn/presentations/gamification/'
 back-label: Gamification
+tags:
+- Kata
+- Slides
 ---
 
 <!-- .slide: data-background="assets/images/dojo.jpg" -->

@@ -1,4 +1,10 @@
+---
+tags:
+- Knowledge-Driven Development
+---
 # Clean Code as Learning path
+
+> [🗂️ Slides](slides.md){:target="_blank"}
 
 # Description
 
@@ -6,6 +12,7 @@
 Code ou Doc ? Ou : quand le Clean Code m'aide à monter en compétence.
 
 ## Abstract
+
 "Tu as lu la doc ?" "RTFM (Read The Friendly Manual)."
 Avez-vous déjà entendu ce genre de propos ?
 La documentation est souvent un passage obligé en arrivant sur un projet. Elle est utilisée pour décrire le contexte du projet et des logiciels qui gravitent autour.

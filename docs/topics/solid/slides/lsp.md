@@ -1,5 +1,9 @@
 ---
+title: 'SOLID : Liskov Substitution Principle (Slides)'
 template: reveal.html
+tags:
+- Slides
+- SOLID
 ---
 # Liskov Substitution Principle
 

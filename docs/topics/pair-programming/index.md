@@ -15,7 +15,7 @@ tout le temps.
 
 ## Présentation succincte
 
-> [🗂️ Slides](slides.md)
+> [🗂️ Slides](slides.md){:target="_blank"}
 
 ## Ateliers 
 

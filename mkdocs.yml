@@ -47,8 +47,6 @@ nav:
       - 🎓 Veille:
           - topics/veille/index.md
           - topics/veille/activites.md
-          - topics/veille/cfp/veille.md
-          - topics/veille/cfp/2022/devoxx.md
           - topics/veille/phare/index.md
       - 🧩 Gamification:
           - topics/gamification/index.md
@@ -70,23 +68,10 @@ nav:
       - NoCV: me/nocv.md
 not_in_nav: |
   tags.md
-  topics/good-morning-learning/slides/index.md
-  topics/good-morning-learning/slides/en.md
-  topics/gamification/slides.md
+  cfp*
+  slides*
   topics/gamification/lt.md
-  topics/knowledge-driven-development/slides.md
-  topics/solid/slides/intro.md
-  topics/solid/slides/srp.md
-  topics/solid/slides/ocp.md
-  topics/solid/slides/lsp.md
-  topics/solid/slides/isp.md
-  topics/solid/slides/dip.md
-  topics/tdd/triangle-du-developpement/slides.md
-  topics/tdd/slides.md
-  topics/coding-dojo/slides.md
   topics/katas/lt.md
-  topics/pair-programming/slides.md
-  topics/mob-programming/slides.md
 
 theme:
   name: material

@@ -1,4 +1,7 @@
-Kata RPN Calculator - SOLID Version
+---
+title: Kata RPN Calculator - SOLID Version
+tags:
+- SOLID
 ---
 Le but de ce Kata, est de faire découvrir une partie de SOLID : SRP, OCP, et LSP.
 Dans cet exercice, on va mettre de coté :
@@ -47,7 +50,7 @@ Poser quelques contraintes :
 - Code review en Mod                                 [5 mins/paire]
 
 ---
-En Dojo (voir les règles du Dojo) sur le Kata ""Roman Numerals"", on abordera les 5 Principes S.O.L.I.D.
+En Dojo (voir les règles du Dojo) sur le Kata ""Roman Numerals"", on abordera les 5 Principes SOLID.
 Introduction et présentation du Kata.
 
 Itération 1: ""Implémenter l'addition""

@@ -2,6 +2,8 @@
 title: Diamond
 description: >
   Affichez un diamant, à partir d'une lettre de l'alphabet
+tags:
+- Kata
 ---
 Le "Fizz-Buzz" est une question d'entretien d'embauche, construite pour évincer 99.5% des candidats à un poste 
 de développeur qui n'ont pas la moindre idée de la manière de programmer.

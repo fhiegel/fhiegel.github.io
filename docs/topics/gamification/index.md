@@ -1,4 +1,4 @@
 # La Gamification
 
 
-[Présentation](slides.md)
+[Présentation](slides.md){:target="_blank"}

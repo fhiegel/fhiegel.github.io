@@ -105,7 +105,7 @@ Voici une liste non exhaustive des Schémas de la Programmation :
 - Le livre [Design Patterns: Elements of Reusable Object-Oriented Software][], qui présente des Patterns comme la `Factory Method`, l'`Observer`, le `Decorator`.
 - Les Patterns d'Architecture, par exemple ceux de Martin Fowler : [Catalog of Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/), avec des choses comme le `Repository`, les `Layers`, le `MVC`
 - [Les Anti-Patterns de code](https://sourcemaking.com/antipatterns)
-- Les Principes [S.O.L.I.D](https://codersite.dev/solid-principles-the-definitive-guide/)
+- Les Principes [SOLID](https://codersite.dev/solid-principles-the-definitive-guide/)
 - L'architecture Hexagonale, l'architecture en oignon
 
 L'important dans tous ces modèles, c'est de pouvoir, dans le code, identifier rapidement le schéma de la situation.

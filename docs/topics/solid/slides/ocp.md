@@ -1,5 +1,9 @@
 ---
+title: 'SOLID : Open-Close Principle (Slides)'
 template: reveal.html
+tags:
+- Slides
+- SOLID
 ---
 # Open-Close Principle
 

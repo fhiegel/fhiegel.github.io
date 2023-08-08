@@ -1,6 +1,8 @@
 ---
 title: "Mob Programming - Slides"
 template: reveal.html
+tags:
+- Slides
 ---
 # Mob Programming
 

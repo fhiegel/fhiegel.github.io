@@ -1,5 +1,9 @@
 ---
+title: 'SOLID : Interface Segregation Principle (Slides)'
 template: reveal.html
+tags:
+- Slides
+- SOLID
 ---
 # Interface Segregation Principle
 
