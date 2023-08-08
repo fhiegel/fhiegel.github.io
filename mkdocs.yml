@@ -190,3 +190,7 @@ plugins:
         'learn/presentations/good-morning-learning/index.md': 'topics/good-morning-learning/index.md'
         'learn/presentations/good-morning-learning/slides/index.md': 'topics/good-morning-learning/slides/index.md'
         'learn/presentations/good-morning-learning/slides/en.md': 'topics/good-morning-learning/slides/en.md'
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
