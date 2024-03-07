@@ -49,48 +49,62 @@ engagements clients pris._
 _Développeur. Coach Agile Technique._ <br>| Septembre 2021 ➡
 
 > Maisons du Monde est une enseigne de distribution, d'ameublement et de décoration française
+> La DSI s'organise en différents domaines IT associés à leurs équivalents métiers de l'entreprise, comme la
+« Supply Chain Management », domaine IT dans lequel s'est déroulé cette mission. 
 
-L'essentiel de cette mission s'est déroulée dans le service de la DSI associé au domaine métier de la
-« Supply Chain Management ».
-
-**Depuis Février 2023, à plein temps en tant que « Soutien Technique Supply ».**
+**Depuis Février 2023, à plein temps en tant que « Soutien Technique Supply » sur plusieurs équipes**
 
 Reprise d'applications fortement endettées, et animations
 
-- Accompagnement individuel des internes
-  - Montée en compétence
-  - 
+- Accompagnement des équipes dans les processus DevOps impulsés par l'entreprise
+
+- Accompagnement individuel des personnes
+  - Recherche de solution
+  - Mentorat et montée en compétence
+
+- Animation d'un "Point de partage" 
+  - Présentations de REX, de concepts logiciels, et de sujets de veille.
+  - Discussions des pratiques des équipes
+  - Exploration et consolidation de nos savoirs par des ateliers de travail.
+
+- Développement logiciel (comme précédemment)
 
 **De Avril 2022 à Février 2023, à mi-temps en tant que « Soutien Technique Supply »,
-et à mi-temps dans tout à tour dans les équipes « APPRO » et « TRP ».**
+et à mi-temps en renfort de réalisation dans les équipes « APPRO » et « TRP ».**
 
-- Animation d'ateliers d'Event Storming
-    - sur le process de Booking (équipe TRP)
-    - sur le process de Booking
+- Animation d'ateliers de conception logicielle,
+  - Différents formats : Event Storming, Coding Lab, discussions
+  - Différents processus : Booking de la Commande, la Commande Fournisseur et des ETL.
 
 - Initiation du service aux pratiques Craft
-    - Présentations régulières (TDD, Clean Code, Pair-programming)
-    - Mise en place de Mob-Programming sur des sujets de refactor et
-      de partage de connaissance
-    - Animation de Coding Dojos, et d'atelier de travail sur le Pair-Programming, et Mob-Programming
-        - Animation de Serious Games :
-            - « Les Dés de la dette »,
+  - Présentations régulières (TDD, Clean Code, Pair-programming)
+  - Mise en place de Mob-Programming sur des sujets de refactor et de partage de connaissance
+  - Animation d'ateliers de travail, de Coding Dojos, et de Serious Games, sur des sujets comme la dette technique, les techniques de refactoring, le Pair-Programming, et Mob-Programming
+
+- Développement logiciel (comme précédemment)
 
 **De Septembre 2021 à Avril 2022, développeur dans l'équipe « TRP » (Transport).**
 
 Principales réalisations :
 
 - Industrialisation de la mise à jour du paramétrage du « MET » (Moteur d'Eligibilité Transporteur)
-    - Evolution des
+  - Evolution du processus manuel vers un processus outillé
+  - Réalisation d'un Poc des outils à utiliser
+  - Industrialisation du Poc
 
-- Automatisation de test sur le MET
-    - Bootstrap de tests applicatifs automatisés utilisant Cucumber comme glue
-    - Exécution d'un pipeline GitLab orchestrant les tests
-    - Intégration l'exécution avec le plugin XRay de JIRA
+- Automatisation de tests sur le MET
+  - Bootstrap de tests applicatifs automatisés utilisant Cucumber comme glue
+  - Exécution d'un pipeline GitLab orchestrant les tests
+  - Intégration l'exécution avec le plugin XRay de JIRA
+
+- Développement logiciel
+    - Realisation de fonctionnalité
+    - Relecture de Merge-Request
+    - Suivi des travaux livrés en production
 
 **Environnement :**
 
-Java, JUnit, Mockito, Cucumber, JavaScript (REACT, JEST), Spring, Git,
+Java(5..21), JUnit, Mockito, Cucumber, JavaScript (REACT, JEST), Spring, Git,
 Software Craftsmanship, Clean Code, TDD, Pair-Programming (& MOB),
 Docker, GitLab, Kubernetes, GCP, Formation, Animation, Facilitation
 
