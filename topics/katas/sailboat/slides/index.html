@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <base href="https://fhiegel.github.io/">
+  <link rel="canonical" href="https://fhiegel.github.io/">
+  <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet"
+        href="reveal.js/dist/theme/white.css"
+        id="theme">
+  <link rel="stylesheet" href="../../../../css/reveal-theme-overrdes.css">
+  <link rel="stylesheet" href="../../../../css/reveal-additional.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+
+<div class="reveal">
+    
+    <a      id="back-button"
+            href="../"
+            title="Back button">
+        <span class="material-icons">chevron_left</span>
+    </a>
+    
+  <div class="slides">
+    <section data-markdown
+             data-separator="^\n---\n$"
+             data-separator-vertical="^\n--\n$"
+             data-separator-notes="^Notes?\W?:"
+            
+            
+            
+            
+            
+    >
+      <script type="text/template">
+        <!-- .slide: data-background-image="../../../assets/images/katas/sailboat/sailboat-kata-overview.png" data-background-opacity="0.6"-->
+# Sailboat Kata
+
+Notes:
+
+- Vous êtes à la barre d'un petit voilier, qui cherche à atteindre une île. Votre bateau se déplace au tour par tour en fonction du vent, lequel change à chaque tour.
+- L'objectif de ce kata est de développer une fonction permettant de calculer la position du bateau à chaque tour.
+
+---
+
+<!-- .slide: data-background-image="../../../assets/images/katas/sailboat/sailboat-kata-overview.png" data-background-opacity="0.6"-->
+## Déplacement du bateau
+
+--
+
+On modélise la position du bateau comme une grille à deux dimensions, réputée infinie.
+
+--
+
+Si le vent et le bateau sont alignés, alors le bateau avance de 4 cases
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-déplacement-alignes.png)
+
+--
+
+Si le vent et le bateau sont opposés, alors le bateau avance de 1 case
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-déplacement-opposes.png)
+
+--
+
+Si le vent et le bateau sont orthogonaux, alors le bateau avance de 2 cases, et se décale d'une case dans le sens du vent
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-déplacement-orthogonaux.png)
+
+---
+
+<!-- .slide: data-background-image="../../../assets/images/katas/sailboat/sailboat-kata-overview.png" data-background-opacity="0.6"-->
+## Navigation
+### Orientation du bateau
+
+--
+
+Avant de se laisser pousser par le vent, le navigateur oriente le bateau dans le sens qui lui semble optimum pour atteindre l'île.
+
+--
+
+Le bateau peut tourner dans le sens horaire
+
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-orientation-sens-anti-horaire.png)
+
+--
+
+Le bateau peut tourner dans le sens anti-horaire
+
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-orientation-sens-horaire.png)
+
+--
+
+Le bateau ne tourne que d'un seul quart de tour à la fois
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-orientation-un-seul-quart.png)
+
+--
+
+Le bateau tourne dans la direction la plus avantageuse
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-orientation-plus-avantageuse.png)
+
+--
+
+Le bateau peut conserver sa direction
+
+![](../../../assets/images/katas/sailboat/sailboat-kata-examples-orientation-conservée.png)
+
+---
+
+<!-- .slide: data-background-image="../../../assets/images/katas/sailboat/sailboat-kata-overview.png" data-background-opacity="0.6"-->
+# C'est parti !
+      </script>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div id="licence-cc">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Licence Creative Commons"
+           style="border-width:0"
+           src="https://i.creativecommons.org/l/by/4.0/80x15.png"/></a>
+    Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license"
+                                                                   href="http://creativecommons.org/licenses/by/4.0/">Licence
+    Creative Commons Attribution 4.0 International</a>.
+  </div>
+</footer>
+
+
+<script src="reveal.js/dist/reveal.js"></script>
+
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/highlight/highlight.js"></script>
+<script src="reveal.js/plugin/zoom/zoom.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    hash: true,
+
+    transition: 'slide', // default/cube/page/concave/zoom/linear/fade/none
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+  });
+</script>
+
+</body>
+</html>

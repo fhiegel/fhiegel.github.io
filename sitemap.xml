@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://fhiegel.github.io/topics/coding-dojo/code-retreat/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://fhiegel.github.io/topics/coding-dojo/slides/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
@@ -131,22 +136,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fhiegel.github.io/topics/katas/Game-Of-Life/</loc>
-         <lastmod>2024-06-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://fhiegel.github.io/topics/katas/lt/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fhiegel.github.io/topics/katas/Diamound/</loc>
+         <loc>https://fhiegel.github.io/topics/katas/fizzbuzz/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fhiegel.github.io/topics/katas/FizzBuzz/</loc>
+         <loc>https://fhiegel.github.io/topics/katas/game-of-life/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/katas/rpn/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/katas/sailboat/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/katas/sailboat/slides/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -191,11 +206,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fhiegel.github.io/topics/solid/deroule/</loc>
-         <lastmod>2024-06-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/dip/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
@@ -222,6 +232,16 @@
     </url>
     <url>
          <loc>https://fhiegel.github.io/topics/solid/slides/srp/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/solid/with-rpn/</loc>
+         <lastmod>2024-06-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fhiegel.github.io/topics/solid/with-rpn/abstract/</loc>
          <lastmod>2024-06-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
