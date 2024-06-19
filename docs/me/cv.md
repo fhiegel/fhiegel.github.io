@@ -49,7 +49,7 @@ title: "Bio"
 
 ## Expériences
 
-### Shodo Nantes <img alt="logo decathlon" src="/assets/images/me/cv/shodo-nantes.png" style="float: right; height: 80px"/>
+### **Shodo Nantes** <img alt="logo decathlon" src="/assets/images/me/cv/shodo-nantes.png" style="float: right; height: 80px"/>
 
 🗓️ Depuis Septembre 2021<br/>
 👤 Coach Craft, Coach Agile Technique, Développeur Senior. Animateur de communauté.
@@ -144,7 +144,7 @@ technique)_
 JAVA, JUNIT, MOCKITO, CUCUMBER, JAVASCRIPT (REACT, JEST), SPRING, GIT, SOFTWARE CRAFTSMANSHIP, CLEAN CODE, TDD,
 PAIR-PROGRAMMING (& MOB), DOCKER, GITLAB, KUBERNETES, GCP, FORMATION, ANIMATION, FACILITATION
 
-### E-VOYAGEURS TECHNOLOGIES <img alt="logo decathlon" src="/assets/images/me/cv/sncf-connect-and-tech.png" style="float: right; height: 80px"/>
+### **E-VOYAGEURS TECHNOLOGIES** <img alt="logo decathlon" src="/assets/images/me/cv/sncf-connect-and-tech.png" style="float: right; height: 80px"/>
 
 🗓️ _décembre 2018 ➡ septembre 2021_<br/>
 👤 _Développeur Java, Senior, puis Lead._<br/>
@@ -242,7 +242,7 @@ Typescript (REACT, JEST), MongoDB, Spring, Python, Dart, Flutter, Git,
 Software Craftsmanship, Clean Code, TDD, Pair-Programming (& MOB),
 Docker, Jenkins, AWS, Formation, Animation, Facilitation
 
-### AROLLA <img alt="logo arolla" src="/assets/images/me/cv/arolla.png" style="float: right; width: 120px"/>
+### **AROLLA** <img alt="logo arolla" src="/assets/images/me/cv/arolla.png" style="float: right; width: 120px"/>
 
 🗓️ _juin 2016 ➡ décembre 2018_<br/>
 👤 _Développeur Java, Senior, puis Lead._<br/>

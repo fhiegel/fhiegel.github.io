@@ -18,15 +18,17 @@ nav:
               - Pair-Practice: topics/pair-programming/pair-practice.md
               - Pair-Poetry: topics/pair-programming/pair-poetry.md
           - ⛩️ La maîtrise personnelle:
-              - Katas: topics/katas/index.md
-
+              - topics/katas/index.md
+              - Katas:
+                  - topics/katas/index.md
               - Coding Dojo:
                   - topics/coding-dojo/index.md
-
               - Kata catalogue:
-                  - topics/katas/Diamound/index.md
-                  - topics/katas/FizzBuzz/index.md
-                  - topics/katas/Game-Of-Life.md
+                  - topics/katas/index.md
+                  - topics/katas/game-of-life/index.md
+                  - topics/katas/sailboat/index.md
+                  - topics/katas/rpn/index.md
+                  - topics/katas/fizzbuzz/index.md
           - Test-Driven Development:
               - topics/tdd/index.md
               - topics/tdd/objectifs-pédagogiques.md
@@ -36,9 +38,7 @@ nav:
 
           - 🧱 S.O.L.I.D:
               - Synopsis: topics/solid/index.md
-              - topics/solid/deroule.md
-
-          - Ateliers:
+          - 🛠️ Ateliers:
               - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
               - Good Morning Learning: topics/good-morning-learning/index.md
           - Vrac:
@@ -70,8 +70,7 @@ not_in_nav: |
   tags.md
   cfp*
   slides*
-  topics/gamification/lt.md
-  topics/katas/lt.md
+  **/lt.md
 
 theme:
   name: material
@@ -194,3 +193,4 @@ plugins:
       match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
+  - include-markdown

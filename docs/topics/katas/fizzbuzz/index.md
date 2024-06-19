@@ -1,5 +1,5 @@
 ---
-title: FizzBuzz
+title: 🔢 FizzBuzz
 description: >
   Le "Fizz-Buzz test" est une question d'entretien d'embauche, construite pour évincer 99.5% des candidats à un poste 
   de développeur qui n'ont pas la moindre idée de la manière de programmer.
@@ -27,12 +27,14 @@ Ce Kata est idéal pour **introduire** et **illustrer** les concepts du **TDD**.
 Il s'agit d'un exercice permettant d'arriver à une solution finale au bout d'1h environ.
  
 Ce Kata est également adapté pour travailler des **Contraintes** indépendantes de l'algorithmie. 
-Par exmple:  "Essayer une nouveau langage", ou "Développer sans souris".
+Par exemple :  "Essayer un nouveau langage", ou "Développer sans souris".
 
-## Le Kata sur d'autres sites
+## 🔗 Ressources
+
+### Le Kata sur d'autres sites
 
 - [FizzBuzz sur le WikiWikiWeb][WikiWikiWeb]
-  avec des proposition d'implémentation dans différents langages
+  avec des propositions d'implémentation dans différents langages
 - [CodingDojo.org]
 
 [WikiWikiWeb]: https://wiki.c2.com/?FizzBuzzTest
