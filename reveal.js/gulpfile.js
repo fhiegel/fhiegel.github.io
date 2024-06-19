@@ -1,20 +1,19 @@
 const pkg = require('./package.json')
-const path = require('path')
 const glob = require('glob')
 const yargs = require('yargs')
-const colors = require('colors')
+const through = require('through2');
 const qunit = require('node-qunit-puppeteer')
 
 const {rollup} = require('rollup')
-const {terser} = require('rollup-plugin-terser')
+const terser = require('@rollup/plugin-terser')
 const babel = require('@rollup/plugin-babel').default
 const commonjs = require('@rollup/plugin-commonjs')
 const resolve = require('@rollup/plugin-node-resolve').default
+const sass = require('sass')
 
 const gulp = require('gulp')
 const tap = require('gulp-tap')
 const zip = require('gulp-zip')
-const sass = require('gulp-sass')
 const header = require('gulp-header')
 const eslint = require('gulp-eslint')
 const minify = require('gulp-clean-css')
@@ -23,13 +22,14 @@ const autoprefixer = require('gulp-autoprefixer')
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
+const host = yargs.argv.host || 'localhost'
 
 const banner = `/*!
 * reveal.js ${pkg.version}
 * ${pkg.homepage}
 * MIT licensed
 *
-* Copyright (C) 2020 Hakim El Hattab, https://hakim.se
+* Copyright (C) 2011-2024 Hakim El Hattab, https://hakim.se
 */\n`
 
 // Prevents warnings from opening too many test pages
@@ -59,11 +59,11 @@ const babelConfig = {
 // polyfilling older browsers and a larger bundle.
 const babelConfigESM = JSON.parse( JSON.stringify( babelConfig ) );
 babelConfigESM.presets[0][1].targets = { browsers: [
-    'last 2 Chrome versions', 'not Chrome < 60',
-    'last 2 Safari versions', 'not Safari < 10.1',
-    'last 2 iOS versions', 'not iOS < 10.3',
-    'last 2 Firefox versions', 'not Firefox < 60',
-    'last 2 Edge versions', 'not Edge < 16',
+    'last 2 Chrome versions',
+    'last 2 Safari versions',
+    'last 2 iOS versions',
+    'last 2 Firefox versions',
+    'last 2 Edge versions',
 ] };
 
 let cache = {};
@@ -155,12 +155,33 @@ gulp.task('plugins', () => {
     } ));
 })
 
+// a custom pipeable step to transform Sass to CSS
+function compileSass() {
+  return through.obj( ( vinylFile, encoding, callback ) => {
+    const transformedFile = vinylFile.clone();
+
+    sass.render({
+        data: transformedFile.contents.toString(),
+        file: transformedFile.path,
+    }, ( err, result ) => {
+        if( err ) {
+            callback(err);
+        }
+        else {
+            transformedFile.extname = '.css';
+            transformedFile.contents = result.css;
+            callback( null, transformedFile );
+        }
+    });
+  });
+}
+
 gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
-        .pipe(sass())
+        .pipe(compileSass())
         .pipe(gulp.dest('./dist/theme')))
 
 gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
-    .pipe(sass())
+    .pipe(compileSass())
     .pipe(autoprefixer())
     .pipe(minify({compatibility: 'ie9'}))
     .pipe(header(banner))
@@ -173,7 +194,7 @@ gulp.task('qunit', () => {
     let serverConfig = {
         root,
         port: 8009,
-        host: '0.0.0.0',
+        host: 'localhost',
         name: 'test-server'
     }
 
@@ -245,20 +266,24 @@ gulp.task('default', gulp.series(gulp.parallel('js', 'css', 'plugins'), 'test'))
 
 gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 
-gulp.task('package', gulp.series('default', () =>
+gulp.task('package', gulp.series(() =>
 
-    gulp.src([
-        './index.html',
-        './dist/**',
-        './lib/**',
-        './images/**',
-        './plugin/**',
-        './**.md'
-    ]).pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
+    gulp.src(
+        [
+            './index.html',
+            './dist/**',
+            './lib/**',
+            './images/**',
+            './plugin/**',
+            './**/*.md'
+        ],
+        { base: './' }
+    )
+    .pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
 
 ))
 
-gulp.task('reload', () => gulp.src(['*.html', '*.md'])
+gulp.task('reload', () => gulp.src(['index.html'])
     .pipe(connect.reload()));
 
 gulp.task('serve', () => {
@@ -266,18 +291,23 @@ gulp.task('serve', () => {
     connect.server({
         root: root,
         port: port,
-        host: '0.0.0.0',
+        host: host,
         livereload: true
     })
 
-    gulp.watch(['*.html', '*.md'], gulp.series('reload'))
+    const slidesRoot = root.endsWith('/') ? root : root + '/'
+    gulp.watch([
+        slidesRoot + '**/*.html',
+        slidesRoot + '**/*.md',
+        `!${slidesRoot}**/node_modules/**`, // ignore node_modules
+    ], gulp.series('reload'))
 
-    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test'))
+    gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
 
-    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
+    gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
 
     gulp.watch([
-        'css/theme/source/*.{sass,scss}',
+        'css/theme/source/**/*.{sass,scss}',
         'css/theme/template/*.{sass,scss}',
     ], gulp.series('css-themes', 'reload'))
 
