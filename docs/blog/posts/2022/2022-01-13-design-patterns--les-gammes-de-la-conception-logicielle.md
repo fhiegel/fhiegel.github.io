@@ -175,7 +175,7 @@ Fabien
 *[GoF]: Gang Of Four : les quatre auteurs du livre 
 *[Felienne Hermans]: Felienne Hermans | @Felienne | https://www.felienne.com
 
-[design patterns]: ../../../topics/design-patterns/index.md
+[design patterns]: ../../../topics/software/design/patterns/index.md
 [The Programmer's Brain]: https://www.felienne.com/book
 [Design Patterns: Elements of Reusable Object-Oriented Software]: https://www.oreilly.com/library/view/design-patterns-elements/0201633612/
 

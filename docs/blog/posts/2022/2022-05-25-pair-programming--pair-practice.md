@@ -89,7 +89,7 @@ Fabien
 
 [software-craft-dunod]: https://www.dunod.com/sciences-techniques/software-craft-tdd-clean-code-et-autres-pratiques-essentielles
 [pair-practice]: https://xp123.com/articles/pair-practice/
-[pair-practice-mine]: ../../../topics/pair-programming/pair-practice.md
+[pair-practice-mine]: ../../../topics/software/practices/pair-programming/pair-practice.md
 [pair-poetry]: https://www.tastycupcakes.org/2019/08/pair-poetry/
-[pair-poetry-mine]: ../../../topics/pair-programming/pair-poetry.md
-[coding-dojo]: ../../../topics/coding-dojo/index.md
+[pair-poetry-mine]: ../../../topics/software/practices/pair-programming/pair-poetry.md
+[coding-dojo]: ../../../topics/software/practices/coding-dojo/index.md

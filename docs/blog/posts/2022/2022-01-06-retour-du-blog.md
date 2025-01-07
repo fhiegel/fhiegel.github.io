@@ -34,7 +34,7 @@ Pour moi, sera donc l'article sous vos yeux.
 
 ### Gamifier
 
-Je trouve que les mécanismes autour de la [gamification][] (ou ludification en français), sont très intéressantes.
+Je trouve que les mécanismes autour de la [gamification] (ou ludification en français), sont très intéressantes.
 Elles agissent sur des leviers de motivations en trouvant des façons de rendre amusantes des choses qui ne le sont pas.
 
 Mon objectif est de publier une fois par semaine, le jeudi.
@@ -93,7 +93,7 @@ Articles, présentations, sketchnotes, infographies, fiches de jeux (serious gam
 
 Le Software Craftsmanship **n'est pas** un mouvement élitiste.
 
-Le Software Craftsmanship, comme le DevOps, est une manière de propager l'Agilité dans des cercles qui s'en sont désintéressé.
+Le Software Craftsmanship, comme le DevOps, est une manière de propager l'Agilité dans des cercles qui s'en sont désintéressés.
 Pour moi, l'Agilité est une philosophie, qui nous pousse à _Exceller Ensemble_.
 
 #### _Exceller Ensemble_

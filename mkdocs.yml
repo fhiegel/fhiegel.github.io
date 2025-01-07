@@ -11,66 +11,59 @@ edit_uri: ""
 nav:
   - Accueil:
       - index.md
-      - 🛠️ Software Craft:
-          - topics/craft/index.md
+  - Software:
+    - topics/software/software-engineering.md
+    - topics/software/software-craftsmanship.md
+    - ⛩️ La maîtrise personnelle:
+        - Les Katas de code:
+          - topics/software/practices/katas/index.md
+          - topics/software/practices/katas/fizzbuzz/index.md
+          - topics/software/practices/katas/game-of-life/index.md
+          - topics/software/practices/katas/sailboat/index.md
+          - topics/software/practices/katas/rpn/index.md
+          - topics/software/practices/katas/mars-rover/index.md
+        - S'entrainer:
+          - topics/software/practices/coding-dojo.md
+          - topics/software/practices/code-retreat.md
+    - Les Pratiques:
+      - 🚥 Test-Driven Development:
+          - topics/software/practices/tdd/index.md
+          - topics/software/practices/tdd/as-if-you-meant-it.md
+          - topics/software/practices/tdd/outside-in.md
+          - topics/software/practices/tdd/triangle-du-developpement/index.md
+      - 👥 Collaborer:
           - 👥 Pair-Programming:
-              - topics/pair-programming/index.md
-              - Pair-Practice: topics/pair-programming/pair-practice.md
-              - Pair-Poetry: topics/pair-programming/pair-poetry.md
-          - ⛩️ La maîtrise personnelle:
-              - topics/katas/index.md
-              - Katas:
-                  - topics/katas/index.md
-              - Coding Dojo:
-                  - topics/coding-dojo/index.md
-              - Kata catalogue:
-                  - topics/katas/index.md
-                  - topics/katas/game-of-life/index.md
-                  - topics/katas/sailboat/index.md
-                  - topics/katas/rpn/index.md
-                  - topics/katas/fizzbuzz/index.md
-          - Test-Driven Development:
-              - topics/tdd/index.md
-              - topics/tdd/objectifs-pédagogiques.md
-              - topics/tdd/ressources.md
-              - topics/tdd/vrac.md
-              - 🔺 Triangle: topics/tdd/triangle-du-developpement/index.md
-
-          - 🧱 S.O.L.I.D:
-              - Synopsis: topics/solid/index.md
-          - 🛠️ Ateliers:
-              - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
-              - Good Morning Learning: topics/good-morning-learning/index.md
-          - Vrac:
-              - topics/knowledge-driven-development/clean-code-as-learning-media.md
-
-      - 🎓 Veille:
-          - topics/veille/index.md
-          - topics/veille/activites.md
-          - topics/veille/phare/index.md
-      - 🧩 Gamification:
-          - topics/gamification/index.md
-
+              - topics/software/practices/pair-programming/index.md
+              - Pair-Practice: topics/software/practices/pair-programming/pair-practice.md
+              - Pair-Poetry: topics/software/practices/pair-programming/pair-poetry.md
+    - 🫧 Conception logicielle et Qualité de Code:
+      - topics/software/design/index.md
+      - 🧱 S.O.L.I.D:
+          - topics/software/design/principles/solid/index.md
       - ➿ Design Patterns:
-          - topics/design-patterns/index.md
-          - topics/design-patterns/gof/index.md
-          - topics/design-patterns/gof/factory.md
-      - 🚧 En chantier:
-          - topics/cold-watching.md
-          - topics/xtrem/xtrem-reading.md
-          - topics/xtrem/xtrem-tech-watch.md
-          - topics/xtrem/xtrem-watching.md
+          - topics/software/design/patterns/index.md
+          - topics/software/design/patterns/gof/index.md
+          - topics/software/design/patterns/gof/factory.md
+    - 🛠️ Ateliers:
+      - Tests Unitaires - Sensibiliser sans coder: topics/sensibiliser-aux-tests-unitaires.md
+      - Good Morning Learning: topics/knowledge-management/good-morning-learning/index.md
+#  - Knowledge Management:
+#    - 🎓 Veille:
+#      - topics/knowledge-management/veille/index.md
+#      - topics/knowledge-management/veille/activites.md
+#      - topics/knowledge-management/veille/phare/index.md
   - Blog:
-      - blog/index.md
+    - blog/index.md
   - A propos de moi:
-      # - Bio: me/.bio.md
-      - CV: me/cv.md
-      - NoCV: me/nocv.md
+    - CV: me/cv.md
+    - NoCV: me/nocv.md
 not_in_nav: |
   tags.md
   cfp*
   slides*
   **/lt.md
+  gamification
+  knowledge-management
 
 theme:
   name: material
@@ -80,7 +73,7 @@ theme:
   favicon: assets/images/favicon.png
   features:
     - content.code.annotate
-    - navigation.indexes
+#    - navigation.indexes
     - navigation.instant
     - navigation.sections
     - navigation.tabs
@@ -186,9 +179,9 @@ plugins:
       tags_file: tags.md
   - redirects:
       redirect_maps:
-        'learn/presentations/good-morning-learning/index.md': 'topics/good-morning-learning/index.md'
-        'learn/presentations/good-morning-learning/slides/index.md': 'topics/good-morning-learning/slides/index.md'
-        'learn/presentations/good-morning-learning/slides/en.md': 'topics/good-morning-learning/slides/en.md'
+        'learn/presentations/good-morning-learning/index.md': 'topics/knowledge-management/good-morning-learning/index.md'
+        'learn/presentations/good-morning-learning/slides/index.md': 'topics/knowledge-management/good-morning-learning/slides/index.md'
+        'learn/presentations/good-morning-learning/slides/en.md': 'topics/knowledge-management/good-morning-learning/slides/en.md'
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
