@@ -37,7 +37,6 @@ nav:
               - Pair-Practice: topics/software/practices/pair-programming/pair-practice.md
               - Pair-Poetry: topics/software/practices/pair-programming/pair-poetry.md
     - 🫧 Conception logicielle et Qualité de Code:
-      - topics/software/design/index.md
       - 🧱 S.O.L.I.D:
           - topics/software/design/principles/solid/index.md
       - ➿ Design Patterns:
@@ -73,7 +72,7 @@ theme:
   favicon: assets/images/favicon.png
   features:
     - content.code.annotate
-#    - navigation.indexes
+    - navigation.indexes
     - navigation.instant
     - navigation.sections
     - navigation.tabs

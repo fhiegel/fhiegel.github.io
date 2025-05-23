@@ -1,26 +1,21 @@
 ---
-draft: true
-title: 97 choses que tout développeur devrait savoir (25/97)
+title: 97 trucs pour les développeur·euses (25/97)
 date: 2020-09-11
 description: |
   Vous cherchez des conseils sur le métier de développeur ?
   Vous voulez demander à Michael Feathers, Seb Rose ou encore à Robert C. Martin (Uncle Bob).
-  Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : Les 97 choses que tout développeur devrait savoir.
+  Ces experts, et bien d'autres, ont rassemblé leurs conseils dans un livre : _"97 Things Every Programmer Should Know"_
 featured_image: /posts/cercle-dev.png
-tags: 
-  - Astuces
-  - "Culture Dev"
-categories: 
-  - dev
-author: "Fabien Hiegel"
-authorEmoji: 🎲
-authorImage: /images/whoami/fhiegel.png
-authorDesc: Juste un Dev
+authors:
+ - fhiegel
+tags:
+ - tips
+ - culture-dev
 ---
-
+<!-- more -->
 En juillet, sur LinkedIn, je suis tombé sur ce post, d'[Emily Bache][]
 
-![image with no caption](images/quote-emily-bache.png)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/quote-emily-bache.png)
 
 Je suis fan du personnage, développeur, et curieux.
 Je me suis donc attelé à la recherche et à lecture du livre _"97 Things Every **Java** Programmer Should Know"_
@@ -40,7 +35,7 @@ Dans la suite de cet article, je vous propose de parcourir ce que j'ai compris d
 > Act with Prudence ([Thing 01])
 > — SebRose
 
-![image with no caption](images/sebrose.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/sebrose.jpg)
 
 > Whatever you undertake, act with prudence and consider the consequences.
 >
@@ -60,7 +55,7 @@ Faire autrement serait imprudent.
 > Apply Functional Programming Principles ([Thing 02])
 > — Edward Garson
 
-![image with no caption](images/edward_garson.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/edward_garson.jpg)
 
 Les paradigmes de la programmation fonctionnelle vous permettent d'améliorer grandement la qualité de votre code.
 Et ce, même dans des languages utilisant d'autres paradigmes comme les langages impératifs, ou les langages orientés objet.
@@ -78,7 +73,7 @@ Aussi ; prenez le temps de vous intéresser à la programmation fonctionnelle po
 > Ask "What Would the User Do?" (You Are not the User) ([Thing 03])
 > — Giles Colborne
 
-![image with no caption](images/giles_colborne.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/giles_colborne.jpg)
 
 Nous avons tendance à croire que les autres pensent comme nous.
 Ce n'est pas le cas, et il existe un biais cognitif pour le décrire : l'**Effet de faux consensus**.
@@ -95,7 +90,7 @@ Votre temps sera mieux investi à les observer pendant une heure, qu'à passer u
 > Automate Your Coding Standard ([Thing 04])
 > — Filip van Laenen
 
-![image with no caption](images/filip_van_laenen.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/filip_van_laenen.jpg)
 
 Au début d'un projet, tout le mode a meilleures intentions du monde.
 Les développeurs écrivent les standards de code du projet dans des guides de contribution, auxquels tout le monde adhère.
@@ -128,7 +123,7 @@ Ce qui paraissait pertinent au début du projet, aura peut-être moins de sens q
 > Chapter 5. Beauty Is in Simplicity ([Thing 05])
 > — Jørn Ølmheim
 
-![image with no caption](images/jorn_olmheim.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/jorn_olmheim.jpg)
 
 Qu'est-ce que le **beau code** ? Cette question est très subjective, car la perception de la beauté réside en chacun.
 
@@ -154,7 +149,7 @@ La beauté naît et se retrouve dans la simplicité.
 > Before You Refactor ([Thing 06])
 > — Rajith Attapattu
 
-![image with no caption](images/rajith_attapattu.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/rajith_attapattu.jpg)
 
 En tant que développeur, vous allez être amené à refactorer du code.
 Par pitié pour vous-même et pour vos collègue, pensez aux éléments suivants :
@@ -173,7 +168,7 @@ Cela vous permettra de comprendre les forces et les faiblesses du code existant,
 > Beware the Share ([Thing 07])
 > — Udi Dahan
 
-![image with no caption](images/udi_dahan.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/udi_dahan.jpg)
 
 Vous est-il arrivé d'appliquer le principe DRY (Don't Repeat Yourself) ?
 Et de mutualiser du code dupliqué depuis deux modules dans votre code dans une librairie partagée ?
@@ -196,7 +191,7 @@ Prenez garde lorsque vous mutualisez du code, et assurez-vous que le contexte m�
 > The Boy Scout Rule ([Thing 08])
 > — Robert C. Martin (Uncle Bob)
 
-![image with no caption](images/robert_c_martin.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/robert_c_martin.jpg)
 
 > Laissez toujours le campement plus propre que lorsque vous y êtes entré.
 
@@ -208,7 +203,7 @@ Améliorez continuellement la codebase que vous partagez avec vos collègues.
 > Check Your Code First before Looking to Blame Others ([Thing 09])
 > —  Allan Kelly
 
-![image with no caption](images/allan_kelly.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/allan_kelly.jpg)
 
 Nous, développeurs, sommes souvent de mauvaise foi : nous ne voulons pas remettre notre code en question lors d'un bug.
 Jamais.
@@ -224,7 +219,7 @@ Aussi, quand vous avez un problème dans votre application, investissez votre é
 > Choose Your Tools with Care ([Thing 10])
 > — Giovanni Asproni
 
-![image with no caption](images/giovanni_asproni.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/giovanni_asproni.jpg)
 
 Aujourd'hui, les logiciels sont rarement construits à partir de rien : 
 ils sont assemblés à partir d'outils existants, de frameworks et de librairies.
@@ -240,7 +235,7 @@ Par exemple, si vous êtes dans un contexte asynchrone sur l'ensemble de votre s
 
 Ma stratégie dans le choix des outils : ne prenez que les outils dont vous avez réellement besoin.
 J'essaie également, d'isoler au maximum ces outils de mon domaine métier.
-Je les intègres dans des couches applicatives dédiées.
+Je les intègre dans des couches applicatives dédiées.
 Ainsi, lorsque j'ai besoin de changer d'outils, je peux le faire facilement.
 
 ## #11. Développez dans le Language du Domaine Métier
@@ -248,7 +243,7 @@ Ainsi, lorsque j'ai besoin de changer d'outils, je peux le faire facilement.
 > Code in the Language of the Domain ([Thing 11])
 > — Dan North
 
-![image with no caption](images/dan_north.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/dan_north.jpg)
 
 Prenons l'exemple de deux codebases.
 
@@ -283,7 +278,7 @@ Répondez franchement : sur quelle codebase préféreriez-vous travailler ?
 > Code Is Design ([Thing 12])
 > — Ryan Brush
 
-![image with no caption](images/ryan_brush.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/ryan_brush.jpg)
 
 Projetons-nous dans un futur imaginaire, 
 dans lequel des robots sont en mesure de nous construire n'importe quoi,
@@ -318,7 +313,7 @@ Le code fonctionne de la même manière.
 > Code Layout Matters ([Thing 13])
 > — Steve Freeman
 
-![image with no caption](images/steve_freeman.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/steve_freeman.jpg)
 
 En tant que développeurs, nous passons plus de temps à naviguer, et à lire du code, qu'à en écrire. Et ce, dans le but de trouver où coder. Il existe plusieurs moyens de faciliter cette lecture :
 
@@ -333,7 +328,7 @@ L'allure générale du code doit m'aider à le comprendre, rien de plus.
 > Code Reviews ([Thing 14])
 > — Mattias Karlsson
 
-![image with no caption](images/mattias_karlsson.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/mattias_karlsson.jpg)
 
 Vous ne le savez pas encore, mais vous avez envie de faire de la revue de code.
 
@@ -357,7 +352,7 @@ Rendre cet exercice amusant, est la principale clé de la réussite, et tout le 
 > Coding with Reason ([Thing 15])
 > — Yechiel Kimchi
 
-![image with no caption](images/yechiel_kimchi.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/yechiel_kimchi.jpg)
 
 Regardez votre code, et réfléchissez.
 Est-ce qu'il est syntaxiquement correct ? Ou voyez-vous des erreurs ? 
@@ -384,7 +379,7 @@ Et si vous communiquez le résultat de vos réflexions, tout le monde en profite
 > A Comment on Comments ([Thing 16])
 > — Cal Evans
 
-![image with no caption](images/cal_evans.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/cal_evans.jpg)
 
 Les commentaires ne sont pas nécessairement un mal.Faites en sorte que le code soit compréhensible pour les développeurs qui passeront derrière vous.
 
@@ -396,7 +391,7 @@ Les futurs développeurs doivent comprendre ce que fait le code en rapport avec 
 > Comment Only What the Code Cannot Say ([Thing 17])
 > — Kevlin Henney
 
-![image with no caption](images/kevlin_henney.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/kevlin_henney.jpg)
 
 Ecrire de bons commentaires est une compétence à part entière. Elle consiste principalement à savoir **à quel moment il faut ne pas en écrire.** Un commentaire erroné n'a pas de valeur, et peut avoir un effet négatif. Il peut nuire à la concentration et être source de distraction. De plus, il est plus facile pour un commentaire faux, de survivre dans une codebase, qu'un bug dans le code. Un commentaire n'est pas exécuté, contrairement au code.
 
@@ -407,7 +402,7 @@ Comment qualifier la valeur d'un commentaire ? Il doit expliciter quelque chose 
 > Continuous Learning ([Thing 18])
 > — Clint Shank
 
-![image with no caption](images/clint_shank.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/clint_shank.jpg)
 
 N'importe qui sur Terre peut apprendre à faire votre métier. Travaillez votre employabilité, et continuez d'apprendre. Sinon, vous devenez un dinosaure, et vous disparaîtrez quand plus personne n'aura besoin de vous.
 
@@ -422,7 +417,7 @@ La technologie évolue vite. Ne restez pas derrière.
 > Convenience Is not an -ility ([Thing 19])
 > — Gregor Hohpe
 
-![image with no caption](images/gregor_hohpe.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/gregor_hohpe.jpg)
 
 Ecrire de bonnes API de code n'est pas chose aisée. Connaître les bonnes pratiques ne garantis pas de savoir les appliquer proprement.
 
@@ -445,7 +440,7 @@ Il n'y a rien de mal à user de commodité, tant qu'elle ne nuit pas au design d
 > Deploy Early and Often ([Thing 20])
 > — Steve Berczuk
 
-![image with no caption](images/steve_berczuk.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/steve_berczuk.jpg)
 
 Le processus d'installation/déploiement, est la première chose visible pour l'utilisateur final. Ce dernier utilise une application déployée. 
 
@@ -458,7 +453,7 @@ Le processus d'installation/déploiement est indispensable à la productivité d
 > Distinguish Business Exceptions from Technical ([Thing 21])
 > — Dan Bergh Johnsson
 
-![image with no caption](images/dan_bergh_johnsson.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/dan_bergh_johnsson.jpg)
 
 Au runtime, il y a deux raisons pour lesquelles les choses se passent mal
 
@@ -474,7 +469,7 @@ Mélanger les Exceptions métier et les Exceptions techniques dans une même hi�
 > Do Lots of Deliberate Practice ([Thing 22])
 > — Jon Jagger
 
-![image with no caption](images/jon_jagger.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/jon_jagger.jpg)
 
 L'entraînement volontaire, ou "Deliberate Practice" en anglais, va au-delà de la simple résolution d'un problème. Il s'agit de la répétition d'un exercice, pour acquérir une expertise sur une compétence. Cela signifie répéter l'exercice, encore et encore, jusqu'à atteindre le niveau de maîtrise satisfaisant.
 
@@ -489,7 +484,7 @@ L'entraînement volontaire est une question d'apprentissage. D'un apprentissage 
 > Domain-Specific Languages ([Thing 23])
 > — Michael Hunger
 
-![image with no caption](images/michael_hunger.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/michael_hunger.jpg)
 
 Lorsque vous écoutez une discussion entre experts, vous vous rendrez compte qu'ils utilisent un vocabulaire différent de leur langage de tous les jours. Et ce, quel que soit le domaine d'expertise. C'est ce q'uon appelle des DSL (Domain-Specific Languages) : chaque domaine spécifgique possède son vocabulaire spécifique.
 
@@ -505,7 +500,7 @@ Adaptez votre DSl au public que vous visez. En masquant la complexité technique
 >  Don’t Be Afraid to Break Things ([Thing 24])
 > — Mike Lewis
 
-![image with no caption](images/mike_lewis.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/mike_lewis.jpg)
 
 Dans le monde de l'industrie logicielle, tout le monde a rencontré une application qualifiée, au mieux, de précaire. Sur ce genre d'application, à chaque fois que l'on modifie quelque chose, on est susceptibles de casser une autre fonctionnalité, sans lien apparent avec le code modifié. Dans ce contexte, chaque fonctionnalité est livrée avec le moins de modification possible. C'est l'équivalent de jouer au Jenga, mais sur un logiciel.
 
@@ -520,7 +515,7 @@ Cett attitude est contagieuse, et inspirera vos collègues. Il se mettrront à l
 > Don't Be Cute with Your Test Data ([Thing 25])
 > — Rod Begbie
 
-![image with no caption](images/rod_begbie.jpg)
+![](../../../assets/images/blog/2020/97-trucs-pour-les-devs/rod_begbie.jpg)
 
 L'histoire du développement possède plusieurs anecdotes croustillantes autour du thème "Personne ne verra ça", qui, subitement, devient visible. Le type de fuite varie, et est parfois préjudiciable, pour une personne, une équipe, ou toute l'entreprise. Par exemple :
 
@@ -530,7 +525,8 @@ L'histoire du développement possède plusieurs anecdotes croustillantes autour 
 
 Rappelez-vous du vieil adage :
 
-> Un mensonge peut faire le tour de la terre le temps que la vérité mette ses chaussures. — Mark Twain
+> Un mensonge peut faire le tour de la terre le temps que la vérité mette ses chaussures. 
+> — Mark Twain
 
 Adage, déjà vrai en ces temps, où Twitter, Facebook, LinkedIn, n'existaient pas encore.
 

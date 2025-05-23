@@ -1,9 +1,9 @@
 # Documentation static site generator & deployment tool
-mkdocs>=1.6.0
+mkdocs>=1.6.1
 
 # Add your custom theme if not inside a theme_dir
 # (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
-mkdocs-material>=5.4.0
+mkdocs-material>=9.6.8
 
 # Enable the use of macros and manipulate date into md files
 # https://mkdocs-macros-plugin.readthedocs.io/en/latest/
